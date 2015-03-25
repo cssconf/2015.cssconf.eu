@@ -3,7 +3,7 @@ import url from 'url'
 import path from 'path'
 import express from 'express'
 
-const PORT = process.env.PORT || 5020;
+const PORT = process.env.PORT || 3000;
 
 
 import browserify from 'browserify';
