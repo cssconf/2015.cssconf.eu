@@ -46,35 +46,18 @@ let jsPromises = {
   }
 };
 
-import less from 'less';
-
-import LessPluginAutoPrefix from 'less-plugin-autoprefix'
-
-let lessOptions = {
-  plugins: [
-    new LessPluginAutoPrefix({ browsers: ['last 2 versions'] })
-  ],
-  sourceMap: {
-    outputSourceFiles: true,
-    sourceMapFileInline: true,
-    sourceMapFullFilename: true
-  }
-};
-
+import sass from 'node-sass'
+let stylesFolder = path.join(process.cwd(), 'app', 'styles');
 let cssPromises = {
   promises: {},
-  get: function(path) {
-    path = `./app${path.replace(/\.css$/, '.less')}`;
-
+  get: function(file) {
     return new Promise((resolve, reject) => {
-      lessOptions.filename = path;
-      // load file
-      fs.readFile(path, (fsErr, buffer) => {
-        if (fsErr) return reject(fsErr);
-        less.render(buffer.toString(), lessOptions, (lessErr, lessOut) => {
-          if (lessErr) reject(lessErr);
-          else resolve(lessOut.css);
-        });
+      file = file.replace(/^\/styles\//gi, '').replace(/\.css$/, '.scss');
+      sass.render({
+        file: file,
+        includePaths: [stylesFolder],
+        success: (result) => resolve(result.css),
+        error: (e) => reject(e)
       });
     });
   }
@@ -96,7 +79,7 @@ app.use((req, res, next) => {
       })
       .catch((e) => {
         res.writeHead(500, { 'content-type': 'text/plain' });
-        res.write(e.toString());
+        res.write(e.stack);
         res.end();
       });
     return;
@@ -117,7 +100,7 @@ app.use((req, res, next) => {
       })
       .catch((e) => {
         res.writeHead(500, { 'content-type': 'text/plain' });
-        res.write(e.toString());
+        res.write(e.stack);
         res.end();
       });
     return;
@@ -146,9 +129,9 @@ app.listen(PORT, () => console.log(`listening on port ${PORT}`));
 // lifereload server
 import livereload from 'livereload'
 let lrServer = livereload.createServer({
-  exts: [ 'less' ],
+  exts: [ 'scss' ],
   alias: {
-    less: 'css'
+    scss: 'css'
   }
 })
 lrServer.watch(path.join(__dirname, 'app', 'styles'));
