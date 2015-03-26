@@ -137,9 +137,10 @@ app.listen(PORT, () => console.log(`listening on port ${PORT}`));
 // lifereload server
 import livereload from 'livereload'
 let lrServer = livereload.createServer({
-  exts: [ 'scss' ],
+  exts: [ 'scss', 'sass' ],
   alias: {
-    scss: 'css'
+    scss: 'css',
+    sass: 'css'
   }
 })
 lrServer.watch(path.join(__dirname, 'app', 'styles'));
