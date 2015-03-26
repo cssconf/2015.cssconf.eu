@@ -12,6 +12,7 @@
   "author": "Robert Fleischmann",
   "private": true,
   "dependencies": {
+    "autoprefixer": "5.1.0",
     "babel": "4.7.16",
     "babelify": "5.0.4",
     "browserify": "9.0.3",

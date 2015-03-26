@@ -11,7 +11,7 @@ import watchify from 'watchify';
 
 let jsPromises = {
   promises: {},
-  get: function(path) {
+  get(path) {
     path = `./app${path}`;
     if (!this.promises[path]) {
       let b = browserify({
@@ -47,19 +47,27 @@ let jsPromises = {
 };
 
 import sass from 'node-sass'
+import autoprefixer from 'autoprefixer'
 let stylesFolder = path.join(process.cwd(), 'app', 'styles');
 let cssPromises = {
   promises: {},
-  get: function(file) {
+  getCSS(file) {
+    let fileName = path.basename(file);
+    let srcFileName = fileName.replace(/\.css$/, '.scss');
     return new Promise((resolve, reject) => {
-      file = file.replace(/^\/styles\//gi, '').replace(/\.css$/, '.scss');
       sass.render({
-        file: file,
+        file: srcFileName,
         includePaths: [stylesFolder],
         success: (result) => resolve(result.css),
         error: (e) => reject(e)
       });
     });
+  },
+  getPrefixedCSS(css) {
+    return autoprefixer.process(css).css;
+  },
+  get(file) {
+    return this.getCSS(file).then(this.getPrefixedCSS);
   }
 };
 

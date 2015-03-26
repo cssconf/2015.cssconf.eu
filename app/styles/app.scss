@@ -2,6 +2,11 @@
 
 $blue: green;
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   background: $blue;
+  background-image: linear-gradient(top, red, blue);
 }
