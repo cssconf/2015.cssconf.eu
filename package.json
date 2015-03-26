@@ -6,8 +6,8 @@
   "scripts": {
     "start": "nodemon",
     "build": "rm -r build && mkdir -p build && cp -R app/static/* build && npm run build-css && npm run build-js",
-    "build-js": "mkdir -p build/js && NODE_ENV=production browserify -t babelify -t envify -e app/js/app.js | uglifyjs --screw-ie8 -o build/js/app.js",
-    "build-css": "mkdir -p build/styles && NODE_ENV=production lessc --plugin=less-plugin-autoprefix app/styles/app.less > build/styles/_app.css && csso build/styles/_app.css > build/styles/app.css && rm build/styles/_app.css"
+    "build-js": "mkdir -p build/js && browserify -t babelify -e app/js/app.js | uglifyjs --screw-ie8 -o build/js/app.js",
+    "build-css": "node-sass app/styles/app.scss build/styles/_app.css && autoprefixer build/styles/_app.css && csso build/styles/_app.css > build/styles/app.css && rm build/styles/_app.css"
   },
   "author": "Robert Fleischmann",
   "private": true,
