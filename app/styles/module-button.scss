@@ -1,5 +1,11 @@
+
+
 .button {
   color: $color-white;
   background-color: $color-blue;
   font-size: $font-size-21;
+  padding: .4rem 1rem .3rem;
+  border-bottom: none;
+
+  &:hover {} //TODO: Define hover state
 }
