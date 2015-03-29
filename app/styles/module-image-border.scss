@@ -1,0 +1,35 @@
+
+
+//TODO: Build mixin out ouf it
+.image--has-border {
+  position: relative;
+  margin: 0 auto;
+  width: 12.5rem;
+  height: 12.5rem;
+  display: block;
+
+  > img {
+    width: inherit;
+    height: inherit;
+  }
+
+  &:before,
+  &:after {
+    width: inherit;
+    height: inherit;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border: 3px solid $color-black;
+  }
+
+  &:before {
+    top: -1rem;
+    left: -1rem;
+  }
+
+  &:after {
+    top: 1rem;
+    left: 1rem;
+  }
+}
