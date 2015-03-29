@@ -13,6 +13,7 @@ p {}
 a {
   color: $color-blue;
   text-decoration: none; //TODO: Build alternative underline
+  border-bottom: 3px solid $color-yellow;
 
   &:hover {} //TODO: Set hover state
 }
