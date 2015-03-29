@@ -10,12 +10,48 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="/styles/app.css">
+    <script>
+    (function(){
+        function addFont() {
+            var style = document.createElement('style');
+            style.rel = 'stylesheet';
+            document.head.appendChild(style);
+            style.textContent = localStorage.cssconffonts;
+        }
+
+        try {
+            if (localStorage.cssconffonts) {
+                // The font is in localStorage, we can load it directly
+                addFont();
+            } else {
+                // We have to first load the font file asynchronously
+                var request = new XMLHttpRequest();
+                request.open('GET', 'fonts.css', true);
+
+                request.onload = function() {
+                    if (request.status >= 200 && request.status < 400) {
+                        // We save the file in localStorage
+                        localStorage.cssconffonts = request.responseText;
+
+                        // ... and load the font
+                        addFont();
+                    }
+                }
+
+                request.send();
+            }
+        } catch(ex) {
+            // maybe load the font synchronously for woff-capable browsers
+            // to avoid blinking on every request when localStorage is not available
+        }
+    }());
+    </script>
   </head>
   <body>
     <h1>Headline h1</h1>
     <h2>Headline h2</h2>
     <h3>Headline h3</h3>
-    <h4>Headline h4</h4>
+    <h4>Headline h4 — Not styled yet</h4>
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus officia eos veritatis, perferendis voluptate <a href="/">possimus</a>, ratione voluptas porro! Consequuntur, sapiente magnam laudantium tempora laborum reiciendis. Unde quasi ut excepturi esse?</p>
 
@@ -28,6 +64,7 @@
     </ul>
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ratione saepe soluta quos, optio deserunt iusto quaerat, enim iure corrupti omnis laborum fuga, autem, minus velit! Esse, dolorum recusandae beatae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vitae modi, voluptates odio. Blanditiis commodi pariatur placeat dolor reprehenderit qui laudantium, et nihil odio assumenda suscipit culpa corporis labore facere.</p>
+    <a href="/" class="button">Button</a>
     <script src="/js/app.js" defer></script>
   </body>
 </html>
