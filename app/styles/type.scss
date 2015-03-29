@@ -4,6 +4,8 @@ body {
   font-size: $font-size-base;
   line-height: $line-height-base;
   color: $color-black;
+  font-family: 'nunitolight', sans-serif;
+  font-weight: 300;
 }
 
 p {}
@@ -11,18 +13,31 @@ p {}
 a {
   color: $color-blue;
   text-decoration: none; //TODO: Build alternative underline
+
+  &:hover {} //TODO: Set hover state
 }
 
 h1 {
   font-size: $font-size-64;
   color: $color-red;
+  font-family: montserratbold, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 h2 {
   font-size: $font-size-34;
   color: $color-blue;
+  font-family: montserratbold, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
-h3 {}
+h3 {
+  font-size: $font-size-24;
+  color: $color-black;
+  font-family: nunitolight, sans-serif;
+  font-weight: 300;
+}
 
 h4 {}
