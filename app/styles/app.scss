@@ -1,12 +1,7 @@
 @import 'normalize';
 
-$blue: green;
+html { box-sizing: border-box; }
 
-* {
-  box-sizing: border-box;
-}
-
-html {
-  background: $blue;
-  background-image: linear-gradient(top, red, blue);
-}
+*,
+*:before,
+*:after { box-sizing: inherit; }
