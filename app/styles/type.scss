@@ -3,9 +3,15 @@
 body {
   font-size: $font-size-base;
   line-height: $line-height-base;
+  color: $color-black;
 }
 
 p {}
+
+a {
+  color: $color-blue;
+  text-decoration: none; //TODO: Build alternative underline
+}
 
 h1 {
   font-size: $font-size-64;
