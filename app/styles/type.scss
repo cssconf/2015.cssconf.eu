@@ -18,6 +18,9 @@ a {
   &:hover {} //TODO: Set hover state
 }
 
+.a--has-no-underline { border: none; }
+//TODO: There will also be links without an underline
+
 h1 {
   font-size: $font-size-64;
   color: $color-red;
@@ -35,6 +38,8 @@ h2 {
   text-transform: uppercase;
   margin-bottom: $margin-base/2;
 }
+
+.h2--is-red { color: $color-red; }
 
 h3 {
   font-size: $font-size-24;
