@@ -1,6 +1,6 @@
 
 
-.button {
+.btn {
   color: $color-white;
   background-color: $color-blue;
   font-size: $font-size-21;
@@ -9,3 +9,11 @@
 
   &:hover {} //TODO: Define hover state
 }
+
+.btn-caps {
+ @extend .btn;
+  text-transform: uppercase;
+  font-size: 90%;
+}
+
+//TODO: Build button mixin
