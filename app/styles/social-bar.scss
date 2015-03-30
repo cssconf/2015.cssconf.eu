@@ -1,0 +1,29 @@
+//TODO: Add responsive behaviour
+
+.social-bar__list {
+  padding: 0;
+  list-style: none;
+}
+
+.social-bar__list-element {
+  width: 33.3vw;
+  float: left;
+}
+
+[class^="social-bar__link"] {
+  display: block;
+  width: 100%;
+  border-bottom: none;
+  color: $color-white;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  &:hover {} //TODO: Add hover effect
+}
+
+.social-bar__link-youtube { background-color: $color-red; }
+
+.social-bar__link-google { background-color: $color-black; }
+
+.social-bar__link-twitter { background-color: $color-blue; }
