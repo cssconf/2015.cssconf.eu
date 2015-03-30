@@ -1,0 +1,12 @@
+.bg-zebra {
+  height: 200px; //TODO: Replace with more realtive units
+  background: linear-gradient(
+  to bottom,
+  $color-black,
+  $color-black 50%,
+  transparent 50%,
+  transparent
+);
+  background-size: 100% 20%;
+  clear: both;
+}
