@@ -13,3 +13,11 @@ h4,
 p,
 ul,
 ol { margin-top: 0; }
+
+.header-page {
+  @extend %grid;
+}
+
+.nav-main {
+  @extend %grid__item;
+}
