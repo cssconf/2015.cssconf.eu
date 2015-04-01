@@ -1,12 +1,8 @@
 //TODO: Add responsive behaviour
 
-.social-bar {
-  @extend %full-width;
-}
+.social-bar { @extend %full-width; }
 
-.social-bar__list {
-  @extend %nav;
-}
+.social-bar__list { @extend %nav; }
 
 .social-bar__list-element {
   width: 33.3%;
