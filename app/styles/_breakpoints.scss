@@ -1,0 +1,22 @@
+$break-small: 34.375em; //550px
+// $break-medium:;
+// $break-large:;
+// $break-xlarge:;
+
+@mixin bp($media) {
+  @if $media == small {
+    @media only screen and (min-width: $break-small) { @content; }
+  } @else if $media == medium {
+    @media only screen and (min-width: $break-medium) { @content; }
+  } @else if $media == large {
+    @media only screen and (min-width: $break-large) { @content; }
+  } @else if $media == xlarge {
+    @media only screen and (min-width: $break-xlarge) { @content; }
+  }
+}
+
+
+// Include breakpoints like this:
+// .classname {
+//   @include bp(small) {...;}
+// }
