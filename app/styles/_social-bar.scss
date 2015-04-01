@@ -1,12 +1,15 @@
 //TODO: Add responsive behaviour
 
+.social-bar {
+  @extend %full-width;
+}
+
 .social-bar__list {
-  padding: 0;
-  list-style: none;
+  @extend %nav;
 }
 
 .social-bar__list-element {
-  width: 33.3vw;
+  width: 33.3%;
   float: left;
 }
 
@@ -18,6 +21,7 @@
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  text-transform: lowercase;
 
   &:hover {} //TODO: Add hover effect
 }
