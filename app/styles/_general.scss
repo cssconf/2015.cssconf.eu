@@ -15,8 +15,8 @@ ul,
 ol { margin-top: 0; }
 
 body {
-  padding-left: .625rem;
-  padding-right: .625rem;
+  padding-left: $padding-body;
+  padding-right: $padding-body;
 }
 
 %nav {
@@ -25,6 +25,6 @@ body {
 }
 
 %full-width {
-  margin-left: -.625rem;
-  margin-right: -.625rem;
+  margin-left: -$padding-body;
+  margin-right: -$padding-body;
 }
