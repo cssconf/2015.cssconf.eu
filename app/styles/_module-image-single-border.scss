@@ -1,24 +1,29 @@
 
 
 .image--has-single-border {
-  width: 400px;
-  height: 400px;
+  width: 60vw;
+  height: 60vw;
+  max-width: 500px;
+  max-height: 500px;
   position: relative;
   overflow: hidden;
   margin-bottom: 4rem; //TODO: Remove just for demo purposes
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   box-sizing: content-box;
+  margin-left: -$padding-body;
 
   > img {
     width: inherit;
     height: inherit;
+    max-width: inherit;
+    max-height: inherit;
   }
 
   &:after {
     position: absolute;
     content: "";
     width: inherit;
-    height: 2rem;
+    height: 1rem;
     left: -2rem; //TODO: Maybe lets JS/or some CSS solution calculate "border" offset
     bottom: 0;
     background-color: $color-blue;
@@ -27,7 +32,10 @@
 
 //Left is default -> helper class
 
-.image--is-positioned-right { float: right;
+.image--is-positioned-right {
+  float: right;
+  margin-right: -$padding-body;
+  margin-left: auto;
 
   &:after {
     right: -2rem;
