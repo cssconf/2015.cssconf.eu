@@ -12,14 +12,18 @@ p { margin-bottom: $margin-base; }
 
 a {
   color: $color-blue;
-  text-decoration: none; //TODO: Build alternative underline
-  border-bottom: 3px solid $color-yellow;
+  text-decoration: none;
 
   &:hover {} //TODO: Set hover state
 }
 
-.a--has-no-underline { border: none; }
-//TODO: There will also be links without an underline
+p > a,
+.anchor--has-underline {
+  color: $color-blue;
+  background-image: linear-gradient(transparent 85%, $color-yellow 15%);
+  background-repeat: repeat-x;
+  background-position: 0 -2px;
+}
 
 h1 {
   font-size: $font-size-64;
