@@ -1,0 +1,19 @@
+
+
+.geometric-container { // Add the geometric container class to the content section you want it to be displayed
+  position: relative;
+  overflow-x: hidden;
+  @extend %full-width;
+  height: 40vw;
+}
+
+.geometric-element-1 {
+  width: 10vw;
+  height: 40vw;
+  background-color: $color-yellow;
+  position: absolute;
+  transform: rotate(-15deg);
+  right: -3rem;
+}
+
+// TODO: Has to be more relative
