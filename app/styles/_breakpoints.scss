@@ -1,17 +1,16 @@
-$break-small: 34.375em; //550px
-// $break-medium:;
-// $break-large:;
-// $break-xlarge:;
+$cssconf-breakpoints: (
+  'small' : (min-width: 34.375em),
+  'medium' : (min-width: 50em)
+);
 
-@mixin bp($media) {
-  @if $media == small {
-    @media only screen and (min-width: $break-small) { @content; }
-  } @else if $media == medium {
-    @media only screen and (min-width: $break-medium) { @content; }
-  } @else if $media == large {
-    @media only screen and (min-width: $break-large) { @content; }
-  } @else if $media == xlarge {
-    @media only screen and (min-width: $break-xlarge) { @content; }
+@mixin bp($name) {
+  @if map-has-key($cssconf-breakpoints, $name) {
+    @media only screen and #{inspect(map-get($cssconf-breakpoints, $name))} {
+      @content;
+    }
+  }
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoints}`";
   }
 }
 
@@ -20,3 +19,5 @@ $break-small: 34.375em; //550px
 // .classname {
 //   @include bp(small) {...;}
 // }
+
+
