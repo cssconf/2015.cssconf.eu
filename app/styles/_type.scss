@@ -25,36 +25,46 @@ p > a,
   background-position: 0 -2px;
 }
 
-h1 {
-  font-size: $font-size-64;
+h1,
+.fz-alpha {
+  font-size: $font-size-39;
   color: $color-red;
   font-family: montserratbold, sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: $margin-base;
   line-height: .9375;
+
+  @include bp(small) { font-size: $font-size-64; }
 }
 
-h2 {
-  font-size: $font-size-34;
+h2,
+.fz-beta {
+  font-size: $font-size-22;
   color: $color-blue;
   font-family: montserratbold, sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: $margin-base/2;
+
+  @include bp(small) { font-size: $font-size-34; }
 }
 
 .h2--is-red { color: $color-red; }
 
-h3 {
-  font-size: $font-size-24;
+h3,
+.fz-gamma {
+  font-size: $font-size-14;
   color: $color-black;
   font-family: nunitolight, sans-serif;
   font-weight: 300;
   margin-bottom: $margin-base/2;
+
+  @include bp(small) { font-size: $font-size-24; }
 }
 
-h4 { margin-bottom: $margin-base/2}
+h4,
+.fz-delta { margin-bottom: $margin-base/2}
 
 ul,
 ol { margin-bottom: $margin-base; }
@@ -62,3 +72,4 @@ ol { margin-bottom: $margin-base; }
 ul { padding-left: 1.25rem; }
 
 ol { padding-left: 1.6875rem; }
+
