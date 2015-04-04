@@ -9,5 +9,9 @@
   );
   background-size: 100% 20%;
   clear: both;
-  @include bp(small) { @extend %full-width; }
+
+  @include bp(small) {
+    margin-left: -$padding-body;
+    margin-right: -$padding-body;
+  }
 }
