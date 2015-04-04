@@ -25,17 +25,26 @@ section {
   padding: 60px 20px;
 }
 
-%nav {
-  padding: 0;
-  list-style: none;
-}
-
-%full-width {
-  margin-left: -$padding-body;
-  margin-right: -$padding-body;
-}
-
 .c-thank-you {
   @extend %tac;
   @extend %bgc;
+}
+
+.c-team { @extend %tac; }
+
+.c-organizers {
+  color: $color-white;
+  background-color: $color-red;
+  @extend %tac;
+}
+
+.img-row {
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: -60px;
+}
+
+.img-row__element {
+  width: 33.333%;
+  display: inline-block;
 }
