@@ -10,7 +10,7 @@
   margin-bottom: 4rem; //TODO: Remove just for demo purposes
   padding-bottom: 1rem;
   box-sizing: content-box;
-  margin-left: -$padding-body;
+  // margin-left: -$padding-body;
 
   > img {
     width: inherit;
@@ -34,7 +34,7 @@
 
 .image--is-positioned-right {
   float: right;
-  margin-right: -$padding-body;
+  // margin-right: -$padding-body;
   margin-left: auto;
 
   &:after {
