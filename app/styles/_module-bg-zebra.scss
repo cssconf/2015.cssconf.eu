@@ -1,5 +1,4 @@
 .bg-zebra {
-  @extend %full-width;
   height: 200px; //TODO: Replace with more realtive units
   background: linear-gradient(
     to bottom,
@@ -10,4 +9,5 @@
   );
   background-size: 100% 20%;
   clear: both;
+  @include bp(small) { @extend %full-width; }
 }
