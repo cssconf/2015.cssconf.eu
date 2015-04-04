@@ -6,12 +6,15 @@ $color-red: #ea3939;
 $color-black: #212121;
 $color-yellow: #fcc720;
 $color-white: #fff;
+$color-beige: #f5f2e6;
 
 $font-size-base: 1.125em; //18px
 $font-size-14: .777777778em;
 $font-size-16: .888888889em;
+$font-size-22: 1.222222222em;
 $font-size-24: 1.333333333em;
 $font-size-34: 1.888888889em;
+$font-size-39: 2.166666667em;
 $font-size-44: 2.444444444em;
 $font-size-64: 3.555555556em;
 
@@ -19,7 +22,7 @@ $line-height-base: 1.444444444;
 
 $margin-base: 1.625rem;
 
-$padding-body: 1.5rem;
+$padding-body: .75rem;
 
 // Variables for the grid
 $use-silent-classes: true;
