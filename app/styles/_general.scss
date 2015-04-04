@@ -15,8 +15,14 @@ ul,
 ol { margin-top: 0; }
 
 body {
-  padding-left: $padding-body;
-  padding-right: $padding-body;
+  @include bp(small) {
+    padding-left: $padding-body;
+    padding-right: $padding-body;
+  }
+}
+
+section {
+  padding: 60px 20px;
 }
 
 %nav {
@@ -27,4 +33,9 @@ body {
 %full-width {
   margin-left: -$padding-body;
   margin-right: -$padding-body;
+}
+
+.c-thank-you {
+  @extend %tac;
+  @extend %bgc;
 }
