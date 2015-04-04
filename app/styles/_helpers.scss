@@ -1,0 +1,15 @@
+// Helpers
+
+%tac { text-align: center; }
+
+%bgc { background-color: $color-beige; }
+
+%cf {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after { clear: both; }
+}
