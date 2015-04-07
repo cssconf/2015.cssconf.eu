@@ -36,19 +36,29 @@
   }
 }
 
-.c-organizers > p {
+.c-organizers__paragraph {
   @extend %lap--ten-twelfths;
   margin: 0 auto;
 }
 
 .c-organizers__svg {
-  position: absolute;
+  position: absolute; //TODO: Group and position the letters
   top: -35vw;
   left: 0;
   right: 0;
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 350px;
+
+  @include bp(small) {
+    top: -187px;
+  }
 }
+
+.corganizers__svg-c {}
+
+.c-organizers__svg-s1 { transform: translateY(50px); }
+
+.c-organizers__svg-s2 {}
 
 .c-organizers-st0 {
   fill: $color-white;
