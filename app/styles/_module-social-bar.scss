@@ -30,12 +30,28 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   text-transform: lowercase;
+  border: 3px solid;
 
-  &:hover {} //TODO: Add hover effect
+  &:hover { background-color: transparent; }
 }
 
-.social-bar__link-youtube { background-color: $color-red; }
+.social-bar__link-youtube {
+  background-color: $color-red;
+  border-color: $color-red;
 
-.social-bar__link-google { background-color: $color-black; }
+  &:hover { color: $color-red; }
+}
 
-.social-bar__link-twitter { background-color: $color-blue; }
+.social-bar__link-google {
+  background-color: $color-black;
+  border-color: $color-black;
+
+  &:hover { color: $color-black; }
+}
+
+.social-bar__link-twitter {
+  background-color: $color-blue;
+  border-color: $color-blue;
+
+  &:hover { color: $color-blue; }
+}
