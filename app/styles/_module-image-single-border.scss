@@ -3,24 +3,19 @@
 .image--has-single-border {
   width: 100%;
   height: auto;
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 300px;
   position: relative;
   overflow: hidden;
   padding-bottom: 1rem;
   box-sizing: content-box;
   margin-left: -$padding-body*2;
 
-  @include bp(small) { margin-left: -$padding-body*3; }
+  @include bp(small) {
+    margin-left: -$padding-body*3;
+    max-width: 400px;
+  }
 
   @include bp(medium) { margin-left: -$padding-body*4; }
-
-  > img {
-    width: inherit;
-    height: inherit;
-    max-width: inherit;
-    max-height: inherit;
-  }
 
   &:after {
     position: absolute;
@@ -33,14 +28,11 @@
     max-width: inherit;
     z-index: -1;
 
-    @include bp(small) {
-      left: -$padding-body*4;
-    }
+    @include bp(small) { left: -$padding-body*4; }
   }
 }
 
 //Left is default -> helper class
-
 .image--is-positioned-right {
   float: right;
   margin-right: -$padding-body*2;
@@ -54,4 +46,10 @@
     right: -$padding-body*3;
     left: auto;
   }
+}
+
+.image-single-border {
+  width: inherit;
+  height: inherit;
+  max-width: inherit;
 }
