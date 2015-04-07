@@ -14,4 +14,9 @@
     margin-left: -$padding-body;
     margin-right: -$padding-body;
   }
+
+  @include bp(medium) {
+    margin-left: -$padding-body*2;
+    margin-right: -$padding-body*2;
+  }
 }
