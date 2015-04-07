@@ -19,11 +19,16 @@ body {
     padding-left: $padding-body;
     padding-right: $padding-body;
   }
+
+  @include bp(medium) {
+    padding-left: $padding-body*2;
+    padding-right: $padding-body*2;
+  }
 }
 
-section {
-  padding: 60px 20px;
-}
+section { padding: 60px 20px; }
+
+.grid { @extend %grid }
 
 .c-thank-you {
   @extend %tac;
@@ -36,15 +41,24 @@ section {
   color: $color-white;
   background-color: $color-red;
   @extend %tac;
+  @extend %grid__item;
 }
 
 .img-row {
-  margin-left: -20px;
-  margin-right: -20px;
   margin-top: -60px;
+  margin-left: -24px;
+  margin-right: -20px;
+  margin-bottom: 30px;
+  @extend %cf;
 }
 
 .img-row__element {
   width: 33.333%;
-  display: inline-block;
+  float: left;
+}
+
+%grid {
+  @include bp(small) {
+    padding-left: $padding-body*2 !important;
+  }
 }
