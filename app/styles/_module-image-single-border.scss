@@ -1,16 +1,19 @@
 
 
 .image--has-single-border {
-  width: 60vw;
-  height: 60vw;
+  width: 100%;
+  height: auto;
   max-width: 500px;
   max-height: 500px;
   position: relative;
   overflow: hidden;
-  margin-bottom: 4rem; //TODO: Remove just for demo purposes
   padding-bottom: 1rem;
   box-sizing: content-box;
-  // margin-left: -$padding-body;
+  margin-left: -$padding-body*2;
+
+  @include bp(small) { margin-left: -$padding-body*3; }
+
+  @include bp(medium) { margin-left: -$padding-body*4; }
 
   > img {
     width: inherit;
@@ -24,9 +27,16 @@
     content: "";
     width: inherit;
     height: 1rem;
-    left: -2rem; //TODO: Maybe lets JS/or some CSS solution calculate "border" offset
-    bottom: 0;
+    left: -$padding-body*3;
+    bottom: .25rem;
     background-color: $color-blue;
+    max-width: inherit;
+    z-index: -1;
+
+    @include bp(small) {
+      left: -$padding-body*4;
+      bottom: .5rem;
+    }
   }
 }
 
@@ -34,11 +44,15 @@
 
 .image--is-positioned-right {
   float: right;
-  // margin-right: -$padding-body;
+  margin-right: -$padding-body*2;
   margin-left: auto;
 
+  @include bp(small) { margin-right: -$padding-body*3; }
+
+  @include bp(medium) { margin-right: -$padding-body*4; }
+
   &:after {
-    right: -2rem;
+    right: -$padding-body*3;
     left: auto;
   }
 }
