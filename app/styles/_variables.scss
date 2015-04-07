@@ -28,3 +28,10 @@ $padding-body: .75rem;
 $use-silent-classes: true;
 $push: true;
 $pull: true;
+
+$breakpoints: (
+    'palm' '(min-width: 34.375em)',
+    'lap' '(min-width: 50em)',
+    'portable' '(max-width: 1023px)',
+    'desk' '(min-width: 1024px)'
+);
