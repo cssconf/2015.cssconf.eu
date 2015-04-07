@@ -14,9 +14,7 @@
     color: $color-blue
   } //TODO: Define hover state
 
-  &--is-active {
-    @extend .btn:hover;
-  }
+  &--is-active { @extend .btn:hover; }
 }
 
 .btn-caps {
