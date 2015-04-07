@@ -18,7 +18,6 @@
             document.head.appendChild(style);
             style.textContent = localStorage.cssconffonts;
         }
-
         try {
             if (localStorage.cssconffonts) {
                 // The font is in localStorage, we can load it directly
@@ -27,17 +26,14 @@
                 // We have to first load the font file asynchronously
                 var request = new XMLHttpRequest();
                 request.open('GET', 'fonts.css', true);
-
                 request.onload = function() {
                     if (request.status >= 200 && request.status < 400) {
                         // We save the file in localStorage
                         localStorage.cssconffonts = request.responseText;
-
                         // ... and load the font
                         addFont();
                     }
-                }
-
+                };
                 request.send();
             }
         } catch(ex) {
@@ -48,10 +44,15 @@
     </script>
   </head>
   <body>
+<!-- TYPO BOILERPLATE -->
     <h1>CSSconf is back!</h1>
+
     <h2>Announcing CSSconf 2015</h2>
+
     <h2 class="h2--is-red">Public Transport: Apps</h2>
+
     <h3>Dedicated to all people who love and write CSS</h3>
+
     <h4>Headline h4 — Not styled yet</h4>
 
     <p>In September 2014, over 300 people from around the world gathered in Berlin for CSSconf EU. The conference gave the CSS community a home for one weekend, brought curious and <a href="/">open-minded people</a> together, and helped to spark inspiration, advance knowledge, and create new connections.</p>
@@ -64,7 +65,9 @@
       <li>Join us in Berlin!</li>
     </ul>
     <!-- <div class="geometric-container"><div class="geometric-element-1"></div></div> -->
+
     <p>CSSConf EU 2015 will take place on Saturday, September 26, 2015. Once again, we’ll share the venue – Radialsystem V – with JSconf and Reject JS, so be prepared for a week full of exciting events.</p>
+
     <p>Ticket sales will begin February 3. Like last year, <a href="/">combination tickets</a> for CSSConf and JSconf will be available. We’ll have more details for you early next year – until then, Happy Holidays and a great start in 2015 everyone!</p>
 
     <ol>
@@ -72,12 +75,17 @@
       <li>Rachel Andrew</li>
       <li>Jina Bolton</li>
     </ol>
+<!-- TYPO BOILERPLATE END -->
+
+<!-- BUTTONS -->
     <a href="/" class="btn">Tickets</a>
     <a href="/" class="btn btn--is-active">Tickets</a>
     <a href="/" class="btn-caps">Tickets</a>
     <div class="image--has-border">
       <img src="img/image-speaker.jpg" alt="">
     </div>
+<!-- BUTTONS END -->
+
 <!--     <div class="image--has-single-border">
       <img src="img/image-speaker.jpg" alt="">
     </div>
@@ -85,15 +93,19 @@
       <img src="img/image-speaker.jpg" alt="">
     </div> -->
 
+<!-- GRID CONTAINER -->
+    <div class="grid">
+<!-- THANK YOU SECTION -->
+      <section class="c-thank-you">
+        <h1>Thank you</h1>
+        <h2 class="fz-gamma">This show is only possible through your generous support.</h2>
+        <p>We are currently offering sponsorship packages and media partnerships for CSSConf EU.</p>
+        <a href="/" class="btn">Support Us</a>
+      </section>
+<!-- THANK YOU SECTION END -->
 
-    <section class="c-thank-you">
-      <h1>Thank you</h1>
-      <h2 class="fz-gamma">This show is only possible through your generous support.</h2>
-      <p>We are currently offering sponsorship packages and media partnerships for CSSConf EU.</p>
-      <a href="/" class="btn">Support Us</a>
-    </section>
-    <div class="grid"><!--
-      --><section class="c-organizers">
+<!-- ORGANIZERS SECTION -->
+      <section class="c-organizers">
       <svg class="c-organizers__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 482.6 250" xml:space="preserve"
         >
         <g class="c-organizers__svg-c">
@@ -136,28 +148,33 @@
           <img class="img-row__element" src="img/verpixelt-square.jpg" alt="">
           <img class="img-row__element" src="img/verpixelt-square.jpg" alt="">
         </div>
-    <!--<h1>Organizers</h1> -->
+        <!--<h1>Organizers</h1> -->
         <p class="c-organizers__paragraph">CSSconf EU is curated by Michael P. Pfeiffer. Kristina Schneider and Kevin Lorenz brought to you with love by our great team.</p>
       </section>
+<!-- ORGANIZERS SECTION END -->
 
-    <section class="c-team">
-      <h1>The Team</h1>
-      <p>This event is made possible by the great work of many volunteers who spent lots of their time pouring their blood and sweat into preparing an awesome day for you.</p>
-      <ul class="list">
-        <li><strong>Michael P. Pfeiffer</strong>, Organizer, <a href="/">@frontdevde</a></li>
-        <li><strong>Kristina Schneider</strong>, Organizer, <a href="/">@kriesse</a></li>
-        <li><strong>Kevin Lorenz</strong>, Organizer+Code, <a href="/">@verpixelt</a></li>
-      </ul>
-      <h2 class="fz-gamma">Our big thanks and love go to:</h2>
-      <ul class="list">
-        <li><strong>Robert Fleischmann</strong>, Code, <a href="/">@rendro87</a></li>
-        <li><strong>Nicolas Zimmel</strong>, Design, <a href="/">@toomanyclouds</a></li>
-        <li><strong>Philip von Bargen</strong>, Code, <a href="">@philipvonbargen</a></li>
-        <li><strong>Minja Tönnes</strong>, Speaker Management, <a href="/">@minja</a></li>
-        <li><strong>Lena Reinhard</strong>, Communication, <a href="/">@fffux</a></li>
-      </ul>
-      <a href="/">More about the team</a>
-    </section>
+<!-- TEAM SECTION -->
+      <section class="c-team">
+        <h1>The Team</h1>
+        <p>This event is made possible by the great work of many volunteers who spent lots of their time pouring their blood and sweat into preparing an awesome day for you.</p>
+        <ul class="list">
+          <li><strong>Michael P. Pfeiffer</strong>, Organizer, <a href="/">@frontdevde</a></li>
+          <li><strong>Kristina Schneider</strong>, Organizer, <a href="/">@kriesse</a></li>
+          <li><strong>Kevin Lorenz</strong>, Organizer+Code, <a href="/">@verpixelt</a></li>
+        </ul>
+        <h2 class="fz-gamma">Our big thanks and love go to:</h2>
+        <ul class="list">
+          <li><strong>Robert Fleischmann</strong>, Code, <a href="/">@rendro87</a></li>
+          <li><strong>Nicolas Zimmel</strong>, Design, <a href="/">@toomanyclouds</a></li>
+          <li><strong>Philip von Bargen</strong>, Code, <a href="">@philipvonbargen</a></li>
+          <li><strong>Minja Tönnes</strong>, Speaker Management, <a href="/">@minja</a></li>
+          <li><strong>Lena Reinhard</strong>, Communication, <a href="/">@fffux</a></li>
+        </ul>
+        <a href="/">More about the team</a>
+      </section>
+<!-- TEAM SECTION END -->
+
+<!-- BLACK ARROW -->
       <div class="arrow">
         <a class="arrow__link" href="/">
           <svg class="arrow__svg--black" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -168,7 +185,13 @@
           </svg>
         </a>
       </div>
+<!-- BLACK ARROW END -->
+
+<!-- ZEBRA STRIPES -->
       <div class="bg-zebra"></div>
+<!-- ZEBRA STRIPES END -->
+
+<!-- SOCIAL BAR -->
       <nav class="social-bar">
         <ul class="social-bar__list">
           <li class="social-bar__list-element">
@@ -182,7 +205,10 @@
           </li>
         </ul>
       </nav>
+<!-- SOCIAL BAR END -->
+
     </div>
+<!-- GRID CONTAINER END -->
     <script src="/js/app.js" defer></script>
   </body>
 </html>
