@@ -28,7 +28,11 @@ body {
 
 section { padding: 60px 20px; }
 
-.grid { @extend %grid }
+.grid {
+  @extend %grid;
+  @extend %grid--center;
+  @extend %grid--full;
+}
 
 .c-thank-you {
   @extend %tac;
@@ -36,29 +40,3 @@ section { padding: 60px 20px; }
 }
 
 .c-team { @extend %tac; }
-
-.c-organizers {
-  color: $color-white;
-  background-color: $color-red;
-  @extend %tac;
-  @extend %grid__item;
-}
-
-.img-row {
-  margin-top: -60px;
-  margin-left: -24px;
-  margin-right: -20px;
-  margin-bottom: 30px;
-  @extend %cf;
-}
-
-.img-row__element {
-  width: 33.333%;
-  float: left;
-}
-
-%grid {
-  @include bp(small) {
-    padding-left: $padding-body*2 !important;
-  }
-}
