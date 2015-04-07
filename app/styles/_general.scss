@@ -26,12 +26,17 @@ body {
   }
 }
 
-section { padding: 60px $padding-body*2; }
+section {
+  padding: 60px $padding-body*2;
+  @extend %cf;
+}
 
 .grid {
   @extend %grid;
   @extend %grid--center;
   @extend %grid--full;
+  max-width: 66.666666667em;
+  margin: 0 auto;
 }
 
 .c-thank-you {
@@ -55,3 +60,19 @@ section { padding: 60px $padding-body*2; }
   fill: $color-black;
 }
 
+.left,
+.right {
+  @extend %grid__item;
+  @extend %cf;
+  @extend %lap--six-twelfths;
+}
+
+.left {
+  text-align: left !important;
+  padding-left: 0;
+}
+.right { text-align: right;}
+
+.c-conference {
+  text-align: left;
+}
