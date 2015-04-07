@@ -26,7 +26,7 @@ body {
   }
 }
 
-section { padding: 60px 20px; }
+section { padding: 60px $padding-body*2; }
 
 .grid {
   @extend %grid;
@@ -43,7 +43,7 @@ section { padding: 60px 20px; }
   @extend %tac;
   @extend %lap--eight-twelfths;
   @extend %grid__item;
-  padding-left: 20px !important;
+  padding-left: $padding-body*2 !important;
 }
 
 .arrow {}
