@@ -1,4 +1,4 @@
-//TODO REFACTORING!!!!!!
+
 
 .c-organizers {
   color: $color-white;
@@ -6,9 +6,11 @@
   @extend %tac;
   @extend %grid__item;
   @extend %lap--ten-twelfths;
-  padding-left: 20px !important;
-  margin-top: 200px;
+  padding-left: $padding-body*2 !important;
+  margin-top: 9rem;
   position: relative;
+
+  @include bp(small) { margin-top: 11.25rem; }
 
   &:before,
   &:after {
@@ -23,16 +25,24 @@
 
   &:before {
     background-image: linear-gradient(to bottom, $color-blue 0%, $color-blue 50%, $color-red 51%, $color-red 100%);
-    width: 50px;
-    height: 50px;
-    bottom: -25px;
+    width: 10vw;
+    height: 10vw;
+    bottom: -5vw;
+    max-width: 5rem;
+    max-height: 5rem;
+
+    @include bp(medium) { bottom: -2.5rem; }
   }
 
   &:after {
-    width: 30px;
-    height: 30px;
-    bottom: -15px;
+    width: 6vw;
+    height: 6vw;
+    bottom: -3vw;
     background-image: linear-gradient(to bottom, $color-red 0%, $color-red 50%, $color-white 51%, $color-white 100%);
+    max-height: 2.875rem;
+    max-width: 2.875rem;
+
+    @include bp(medium) { bottom: -1.5rem; }
   }
 }
 
@@ -42,15 +52,16 @@
 }
 
 .c-organizers__svg {
-  position: absolute; //TODO: Group and position the letters
-  top: -35vw;
+  position: absolute;
+  top: -7.5rem;
   left: 0;
   right: 0;
   margin: 0 auto;
-  max-width: 350px;
+  max-width: 18.75rem;
 
   @include bp(small) {
-    top: -187px;
+    max-width: 21.875rem;
+    top: -9rem;
   }
 }
 
@@ -119,10 +130,10 @@
 }
 
 .img-row {
-  margin-top: -60px; //TODO make a variable
-  margin-right: -20px;
-  margin-left: -20px;
-  margin-bottom: 30px;
+  margin-top: -$padding-body*5;
+  margin-right: -$padding-body*2;
+  margin-left: -$padding-body*2;
+  margin-bottom: $padding-body*2;
   @extend %cf;
 }
 
@@ -130,3 +141,4 @@
   width: 33.333%;
   float: left;
 }
+
