@@ -31,6 +31,10 @@ section {
   @extend %cf;
 }
 
+/////////////////////////////////////////////
+// REFACTOR EVERYTHING BELOW THIS COMMENT //
+///////////////////////////////////////////
+
 .grid {
   @extend %grid;
   @extend %grid--center;
