@@ -39,4 +39,19 @@ section { padding: 60px 20px; }
   @extend %bgc;
 }
 
-.c-team { @extend %tac; }
+.c-team {
+  @extend %tac;
+  @extend %lap--eight-twelfths;
+  @extend %grid__item;
+  padding-left: 20px !important;
+}
+
+.arrow {}
+
+.arrow__link { display: inline-block; }
+
+.arrow__svg--black {
+  width: 20vw;
+  fill: $color-black;
+}
+
