@@ -28,14 +28,13 @@
     width: inherit;
     height: 1rem;
     left: -$padding-body*3;
-    bottom: .25rem;
+    bottom: .5rem;
     background-color: $color-blue;
     max-width: inherit;
     z-index: -1;
 
     @include bp(small) {
       left: -$padding-body*4;
-      bottom: .5rem;
     }
   }
 }
