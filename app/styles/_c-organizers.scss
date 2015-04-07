@@ -1,0 +1,122 @@
+//TODO REFACTORING!!!!!!
+
+.c-organizers {
+  color: $color-white;
+  background-color: $color-red;
+  @extend %tac;
+  @extend %grid__item;
+  @extend %lap--eight-twelfths;
+  padding-left: 20px !important;
+  margin-top: 200px;
+  position: relative;
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+
+  &:before {
+    background-image: linear-gradient(to bottom, $color-blue 0%, $color-blue 50%, $color-red 51%, $color-red 100%);
+    width: 50px;
+    height: 50px;
+    bottom: -25px;
+  }
+
+  &:after {
+    width: 30px;
+    height: 30px;
+    bottom: -15px;
+    background-image: linear-gradient(to bottom, $color-red 0%, $color-red 50%, $color-white 51%, $color-white 100%);
+  }
+}
+
+.c-organizers > p {
+  @extend %lap--ten-twelfths;
+  margin: 0 auto;
+}
+
+.c-organizers__svg {
+  position: absolute;
+  top: -35vw;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.c-organizers-st0 {
+  fill: $color-white;
+  stroke: $color-black;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+.c-organizers-st1 {
+  fill: $color-red;
+  stroke: $color-black;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+.c-organizers-st2 {
+  fill: $color-blue;
+  stroke: $color-black;
+  stroke-width: 3;
+}
+
+.c-organizers-st3 {
+  fill: $color-yellow;
+  stroke: $color-black;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+.c-organizers-st4 {
+  fill: $color-white;
+  stroke: $color-black;
+  stroke-width: 3;
+}
+
+.c-organizers-st5 {
+  fill: $color-blue;
+  stroke: $color-black;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+.c-organizers-st7 {
+  display: inline;
+  fill: $color-black;
+}
+
+.c-organizers-st8 {
+  fill: $color-yellow;
+  stroke: $color-black;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+.c-organizers-st9 {
+  fill: $color-red;
+  stroke: $color-black;
+  stroke-width: 3;
+}
+
+.img-row {
+  margin-top: -60px; //TODO make a variable
+  margin-right: -20px;
+  margin-left: -20px;
+  margin-bottom: 30px;
+  @extend %cf;
+}
+
+.img-row__element {
+  width: 33.333%;
+  float: left;
+}
