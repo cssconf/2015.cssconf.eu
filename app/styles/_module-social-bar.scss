@@ -3,15 +3,15 @@
 .social-bar {
   @extend %cf;
 
-  @include bp(small) {
-    margin-left: -$padding-body;
-    margin-right: -$padding-body;
-  }
+  // @include bp(small) {
+  //   margin-left: -$padding-body;
+  //   margin-right: -$padding-body;
+  // }
 
-  @include bp(medium) {
-    margin-left: -$padding-body*2;
-    margin-right: -$padding-body*2;
-  }
+  // @include bp(medium) {
+  //   margin-left: -$padding-body*2;
+  //   margin-right: -$padding-body*2;
+  // }
 }
 
 .social-bar__list { @extend %nav; }
