@@ -1,0 +1,8 @@
+
+
+.g-team { @extend %tac; }
+
+.c-team {
+  @extend %lap--eight-twelfths;
+  padding-left: $padding-body*2 !important;
+}
