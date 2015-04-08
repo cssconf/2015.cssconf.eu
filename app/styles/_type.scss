@@ -59,6 +59,7 @@ h3,
   font-family: nunitolight, sans-serif;
   font-weight: 300;
   margin-bottom: $margin-base/2;
+  text-transform: initial;
 
   @include bp(small) { font-size: $font-size-24; }
 }
