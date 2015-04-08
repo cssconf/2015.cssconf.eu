@@ -21,3 +21,21 @@ The whole grid relies on `display: inline-block`. Because of the `whitepsace` is
 At the given moment you won't find grid classes inside the HTML. Every `grid__item` gets it's styles from Sass `@extend`s. This is something I will change in the near future.
 
 You can find the well documented grid in `_grid.scss`. Variables to overwrite `!default`s are set in `_variables.scss`.
+
+->
+
+`.rw`(row) extends `%grid--full`
+`.cl`(column) extends `%grid__item`
+
+To build a layout use `<section class="rw"></section>` to open a new row aka. grid entity. Use `class="cl"` for elements inside. If you want elements with a gutter, wrap the `.cl` elements inside another element like so:
+
+```
+<section class="rw">
+  <div class="grid-spaces">
+    <div class="cl"></div>
+    <div class="cl"></div>
+    <div class="cl"></div>
+    <div class="cl"></div>
+  </div>
+</section>
+```
