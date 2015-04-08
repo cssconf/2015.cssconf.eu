@@ -1,0 +1,96 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CSSconf EU 2015</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="/styles/app.css">
+    <script>
+    (function(){
+        function addFont() {
+            var style = document.createElement('style');
+            style.rel = 'stylesheet';
+            document.head.appendChild(style);
+            style.textContent = localStorage.cssconffonts;
+        }
+        try {
+            if (localStorage.cssconffonts) {
+                // The font is in localStorage, we can load it directly
+                addFont();
+            } else {
+                // We have to first load the font file asynchronously
+                var request = new XMLHttpRequest();
+                request.open('GET', 'fonts.css', true);
+                request.onload = function() {
+                    if (request.status >= 200 && request.status < 400) {
+                        // We save the file in localStorage
+                        localStorage.cssconffonts = request.responseText;
+                        // ... and load the font
+                        addFont();
+                    }
+                };
+                request.send();
+            }
+        } catch(ex) {
+            // maybe load the font synchronously for woff-capable browsers
+            // to avoid blinking on every request when localStorage is not available
+        }
+    }());
+    </script>
+  </head>
+  <body>
+  <!-- TYPO BOILERPLATE -->
+      <div class="rw">
+        <div class="cl headings">
+          <h1>CSSconf is back!</h1>
+
+          <h2>Announcing CSSconf 2015</h2>
+
+          <h2 class="h2--is-red">Public Transport: Apps</h2>
+
+          <h3>Dedicated to all people who love and write CSS</h3>
+
+          <h4>Headline h4 — Not styled yet</h4>
+        </div><!--
+        --><div class="cl lists">
+        <ul>
+          <li>PS: Want to help us make this happen?</li>
+          <li>consectetur adipisicing</li>
+          <li>E-mail us at <a class="a--has-no-underline" href="/">contact@cssconf.eu</a></li>
+          <li>Be a part of it</li>
+          <li>Join us in Berlin!</li>
+        </ul>
+          <ol>
+            <li>Jed Schmidt </li>
+            <li>Rachel Andrew</li>
+            <li>Jina Bolton</li>
+          </ol>
+          </div>
+
+        <!-- <div class="geometric-container"><div class="geometric-element-1"></div></div> -->
+        <p>In September 2014, over 300 people from around the world gathered in Berlin for CSSconf EU. The conference gave the CSS community a home for one weekend, brought curious and <a href="/">open-minded people</a> together, and helped to spark inspiration, advance knowledge, and create new connections.</p>
+
+        <p>CSSConf EU 2015 will take place on Saturday, September 26, 2015. Once again, we’ll share the venue – Radialsystem V – with JSconf and Reject JS, so be prepared for a week full of exciting events.</p>
+
+        <p>Ticket sales will begin February 3. Like last year, <a href="/">combination tickets</a> for CSSConf and JSconf will be available. We’ll have more details for you early next year – until then, Happy Holidays and a great start in 2015 everyone!</p>
+        </div>
+  <!-- TYPO BOILERPLATE END -->
+
+  <!-- BUTTONS -->
+      <a href="/" class="btn">Tickets</a>
+      <a href="/" class="btn btn--is-active">Tickets</a>
+      <a href="/" class="btn-caps">Tickets</a>
+      <div class="image--has-border">
+        <img src="img/image-speaker.jpg" alt="">
+      </div>
+  <!-- BUTTONS END -->
+
+
+  <script src="/js/app.js" defer></script>
+  </body>
+</html>
