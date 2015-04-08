@@ -12,10 +12,12 @@ Please take a look at existing styles and try to code that way. A few things to 
 * If you think your code could be hard to understand or needs explanation, write comments.
 
 ## Grid Explanation
-The whole grid relies on `display: inline-block`. Because of the ``whitepsace` issue every `grid__item` followed by a `grid__item` has to be sorrounded by HTML comments like so:
+The whole grid relies on `display: inline-block`. Because of the `whitepsace` issue every `grid__item` followed by a `grid__item` has to be sorrounded by HTML comments like so:
 
 ```
 <div class="grid__item"></div><!--
 --><div class="grid__item"></div>
 ```
 At the given moment you won't find grid classes inside the HTML. Every `grid__item` gets it's styles from Sass `@extend`s. This is something I will change in the near future.
+
+You can find the well documented grid in `_grid.scss`. Variables to overwrite `!default`s are set in `_variables.scss`.
