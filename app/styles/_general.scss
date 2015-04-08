@@ -26,9 +26,13 @@ body {
   }
 }
 
-.rw {
-  @extend %grid;
+.container {
+  max-width: 66.666666667em;
+  margin: 0 auto;
+  @extend %tac;
 }
+
+.rw { @extend %grid--full; }
 
 .cl { @extend %grid__item; }
 
@@ -37,36 +41,7 @@ section {
   @extend %cf;
 }
 
-/////////////////////////////////////////////
-// REFACTOR EVERYTHING BELOW THIS COMMENT //
-///////////////////////////////////////////
-
-.headings,
-.lists {
-  @extend %six-twelfths;
-}
-
-.grid {
-  @extend %grid;
-  @extend %grid--center;
-  @extend %grid--full;
-  max-width: 66.666666667em;
-  margin: 0 auto;
-}
-
-.c-thank-you {
-  @extend %tac;
-  @extend %bgc;
-}
-
-.c-team {
-  @extend %tac;
-  @extend %lap--eight-twelfths;
-  @extend %grid__item;
-  padding-left: $padding-body*2 !important;
-}
-
-.arrow {}
+.c-thank-you { @extend %bgc; }
 
 .arrow__link { display: inline-block; }
 
@@ -74,6 +49,12 @@ section {
   width: 20vw;
   fill: $color-black;
 }
+
+
+
+/////////////////////////////////////////////
+// REFACTOR EVERYTHING BELOW THIS COMMENT //
+///////////////////////////////////////////
 
 .left,
 .right {
@@ -87,7 +68,7 @@ section {
   padding-left: 0;
 }
 
-.right { text-align: right;}
+.right { text-align: right; }
 
 .c-conference { text-align: left; }
 

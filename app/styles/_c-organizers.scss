@@ -1,11 +1,11 @@
 
+.g-organizers { @extend %tac; }
 
 .c-organizers {
+  @extend %lap--ten-twelfths;
+
   color: $color-white;
   background-color: $color-red;
-  @extend %tac;
-  @extend %grid__item;
-  @extend %lap--ten-twelfths;
   padding-left: $padding-body*2 !important;
   margin-top: 9rem;
   position: relative;
@@ -48,6 +48,7 @@
 
 .c-organizers__paragraph {
   @extend %lap--ten-twelfths;
+
   margin: 0 auto;
 }
 
@@ -130,11 +131,12 @@
 }
 
 .img-row {
-  margin-top: -$padding-body*5;
-  margin-right: -$padding-body*2;
-  margin-left: -$padding-body*2;
-  margin-bottom: $padding-body*2;
   @extend %cf;
+
+  margin-top: -$padding-body*5; // Every section has padding which we do not want in this case
+  margin-right: -$padding-body*2; //
+  margin-left: -$padding-body*2; //
+  margin-bottom: $padding-body*2; //
 }
 
 .img-row__element {
