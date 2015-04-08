@@ -14,7 +14,7 @@
 
   &:before,
   &:after {
-    content: "";
+    content: '';
     display: block;
     border-radius: 50%;
     position: absolute;
@@ -66,11 +66,11 @@
   }
 }
 
-.corganizers__svg-c {}
+// .corganizers__svg-c {}
 
 .c-organizers__svg-s1 { transform: translateY(50px); }
 
-.c-organizers__svg-s2 {}
+// .c-organizers__svg-s2 {}
 
 .c-organizers-st0 {
   fill: $color-white;

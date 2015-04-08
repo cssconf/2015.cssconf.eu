@@ -21,7 +21,7 @@
     transition: all .3s ease-in-out; //TODO: Make this only available on larger viewports
     width: inherit;
     height: inherit;
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     border: 3px solid $color-black;

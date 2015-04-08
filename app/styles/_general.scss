@@ -27,9 +27,9 @@ body {
 }
 
 .container {
+  @extend %tac;
   max-width: 66.666666667em;
   margin: 0 auto;
-  @extend %tac;
 }
 
 .rw { @extend %grid--full; }
@@ -38,8 +38,8 @@ body {
 
 section,
 footer {
-  padding: 60px $padding-body*2;
   @extend %cf;
+  padding: 60px $padding-body*2;
 }
 
 .c-thank-you { @extend %bgc; }
@@ -68,7 +68,7 @@ footer {
 
 .g-venue { @extend %tal; }
 
-.cssconf-family-list {}
+// .cssconf-family-list {}
 
 .cssconf-family-list__item { display: inline-block; }
 
@@ -78,3 +78,4 @@ footer {
 }
 
 .c-cssfamily { @extend %bgc; }
+

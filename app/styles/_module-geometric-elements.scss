@@ -1,9 +1,9 @@
 
 
 .geometric-container { // Add the geometric container class to the content section you want it to be displayed
+  @extend %full-width;
   position: relative;
   overflow-x: hidden;
-  @extend %full-width;
   height: 40vw;
 }
 

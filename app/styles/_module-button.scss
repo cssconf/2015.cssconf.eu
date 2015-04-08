@@ -11,16 +11,14 @@
 
   &:hover {
     background-color: transparent;
-    color: $color-blue
-  } //TODO: Define hover state
+    color: $color-blue;
+  }
 
   &--is-active { @extend .btn:hover; }
 }
 
 .btn-caps {
- @extend .btn;
+  @extend .btn;
   text-transform: uppercase;
   font-size: 90%;
 }
-
-//TODO: Build button mixin
