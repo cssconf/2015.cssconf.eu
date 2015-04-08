@@ -26,6 +26,12 @@ body {
   }
 }
 
+.rw {
+  @extend %grid;
+}
+
+.cl { @extend %grid__item; }
+
 section {
   padding: 60px $padding-body*2;
   @extend %cf;
@@ -34,6 +40,11 @@ section {
 /////////////////////////////////////////////
 // REFACTOR EVERYTHING BELOW THIS COMMENT //
 ///////////////////////////////////////////
+
+.headings,
+.lists {
+  @extend %six-twelfths;
+}
 
 .grid {
   @extend %grid;
