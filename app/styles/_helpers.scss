@@ -1,4 +1,4 @@
-// Helpers
+
 
 %nav {
   padding: 0;
@@ -10,7 +10,9 @@
   margin-right: -$padding-body;
 }
 
-%tac { text-align: center !important;}
+%tac { text-align: center !important; }
+
+%tal { text-align: left; }
 
 %bgc { background-color: $color-beige; }
 
