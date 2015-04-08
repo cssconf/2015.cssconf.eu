@@ -23,10 +23,11 @@
     width: inherit;
     height: 1rem;
     left: -$padding-body*3;
-    bottom: .5rem;
+    bottom: .8rem;
     background-color: $color-blue;
     max-width: inherit;
-    z-index: -1;
+    // z-index: -1;
+    mix-blend-mode: multiply;
 
     @include bp(small) { left: -$padding-body*4; }
   }
