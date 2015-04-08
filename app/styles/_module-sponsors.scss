@@ -1,0 +1,19 @@
+.sponsors__logo {
+  @extend %grid__item;
+  @extend %four-twelfths;
+  @extend %palm--two-twelfths;
+  vertical-align: bottom;
+  margin-bottom: $padding-body*2;
+
+  &:first-of-type ,
+  &:nth-of-type(4) { margin-left: -$padding-body*2; }
+
+  &:nth-of-type(4) {
+    @include bp(small) { margin-left: 0; }
+  }
+}
+
+.sponsors__img {
+  width: 100%;
+  max-width: 120px;
+}
