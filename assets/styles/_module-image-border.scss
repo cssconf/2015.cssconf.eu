@@ -1,5 +1,13 @@
 
 
+.speakers__item {
+  @extend %four-twelfths;
+  @extend %tac;
+  margin-right: -4px;
+
+  &:first-of-type { padding-left: 0; }
+}
+
 //TODO: Build mixin out ouf it
 //TODO: Eventually replace with figure instead of div
 .image--has-border {
@@ -14,6 +22,8 @@
   > img {
     width: inherit;
     height: inherit;
+    position: relative;
+    z-index: 2;
   }
 
   &:before,
@@ -23,7 +33,7 @@
     height: inherit;
     content: '';
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     border: 3px solid $color-black;
   }
 
