@@ -1,6 +1,6 @@
 # cssconf 2015
 ## Installation
-After checking out the repository just run `npm install` and `npm start` afterwards. The website will be available on `localhost:3000`.
+After checking out the repository just run `npm install` and `grunt dev` afterwards. The website will be available on `localhost:3000`.
 
 ## Coding standards
 Please take a look at existing styles and try to code that way. A few things to keep in mind:

@@ -1,0 +1,42 @@
+
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- Place favicon.ico in the root directory -->
+<link rel="stylesheet" href="/assets/cssconf-2015.css">
+<script>
+(function(){
+    function addFont() {
+        var style = document.createElement('style');
+        style.rel = 'stylesheet';
+        document.head.appendChild(style);
+        style.textContent = localStorage.cssconffonts;
+    }
+    try {
+        if (localStorage.cssconffonts) {
+            // The font is in localStorage, we can load it directly
+            addFont();
+        } else {
+            // We have to first load the font file asynchronously
+            var request = new XMLHttpRequest();
+            request.open('GET', 'fonts.css', true);
+            request.onload = function() {
+                if (request.status >= 200 && request.status < 400) {
+                    // We save the file in localStorage
+                    localStorage.cssconffonts = request.responseText;
+                    // ... and load the font
+                    addFont();
+                }
+            };
+            request.send();
+        }
+    } catch(ex) {
+        // maybe load the font synchronously for woff-capable browsers
+        // to avoid blinking on every request when localStorage is not available
+    }
+}());
+</script>
