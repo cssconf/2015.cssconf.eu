@@ -32,7 +32,7 @@ module.exports = function(grunt) {
     assemble: {
       options: {
         flatten: true,
-        partials: ['templates/includes/*.hbs'],
+        partials: ['templates/partials/*.hbs'],
         layoutdir: 'templates/layouts',
         layout: 'default.hbs'
       },
