@@ -1,0 +1,21 @@
+---
+speakers:
+  - name: Ben Schwarz
+    bio: Team member of CSSConfAU, building calibreapp
+  - name: Marc Edwards
+    bio: Bio about Marc Edwards
+  - name: Claudina Sarahe
+    bio: Bio about Claudina Sarahe
+---
+{{#forEach speaker.speakers}}
+<div class="cl speakers__item">
+  <div class="image--has-border">
+    <img src="assets/img/image-speaker.jpg" alt="">
+  </div>
+  <h2>
+    {{name}}
+  </h2>
+  <p>{{ bio }}</p>
+</div> <!--  
+-->
+{{/forEach}}
