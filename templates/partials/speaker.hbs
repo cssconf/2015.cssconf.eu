@@ -1,21 +1,25 @@
 ---
 speakers:
-  - name: Ben Schwarz
-    bio: Team member of CSSConfAU, building calibreapp
+  - name: 'Ben Schwarz'
+    bio: 'Team member of CSSConfAU, building calibreapp'
+    image-path: 'assets/img/speakers/ben-schwarz.jpg'
+
   - name: Marc Edwards
     bio: Bio about Marc Edwards
+    image-path: 'assets/img/speakers/marc-edwards.jpg'
+
   - name: Claudina Sarahe
     bio: Bio about Claudina Sarahe
+    image-path: 'assets/img/speakers/claudina-sarahe.jpg'
 ---
 {{#forEach speaker.speakers}}
-<div class="cl speakers__item">
-  <div class="image--has-border">
-    <img src="assets/img/image-speaker.jpg" alt="">
+  <div class="cl speakers__item">
+    <div class="image--has-border">
+      <img src="{{ image-path }}" alt="">
+    </div>
+    <h2>
+      {{name}}
+    </h2>
+    <p>{{ bio }}</p>
   </div>
-  <h2>
-    {{name}}
-  </h2>
-  <p>{{ bio }}</p>
-</div> <!--  
--->
 {{/forEach}}
