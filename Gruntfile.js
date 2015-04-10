@@ -8,7 +8,7 @@ module.exports = function(grunt) {
         options: {
           style: 'compressed'
         },
-        files: { 'dest/assets/cssconf-2015.css': 'assets/styles/cssconf-2015.scss' }
+        files: { 'dest/assets/cssconf-2015.css': 'assets/styles/styles.scss' }
       }
     },
     autoprefixer: {
