@@ -1,0 +1,8 @@
+.nav-sub {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem; //TODO: ADJUST PADDING
+}
+
+.nav-sub__list { @extend %nav; }
+
+.nav-sub__list-item { display: inline-block; }
