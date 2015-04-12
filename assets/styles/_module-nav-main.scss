@@ -36,6 +36,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @include bp(small) { left: -$padding-body; }
+
+  @include bp(medium) { left: -$padding-body*2; }
 }
 
 .nav-main__list--is-active .nav-main__list-item {
@@ -45,6 +49,8 @@
 }
 
 .nav-main__list--is-active .nav-main__link { font-size: 10vmin;}
+
+.nav-main__list--is-active .nav-main__link--is-active { font-weight: bold; }
 
 .nav-main__headline-one,
 .nav-main__headline-two {
