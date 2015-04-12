@@ -1,8 +1,6 @@
 ---
 title: CSSconf EU 2015
 description: CSSconf EU 2015
-arrow:
-  arrowClass: --is-black
 ---
 
 <!-- CONFERENCE SECTION -->
@@ -140,7 +138,9 @@ arrow:
 </div>
 <!-- TEAM SECTION END -->
 
-{{> arrow arrow }}
+{{#parseJSON '{"cssClass":"--is-black"}'}}
+  {{> arrow }}
+{{/parseJSON}}
 
 {{> zebra-stripes }}
 
@@ -150,4 +150,6 @@ arrow:
 
 {{> page-footer }}
 
-{{> arrow }}
+{{#parseJSON '{"cssClass":"--is-blue"}'}}
+  {{> arrow }}
+{{/parseJSON}}
