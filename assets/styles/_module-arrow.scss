@@ -9,3 +9,5 @@
 .arrow--is-black .arrow__svg { fill: $color-black; }
 
 .arrow__link { display: inline-block; }
+
+.is-transformed { transform: rotate(180deg); }
