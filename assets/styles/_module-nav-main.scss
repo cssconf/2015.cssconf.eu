@@ -1,6 +1,7 @@
 
 
 .nav-main {
+  font-size: .85em;
   text-align: left;
   display: flex;
   flex-direction: row;
@@ -10,6 +11,9 @@
   align-items: center;
   padding-left: $padding-body*2;
   padding-right: $padding-body*2;
+  position: relative;
+
+  @include bp(xsmall) { font-size: 1em; }
 }
 
 .nav-main__list {
@@ -19,6 +23,28 @@
 
   @include bp(large) { display: block; }
 }
+
+.nav-main__list--is-active {
+  position: absolute;
+  height: calc(100vh - 78px);
+  width: 100vw;
+  top: 78px;
+  left: 0;
+  background-color: $color-white;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-main__list--is-active .nav-main__list-item {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.nav-main__list--is-active .nav-main__link { font-size: 10vmin;}
 
 .nav-main__headline-one,
 .nav-main__headline-two {
@@ -48,28 +74,32 @@
 }
 
 .nav-button {
-  margin-top: -15px;
   display: block;
   text-indent: -9999px;
-
-  width: 2.5rem;
-  height: .625rem;
-  background-color: $color-blue;
   position: relative;
+  height: 1.5625rem;
+  width: 2.5rem;
+
+  &:before {
+    background-color: $color-blue;
+    top: 0;
+  }
 
   &:after {
-    content: '';
-    width: inherit;
-    height: inherit;
-    position: absolute;
     background-color: $color-black;
-    bottom: -15px;
-    right: 0;
+    bottom: 0;
   }
 
-  @include bp(large) {
-    display: none;
-  }
+  @include bp(large) { display: none; }
+}
+
+.nav-button:before,
+.nav-button:after {
+  content: '';
+  width: inherit;
+  height: .625rem;
+  position: absolute;
+  right: 0;
 }
 
 .nav-main .btn {
