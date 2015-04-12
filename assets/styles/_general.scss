@@ -44,13 +44,6 @@ footer {
 
 .c-thank-you { @extend %bgc; }
 
-.arrow__link { display: inline-block; }
-
-.arrow__svg--black {
-  width: 20vw;
-  fill: $color-black;
-}
-
 .g-conference { @extend %tal; }
 
 .split__text,
