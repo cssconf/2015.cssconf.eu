@@ -55,6 +55,14 @@ footer {
 .c-conference .split__text,
 .c-venue .split__media { padding-left: 0; }
 
+// generic, re-usable section classes
+
+.g-tal { @extend %tal; }
+
+.g-bgc { @extend %bgc; }
+
+// special section classes
+
 .g-speakers { @extend %tal; }
 
 .c-speakers { @extend %bgc; }
