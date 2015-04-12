@@ -1,0 +1,11 @@
+
+
+// .arrow {}
+
+.arrow__svg { width: 15vw; }
+
+.arrow--is-blue .arrow__svg { fill: $color-blue; }
+
+.arrow--is-black .arrow__svg { fill: $color-black; }
+
+.arrow__link { display: inline-block; }
