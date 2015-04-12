@@ -15,8 +15,13 @@
   width: 100vw;
   background-color: $color-white;
   z-index: 100;
+  border-bottom: 1px solid red; //temp
 
   @include bp(xsmall) { font-size: 1em; }
+
+  @include bp(small) { margin-left: -$padding-body; }
+
+  @include bp(medium) { margin-left: -$padding-body*2; }
 }
 
 .nav-main__list {
