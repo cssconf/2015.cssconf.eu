@@ -2,7 +2,8 @@
 
 $cssconf-breakpoints: (
   'small' : (min-width: 34.375em),
-  'medium' : (min-width: 50em)
+  'medium' : (min-width: 50em),
+  'large' : (min-width: 62.5em)
 );
 
 @mixin bp($name) {
