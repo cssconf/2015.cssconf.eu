@@ -88,4 +88,22 @@ footer {
   }
 }
 
-.stage__item { max-width: 100%; }
+.stage { position: relative; }
+
+.stage__image { max-width: 100%; }
+
+.stage__content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 10%;
+}
+
+.stage__headline-index {
+  color: $color-black;
+  margin-bottom: 12px;
+  font-size: $font-size-39;
+}
+
+
