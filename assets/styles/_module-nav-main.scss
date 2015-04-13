@@ -15,13 +15,15 @@
   width: 100vw;
   background-color: $color-white;
   z-index: 100;
-  border-bottom: 1px solid red; //temp
+  max-width: 66.666666667em;
 
   @include bp(xsmall) { font-size: 1em; }
 
   @include bp(small) { margin-left: -$padding-body; }
 
   @include bp(medium) { margin-left: -$padding-body*2; }
+
+  @include bp(xlarge) { margin-left: 0;} 
 }
 
 .nav-main__list {
@@ -44,15 +46,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 66.666666667em;
 
   @include bp(xsmall) {
     top: 78px;
     height: calc(100vh -78px);
   }
-
-  @include bp(small) { left: -$padding-body; }
-
-  @include bp(medium) { left: -$padding-body*2; }
 }
 
 .nav-main__list--is-active .nav-main__list-item {
