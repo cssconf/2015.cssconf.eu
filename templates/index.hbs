@@ -5,7 +5,10 @@ description: CSSconf EU 2015
 
 {{> nav-main }}
 
+{{#parseJSON '{"large":"assets/img/stage-2400.png",
+"medium":"assets/img/stage-1200.png", "small":"assets/img/stage-600.png", "altText":"CSSconf written in line artwork."}' }}
 {{> stage }}
+{{/parseJSON}}
 <!-- CONFERENCE SECTION -->
 <div class="rw g-conference">
   <section class="c-conference">
