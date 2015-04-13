@@ -37,10 +37,6 @@ body {
 .cl {
   padding-left: 0;
   @extend %grid__item;
-
-  // @include bp(medium) {
-  //   padding-left: $padding-body*2;
-  // }
 }
 
 section,
@@ -62,21 +58,11 @@ footer {
 .c-conference .split__text,
 .c-venue .split__media { padding-left: 0; }
 
-// generic, re-usable section classes
-
-.g-tal { @extend %tal; }
-
-.g-bgc { @extend %bgc; }
-
-// special section classes
-
 .g-speakers { @extend %tal; }
 
 .c-speakers { @extend %bgc; }
 
 .g-venue { @extend %tal; }
-
-// .cssconf-family-list {}
 
 .cssconf-family-list__item { display: inline-block; }
 
@@ -87,31 +73,7 @@ footer {
 
 .c-cssfamily { @extend %bgc; }
 
-.nav-main + .rw {
-  padding-top: 4.5rem;
 
-  @include bp(small) {
-    padding-top: 4.875rem;
-  }
-}
-
-.stage { position: relative; }
-
-.stage__image { max-width: 100%; }
-
-.stage__content {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  bottom: 10%;
-}
-
-.stage__headline-index {
-  color: $color-black;
-  margin-bottom: 12px;
-  font-size: $font-size-39;
-}
 
 .g-coc { @extend %tal; }
 
