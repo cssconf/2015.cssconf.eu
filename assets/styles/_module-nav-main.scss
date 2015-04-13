@@ -74,7 +74,10 @@
   font-size: $font-size-22;
 }
 
-.nav-main__headline-two { font-size: $font-size-16;}
+.nav-main__headline-two {
+  font-family: nunitolight, sans-serif;
+  font-size: $font-size-16;
+}
 
 .nav-main__link-home { float: left; }
 
@@ -129,3 +132,12 @@
 
   @include bp(large) { display: block; }
 }
+
+.nav-main + .rw {
+  padding-top: 4.5rem;
+
+  @include bp(small) {
+    padding-top: 4.875rem;
+  }
+}
+
