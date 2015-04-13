@@ -1,8 +1,17 @@
 <div class="rw stage">
   <img class="stage__item"
-  srcset="{{{ large }}} 2400w,
-         {{{ medium }}} 1200w,
-         {{{ small }}} 600w"
-  src="{{{ small }}}"
+  srcset="{{{ large }}} 2400w, {{!-- path for the largest image, and so on --}}
+         {{{ medium }}} 1200w, {{!-- ... --}}
+         {{{ small }}} 600w" {{!-- ... --}}
+  src="{{{ small }}}" {{!-- default image for browsers which do not support srcset --}}
   alt="{{{ altText }}}" />
 </div>
+
+{{!-- Following a example how to include the stage partial:
+
+{{#parseJSON '{"large":"assets/img/stage-2400.png",
+"medium":"assets/img/stage-1200.png", "small":"assets/img/stage-600.png", "altText":"CSSconf written in line artwork."}' }}
+  {{> stage }}
+{{/parseJSON}}
+
+--}}
