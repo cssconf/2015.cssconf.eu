@@ -34,7 +34,14 @@ body {
 
 .rw { @extend %grid--full; }
 
-.cl { @extend %grid__item; }
+.cl {
+  padding-left: 0;
+  @extend %grid__item;
+
+  // @include bp(medium) {
+  //   padding-left: $padding-body*2;
+  // }
+}
 
 section,
 footer {
@@ -106,4 +113,17 @@ footer {
   font-size: $font-size-39;
 }
 
+.g-coc { @extend %tal; }
 
+.c-coc-long {
+  @include bp(medium) {
+    column-count: 2;
+    column-gap: 2.777777778em;
+  }
+}
+
+.column-first-heading {
+  @include bp(medium) {
+    column-span: all;
+  }
+}
