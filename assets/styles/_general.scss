@@ -80,4 +80,10 @@ footer {
 
 .c-cssfamily { @extend %bgc; }
 
+.nav-main + .rw {
+  padding-top: 4.5rem;
 
+  @include bp(small) {
+    padding-top: 4.875rem;
+  }
+}
