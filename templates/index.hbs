@@ -5,10 +5,18 @@ description: CSSconf EU 2015
 
 {{> nav-main }}
 
-{{#parseJSON '{"large":"assets/img/stage-2400.png",
-"medium":"assets/img/stage-1200.png", "small":"assets/img/stage-600.png", "altText":"CSSconf written in line artwork."}' }}
-  {{> stage }}
-{{/parseJSON}}
+<div class="rw stage">
+  {{#parseJSON '{"large":"assets/img/stage-2400.png",
+  "medium":"assets/img/stage-1200.png", "small":"assets/img/stage-600.png", "altText":"CSSconf written in line artwork."}' }}
+    {{> stage }}
+  {{/parseJSON}}
+  <div class="stage__content">
+    <h1 class="stage__headline-index">Conf EU</h1>
+    <h2 class="fz-gamma">Berlin, September 26, 2015</h2>
+    <a href="/" class="stage__button btn">Buy Ticket</a>
+  </div>
+
+</div>
 <!-- CONFERENCE SECTION -->
 <div class="rw g-conference">
   <section class="c-conference">
