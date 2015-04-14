@@ -10,10 +10,10 @@
   box-sizing: content-box;
   margin-left: -$padding-body*2;
 
-  @include bp(small) {
-    margin-left: -$padding-body*3;
-    max-width: 400px;
-  }
+  margin-left: auto;
+  float: left;
+
+  @include bp(small) { max-width: 400px; }
 
   @include bp(medium) { margin-left: -$padding-body*4; }
 
@@ -26,7 +26,6 @@
     bottom: .8rem;
     background-color: $color-blue;
     max-width: inherit;
-    // z-index: -1;
     mix-blend-mode: multiply;
 
     @include bp(small) { left: -$padding-body*4; }
@@ -36,10 +35,8 @@
 //Left is default -> helper class
 .image--is-positioned-right {
   float: right;
-  margin-right: -$padding-body*2;
+  margin-right: auto;
   margin-left: auto;
-
-  @include bp(small) { margin-right: -$padding-body*3; }
 
   @include bp(medium) { margin-right: -$padding-body*4; }
 
