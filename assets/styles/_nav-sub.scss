@@ -1,11 +1,12 @@
 .nav-sub {
-  padding-top: 3.75rem;
-  padding-bottom: 3.75rem; //TODO: ADJUST PADDING
+  padding-top: $padding-section/2;
+  padding-bottom: $padding-section/2;
   line-height: 1.666666667;
 }
 
 .nav-sub__list {
   @extend %nav;
+  margin-bottom: 0;
 
   @include bp(medium) {
     display: flex;
