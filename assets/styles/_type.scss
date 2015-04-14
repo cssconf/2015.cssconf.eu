@@ -13,6 +13,7 @@ p { margin-bottom: $margin-base; }
 a {
   color: $color-blue;
   text-decoration: none;
+  word-break: break-all;
 
   // &:hover {}
 }
