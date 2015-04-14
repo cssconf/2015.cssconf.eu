@@ -25,3 +25,16 @@
 
   &:after { clear: both; }
 }
+
+.two-columns {
+  @include bp(medium) {
+    column-count: 2;
+    column-gap: 2.777777778em;
+  }
+}
+
+.column-first-heading {
+  @include bp(medium) {
+    column-span: all;
+  }
+}
