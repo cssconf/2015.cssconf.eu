@@ -44,3 +44,8 @@ To build a layout use `<div class="rw"></div>` to open a new row aka. grid entit
 
 * `c-classname` – content sections which do not require much styling
 * `g-classname` – grid wrapper to set specific styling options
+
+## Comments
+
+* Sass comments `// I AM A SASS COMMENT`
+* Template comments `{{!-- I AM A TEMPLATE COMMENT --}}`
