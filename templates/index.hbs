@@ -5,9 +5,9 @@ description: CSSconf EU 2015
 
 {{> nav-main }}
 
+{{!-- STAGE SECTION --}}
 <div class="rw stage">
-  {{#parseJSON '{"large":"assets/img/stage-2400.png",
-  "medium":"assets/img/stage-1200.png", "small":"assets/img/stage-600.png", "altText":"CSSconf written in line artwork."}' }}
+  {{#parseJSON '{"large":"assets/img/stage-2400.png", "medium":"assets/img/stage-1200.png", "small":"assets/img/stage-600.png", "altText":"CSSconf written in line artwork."}' }}
     {{> stage }}
   {{/parseJSON}}
   <div class="stage__content">
@@ -15,9 +15,10 @@ description: CSSconf EU 2015
     <h2 class="fz-gamma">Berlin, September 26, 2015</h2>
     <a href="/" class="stage__button btn">Buy Ticket</a>
   </div>
-
 </div>
-<!-- CONFERENCE SECTION -->
+{{!-- STAGE SECTION END --}}
+
+{{!-- CONFERENCE SECTION --}}
 <div class="rw g-conference">
   <section class="c-conference">
     <div class="cl split__text">
@@ -25,16 +26,16 @@ description: CSSconf EU 2015
       <p>CSSconf EU is a community conference dedicated to the designers and developers who build the world’s most engaging user interfaces. For the community, from the community.</p>
       <a href="/info.html" class="btn">Learn more</a>
     </div><!--
-    --><div class="cl split__media">
+ --><div class="cl split__media">
       <div class="image--has-single-border image--is-positioned-right">
         <img class="image-single-border" src="assets/img/img-conference.jpg" alt="">
       </div>
     </div>
   </section>
 </div>
-<!-- CONFERENCE SECTION END -->
+{{!-- CONFERENCE SECTION END --}}
 
-<!-- SPEAKER SECTION -->
+{{!-- SPEAKER SECTION --}}
 <div class="rw g-speakers">
   <section class="c-speakers">
     <h1>Meet our Speakers</h1>
@@ -42,9 +43,9 @@ description: CSSconf EU 2015
     {{> speaker }}
   </section>
 </div>
-<!-- SPEAKER SECTION END -->
+{{!-- SPEAKER SECTION END --}}
 
-<!-- VENUE SECTION -->
+{{!-- VENUE SECTION --}}
 <div class="rw g-venue">
   <section class="c-venue">
     <div class="cl split__media">
@@ -52,16 +53,16 @@ description: CSSconf EU 2015
         <img class="image-single-border" src="assets/img/map.png" alt="">
       </div>
     </div><!--
-    --><div class="cl split__text">
+ --><div class="cl split__text">
       <h1>The Venue</h1>
       <h2 class="fz-gamma">Radialsystem V - Holzmarktstr. 33, 10243 Berlin</h2>
       <p>Our venue, RADIALSYSTEM V, is situated in the urban centre of Berlin between Friedrichshain, Mitte and Kreuzberg. Formerly a turn of the century pumping station for the Berlin Wasserwerke (Berlin Water Services), the historic building now functions as a cultural centre where new ideas radiate out in all directions.</p>
     </div>
   </section>
 </div>
-<!-- VENUE SECTION END -->
+{{!-- VENUE SECTION END --}}
 
-<!-- THANK YOU SECTION -->
+{{!-- THANK YOU SECTION --}}
 <div class="rw g-tank-you">
   <section class="c-thank-you">
     <h1>Thank you</h1>
@@ -70,17 +71,19 @@ description: CSSconf EU 2015
     <a href="/" class="btn">Request Sponsor Information</a>
   </section>
 </div>
-<!-- THANK YOU SECTION END -->
+{{!-- THANK YOU SECTION END --}}
 
+{{!-- INCLUDE SPONSORS SECTION --}}
 {{> sponsors }}
 
+
+{{!-- INCLUDE MEDIA PARTNERS --}}
 {{> media-partners }}
 
-<!-- ORGANIZERS SECTION -->
+{{!-- ORGANIZERS SECTION --}}
 <div class="rw g-organizers">
 <section class="cl c-organizers">
-<svg class="c-organizers__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 482.6 250" xml:space="preserve"
-  >
+<svg class="c-organizers__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 482.6 250" xml:space="preserve">
   <g class="c-organizers__svg-c">
     <circle class="c-organizers-st3" cx="85.2" cy="85.7" r="13.7"/>
     <path class="c-organizers-st4" d="M25.6,145.6c-16.1-16-24.1-36.1-24.1-60.2C1.6,61.8,9.6,42,25.7,25.9C41.7,9.8,61.6,1.8,85.4,1.8
@@ -93,27 +96,14 @@ description: CSSconf EU 2015
     c15.1,0,28.1-4.4,39.1-13.3l11.4,12.4L136.2,135.4z"/>
   </g>
   <g class="c-organizers__svg-s1">
-    <path class="c-organizers-st0" d="M244.7,102.8c26.5,6.8,31.9,11.3,31.9,20.2v0.5c0,9.3-8.6,14.9-22.9,14.9c-18.1,0-33.1-7.5-47.3-19.2L196,131.5
-        c15,11.3,35.1,22.3,56.1,22.3c42.7-0.2,41.8-26.5,41.8-32.3c0-22.5-21.4-29.6-40.8-34c-24.8-4.7-44.8-13.5-44.4-35.4
-        c0.4-21.9,21.3-34.2,39.8-34.1c14.7,0.1,25.6,2.9,49.2,16.5l8.8-12.8C290.4,8.8,270.7,1.6,247.6,1.6c-32.4,0-55.5,23.5-55.5,52.3
-        v0.5C192.1,85.8,212.7,94.6,244.7,102.8z"/>
-    <path class="c-organizers-st1" d="M261,72c-27.4-7-34.2-10.4-34.2-20.8v-0.5c0-7.7,7-16.1,20.4-16.1c13.4,0,27.2,3.6,41.2,13.4l9.3-13.5
-        c-23.5-13.7-34.5-16.5-49.2-16.5C230,17.9,209.1,30.2,208.7,52c-0.4,21.9,19.7,30.7,44.4,35.4c19.4,4.4,40.8,11.6,40.8,34
-        c0,5.8,1,32.1-41.8,32.3c-21,0.1-41.1-11-56.1-22.3l-10.3,12.3c19,17,43.2,25.4,67.2,25.4c34.2,0,58.2-17.7,58.2-49.1v-0.5
-        C311.3,91.9,293.1,80.4,261,72z"/>
+    <path class="c-organizers-st0" d="M244.7,102.8c26.5,6.8,31.9,11.3,31.9,20.2v0.5c0,9.3-8.6,14.9-22.9,14.9c-18.1,0-33.1-7.5-47.3-19.2L196,131.5c15,11.3,35.1,22.3,56.1,22.3c42.7-0.2,41.8-26.5,41.8-32.3c0-22.5-21.4-29.6-40.8-34c-24.8-4.7-44.8-13.5-44.4-35.4c0.4-21.9,21.3-34.2,39.8-34.1c14.7,0.1,25.6,2.9,49.2,16.5l8.8-12.8C290.4,8.8,270.7,1.6,247.6,1.6c-32.4,0-55.5,23.5-55.5,52.3v0.5C192.1,85.8,212.7,94.6,244.7,102.8z"/>
+    <path class="c-organizers-st1" d="M261,72c-27.4-7-34.2-10.4-34.2-20.8v-0.5c0-7.7,7-16.1,20.4-16.1c13.4,0,27.2,3.6,41.2,13.4l9.3-13.5c-23.5-13.7-34.5-16.5-49.2-16.5C230,17.9,209.1,30.2,208.7,52c-0.4,21.9,19.7,30.7,44.4,35.4c19.4,4.4,40.8,11.6,40.8,34c0,5.8,1,32.1-41.8,32.3c-21,0.1-41.1-11-56.1-22.3l-10.3,12.3c19,17,43.2,25.4,67.2,25.4c34.2,0,58.2-17.7,58.2-49.1v-0.5C311.3,91.9,293.1,80.4,261,72z"/>
     <path class="c-organizers-st2" d="M219.7,128.5c-4.5-2.7-8.9-5.9-13.3-9.5l-20.6,24.7c4.7,4.2,9.7,7.9,14.9,11L219.7,128.5z"/>
   </g>
   <g class="c-organizers__svg-s2">
-    <path class="c-organizers-st0" d="M414.4,102.8c26.5,6.8,32,11.3,32,20.2v0.5c0,9.3-8.6,15-22.9,15c-18.1,0-33.1-7.5-47.4-19.3l-10.4,12.4
-  c0,0,0,0,0,0l0,0c15,11.3,35.2,22.4,56.1,22.3c42.7-0.2,41.8-26.5,41.8-32.3c0-22.5-21.4-29.6-40.8-34C398.1,82.7,378,73.9,378.4,52
-  s21.3-34.2,39.8-34.1c0,0,0,0,0,0c0,0,0,0,0,0c10.9,0.1,19.8,1.6,33.2,8l10.2-13.9c-13-6.8-27.8-10.6-44.3-10.6
-  c-32.4,0-55.5,23.6-55.5,52.3v0.5C361.9,85.8,382.5,94.6,414.4,102.8z"/>
-    <path class="c-organizers-st8" d="M430.8,72c-27.4-7-34.2-10.4-34.2-20.8v-0.5c0-7.7,7-16.1,20.4-16.1c8.1,0,16.4,1.4,24.9,4.6l9.7-13.3
-  c-13.5-6.4-22.3-8-33.2-8c-18.5-0.1-39.4,12.2-39.8,34.1c-0.4,21.9,19.7,30.7,44.5,35.4c19.4,4.4,40.8,11.6,40.8,34
-  c0,5.8,1,32.2-41.8,32.3c-21,0.1-41.1-11-56.2-22.3l-10.3,12.3c19,17,43.3,25.4,67.3,25.4c34.2,0,58.2-17.7,58.2-49.2v-0.5
-  C481.1,91.9,462.9,80.4,430.8,72z"/>
-    <path class="c-organizers-st9" d="M461.7,12.1l-19.9,27.1c5.4,2.1,10.9,5,16.4,8.8l9.3-13.5c0,0,0,0,0,0l8.8-12.8
-    C471.7,18,466.9,14.8,461.7,12.1z"/>
+    <path class="c-organizers-st0" d="M414.4,102.8c26.5,6.8,32,11.3,32,20.2v0.5c0,9.3-8.6,15-22.9,15c-18.1,0-33.1-7.5-47.4-19.3l-10.4,12.4c0,0,0,0,0,0l0,0c15,11.3,35.2,22.4,56.1,22.3c42.7-0.2,41.8-26.5,41.8-32.3c0-22.5-21.4-29.6-40.8-34C398.1,82.7,378,73.9,378.4,52s21.3-34.2,39.8-34.1c0,0,0,0,0,0c0,0,0,0,0,0c10.9,0.1,19.8,1.6,33.2,8l10.2-13.9c-13-6.8-27.8-10.6-44.3-10.6c-32.4,0-55.5,23.6-55.5,52.3v0.5C361.9,85.8,382.5,94.6,414.4,102.8z"/>
+    <path class="c-organizers-st8" d="M430.8,72c-27.4-7-34.2-10.4-34.2-20.8v-0.5c0-7.7,7-16.1,20.4-16.1c8.1,0,16.4,1.4,24.9,4.6l9.7-13.3c-13.5-6.4-22.3-8-33.2-8c-18.5-0.1-39.4,12.2-39.8,34.1c-0.4,21.9,19.7,30.7,44.5,35.4c19.4,4.4,40.8,11.6,40.8,34c0,5.8,1,32.2-41.8,32.3c-21,0.1-41.1-11-56.2-22.3l-10.3,12.3c19,17,43.3,25.4,67.3,25.4c34.2,0,58.2-17.7,58.2-49.2v-0.5C481.1,91.9,462.9,80.4,430.8,72z"/>
+    <path class="c-organizers-st9" d="M461.7,12.1l-19.9,27.1c5.4,2.1,10.9,5,16.4,8.8l9.3-13.5c0,0,0,0,0,0l8.8-12.8C471.7,18,466.9,14.8,461.7,12.1z"/>
   </g>
 </svg>
   <div class="img-row">
@@ -121,21 +111,18 @@ description: CSSconf EU 2015
     <img class="img-row__element" src="assets/img/kristina-schneider.jpg" alt="">
     <img class="img-row__element" src="assets/img/verpixelt-square.jpg" alt="">
   </div>
-  <!--<h1>Organizers</h1> -->
   <p class="c-organizers__paragraph">CSSconf EU is curated by Michael P. Pfeiffer. Kristina Schneider and Kevin Lorenz brought to you with love by our great team.</p>
 </section>
 </div>
-<!-- ORGANIZERS SECTION END -->
+{{!-- ORGANIZERS SECTION END --}}
 
-<!-- TEAM SECTION -->
+{{!-- TEAM SECTION --}}
 <div class="rw g-team">
   <section class="cl c-team">
     <h1>The Team</h1>
     <p>This event is made possible by the great work of many volunteers who spent lots of their time pouring their blood and sweat into preparing an awesome day for you.</p>
     <ul class="list">
-      <li>
-        <strong>Michael P. Pfeiffer</strong>, Organizer, <a class="c-team__link" href="/">@m_p_pfeiffer</a>
-      </li>
+      <li><strong>Michael P. Pfeiffer</strong>, Organizer, <a class="c-team__link" href="/">@m_p_pfeiffer</a></li>
       <li><strong>Kristina Schneider</strong>, Organizer, <a class="c-team__link" href="/">@kriesse</a></li>
       <li><strong>Kevin Lorenz</strong>, Organizer, <a class="c-team__link" href="/">@verpixelt</a></li>
     </ul>
@@ -148,20 +135,27 @@ description: CSSconf EU 2015
     <a class="anchor--has-underline" href="/team.html">More about the team</a>
   </section>
 </div>
-<!-- TEAM SECTION END -->
+{{!-- TEAM SECTION END --}}
 
+{{!-- INCLUDE ARROW WITH ADDITIONAL CLASS --}}
 {{#parseJSON '{"cssClass":"--is-black"}' }}
   {{> arrow }}
 {{/parseJSON}}
 
+{{!-- INCLUDE ZEBRA STRIPES --}}
 {{> zebra-stripes }}
 
+{{!-- INCLUDE NAV-SUB --}}
 {{> nav-sub }}
 
+{{!-- INCLUDE SOCIAL BAR --}}
 {{> social-bar }}
 
+{{!-- INCLUDE PAGE FOOTER --}}
 {{> page-footer }}
 
+{{!-- INCLUDE ARROW WITH ADDITIONAL CLASSES --}}
 {{#parseJSON '{"cssClass":"--is-blue", "cssClassTwo":"is-transformed"}'}}
   {{> arrow }}
 {{/parseJSON}}
+
