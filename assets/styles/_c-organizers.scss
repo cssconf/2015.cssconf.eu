@@ -1,5 +1,8 @@
 
-.g-organizers { @extend %tac; }
+.g-organizers {
+  @extend %tac;
+  margin-bottom: $padding-section/2;
+}
 
 .c-organizers {
   @extend %lap--ten-twelfths;
