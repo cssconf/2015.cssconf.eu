@@ -10,34 +10,30 @@ description: CSSconf EU 2015
   {{/parseJSON}}
 </div>
 
-<!-- SECTION -->
+{{!-- COC INTRODUCTION SECTION --}}
 <div class="rw g-coc">
   <section class="c-coc">
-  <div class="cl split__text">
+    <div class="cl split__text">
       <h1>Code of Conduct</h1>
-
       <p>All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We are expecting cooperation from all participants to help ensuring a safe environment for everybody.</p>
-
       <p><strong>tl;dr: Be excellent with each other</strong></p>
-
       <h2 class="fz-gamma">Need Help? Contact Us</h2>
-
       <ul>
         <li>Kristina Schneider: <a href="https://twitter.com/kriesse">@kriesse</a> | <a href="mailto:kristina@cssconf.eu">kristina@cssconf.eu</a></li>
         <li>Michael P. Pfeiffer: <a href="https://twitter.com/m_p_pfeiffer">@m_p_pfeiffer</a> | <a href="mailto:michael@cssconf.eu">michael@cssconf.eu</a></li>
         <li>Kevin Lorenz: <a href="https://twitter.com/verpixelt">@verpixelt</a> | <a href="mailto:kevin@cssconf.eu">kevin@cssconf.eu</a></li>
       </ul>
     </div><!--
-        --><div class="cl split__media">
-          <div class="image--has-single-border image--is-positioned-right">
-            <img class="image-single-border" src="assets/img/coc-image1.jpg" alt="">
-          </div>
-        </div>
-      </section>
+ --><div class="cl split__media">
+      <div class="image--has-single-border image--is-positioned-right">
+        <img class="image-single-border" src="assets/img/coc-image1.jpg" alt="">
+      </div>
+    </div>
   </section>
 </div>
-<!-- SECTION END -->
+{{!-- COC INTRODUCTION SECTION END --}}
 
+{{!-- COC SHORT VERSION SECTION --}}
 <div class="rw g-coc">
   <section class="c-coc-short">
     <div class="cl split__media">
@@ -51,8 +47,9 @@ description: CSSconf EU 2015
     </div>
   </section>
 </div>
+{{!-- COC SHORT VERSION SECTION END --}}
 
-<!-- Long Text SECTION -->
+{{!-- COC LONG VERSION SECTION --}}
 <div class="rw g-coc">
   <section class="c-coc-long">
     <h1 class="fz-beta column-first-heading">The Less Quick Version</h1>
@@ -76,24 +73,29 @@ description: CSSconf EU 2015
 
     This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a></em></small>
     </p>
-
   </section>
 </div>
-<!-- THANK YOU SECTION END -->
+{{!-- COC LONG VERSION SECTION END --}}
 
-
+{{!-- INCLUDE ARROW WITH ADDITIONAL CLASS --}}
 {{#parseJSON '{"cssClass":"--is-black"}' }}
   {{> arrow }}
 {{/parseJSON}}
 
+{{!-- INCLUDE ZEBRA-STRIPES --}}
 {{> zebra-stripes }}
 
+{{!-- INCLUDE NAV-SUB --}}
 {{> nav-sub }}
 
+{{!-- INCLUDE SOVIAL-BAR --}}
 {{> social-bar }}
 
+{{!-- INCLUDE PAGE-FOOTER --}}
 {{> page-footer }}
 
+{{!-- INCLUDE ARROW WITH ADDITIONAL CLASSES --}}
 {{#parseJSON '{"cssClass":"--is-blue", "cssClassTwo":"is-transformed"}'}}
   {{> arrow }}
 {{/parseJSON}}
+
