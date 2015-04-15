@@ -8,7 +8,10 @@ module.exports = function(grunt) {
         options: {
           style: 'compressed'
         },
-        files: { 'dest/assets/cssconf-2015.css': 'assets/styles/styles.scss' }
+        files: {
+          'dest/assets/fonts.css': 'assets/styles/fonts.scss',
+          'dest/assets/cssconf-2015.css': 'assets/styles/styles.scss'
+        }
       }
     },
     autoprefixer: {
@@ -16,7 +19,10 @@ module.exports = function(grunt) {
         options: {
           map: true
         },
-        files: { 'dest/assets/cssconf-2015.css': 'dest/assets/cssconf-2015.css' }
+        files: {
+          'dest/assets/cssconf-2015.css': 'dest/assets/cssconf-2015.css',
+          'dest/assets/fonts.css': 'dest/assets/fonts.css'
+        }
       }
     },
     watch: {
