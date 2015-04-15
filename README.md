@@ -49,3 +49,15 @@ To build a layout use `<div class="rw"></div>` to open a new row aka. grid entit
 
 * Sass comments `// I AM A SASS COMMENT`
 * Template comments `{{!-- I AM A TEMPLATE COMMENT --}}`
+
+## Breakpoints
+
+Take a look at `_breakpoints.scss` before you alter any styles regarding media queries.
+You include breakpoints like this:
+```
+.classname {
+  @include bp(small) {...;}
+}
+```
+Make sure to check for predefined breakpoint names.
+
