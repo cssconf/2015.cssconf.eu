@@ -8,6 +8,12 @@ $cssconf-breakpoints: (
   'xlarge' : (min-width: 75em)
 );
 
+//400px
+//550px
+//800px
+//1000px
+//1200px
+
 @mixin bp($name) {
   @if map-has-key($cssconf-breakpoints, $name) {
     @media only screen and #{inspect(map-get($cssconf-breakpoints, $name))} {
@@ -18,7 +24,6 @@ $cssconf-breakpoints: (
     @warn "Unfortunately, no value could be retrieved from `#{$breakpoints}`";
   }
 }
-
 
 // Include breakpoints like this:
 // .classname {
