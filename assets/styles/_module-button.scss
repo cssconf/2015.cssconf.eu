@@ -32,6 +32,7 @@
   &:focus .btn__span {
     transform: rotateX(90deg) translateY(-18px);
     background-color: $color-blue;
+    color: $color-white;
 
     &:before {
       background-color: $color-blue;
