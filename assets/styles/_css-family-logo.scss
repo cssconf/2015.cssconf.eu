@@ -1,0 +1,17 @@
+
+
+.css-family-logo {
+  width: 40vw;
+  max-width: 200px;
+  margin-bottom: $padding-section/4;
+}
+
+.circle-yellow { fill: $color-yellow; }
+
+.circle-red { fill: $color-red; }
+
+.circle-blue { fill: $color-blue; }
+
+[class^="type__letter"] { fill: $color-red; }
+
+[class^="globe__"] { fill: $color-black; }
