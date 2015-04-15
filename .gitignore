@@ -3,3 +3,4 @@ npm-debug.log
 dest
 .DS_Store
 .sass-cache
+config.*.json
