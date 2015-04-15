@@ -51,7 +51,6 @@
 
 .c-organizers__paragraph {
   @extend %lap--ten-twelfths;
-
   margin: 0 auto;
 }
 
@@ -69,11 +68,7 @@
   }
 }
 
-// .corganizers__svg-c {}
-
 .c-organizers__svg-s1 { transform: translateY(50px); }
-
-// .c-organizers__svg-s2 {}
 
 .c-organizers-st0 {
   fill: $color-white;
@@ -135,7 +130,6 @@
 
 .img-row {
   @extend %cf;
-
   margin-top: -$padding-body*5; // Every section has padding which we do not want in this case
   margin-right: -$padding-body*2; //
   margin-left: -$padding-body*2; //

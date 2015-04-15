@@ -4,8 +4,6 @@
   @extend %four-twelfths;
   @extend %tac;
   margin-right: -4px;
-
-  // &:first-of-type { padding-left: 0; }
 }
 
 //TODO: Build mixin out ouf it
@@ -18,8 +16,7 @@
   display: block;
   margin-bottom: 4rem; //TODO: Remove — just for demo purposes
 
-
-  > img {
+  > img { //TODO: GET RID OF THE ELEMENT STYLING
     width: inherit;
     height: inherit;
     position: relative;

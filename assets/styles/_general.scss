@@ -1,3 +1,4 @@
+//TODO: Refactor the @extend rules!!!
 
 
 html { box-sizing: border-box; }
@@ -81,3 +82,4 @@ footer {
 .g-coc,
 .g-call-for-speakers-intro,
 .g-call-for-speakers-help { @extend %tal; }
+

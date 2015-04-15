@@ -9,9 +9,7 @@
   &:first-of-type ,
   &:nth-of-type(4) { margin-left: -$padding-body*2; }
 
-  &:nth-of-type(4) {
-    @include bp(small) { margin-left: 0; }
-  }
+  &:nth-of-type(4) { @include bp(small) { margin-left: 0; }}
 }
 
 .sponsors__img {

@@ -1,3 +1,4 @@
+//TODO: REFACTORING!!! 
 
 
 .btn {
@@ -23,7 +24,6 @@
   font-size: 90%;
 }
 
-
 .btn--special {
   color: $color-white;
   perspective: 1000px;
@@ -34,9 +34,7 @@
     background-color: $color-blue;
     color: $color-white;
 
-    &:before {
-      background-color: $color-blue;
-    }
+    &:before { background-color: $color-blue; }
   }
 }
 
