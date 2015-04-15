@@ -5,6 +5,7 @@
   @extend %palm--two-twelfths;
   vertical-align: bottom;
   margin-bottom: $padding-body*2;
+  padding-left: $padding-body*2;
 
   &:first-of-type ,
   &:nth-of-type(4) { margin-left: -$padding-body*2; }
