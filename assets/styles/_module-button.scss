@@ -22,3 +22,44 @@
   text-transform: uppercase;
   font-size: 90%;
 }
+
+
+.btn--special {
+  color: $color-white;
+  perspective: 1000px;
+
+  &:hover .btn__span,
+  &:focus .btn__span {
+    transform: rotateX(90deg) translateY(-18px);
+    background-color: $color-blue;
+
+    &:before {
+      background-color: $color-blue;
+    }
+  }
+}
+
+.btn__span {
+  position: relative;
+  display: inline-block;
+  padding: .5rem 1rem .4rem;
+  background: $color-blue;
+  transition: transform .3s;
+  transform-origin: 50% 0;
+  transform-style: preserve-3d;
+
+  &:before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: darken($color-blue, 20%);
+    content: attr(data-hover);
+    transition: background .3s;
+    transform: rotateX(-90deg);
+    transform-origin: 50% 0;
+    padding-top: .4375rem;
+    text-align: center;
+  }
+}
