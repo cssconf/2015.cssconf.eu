@@ -123,12 +123,8 @@
   right: 0;
 }
 
-.nav-main .btn {
+.nav-main .btn--special {
   display: none;
-  font-size: $font-size-16;
-  text-transform: uppercase;
-  margin-bottom: 0;
-  padding: .3rem .5rem .1rem;
 
   @include bp(large) { display: block; }
 }
