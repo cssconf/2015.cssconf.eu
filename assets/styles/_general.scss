@@ -19,7 +19,7 @@ body {
 
 }
 
-// apply this in order to have a gap to the left an right, as in the design
+// apply this in order to have a gap to the left and right, as in the design
 %container {
   @include bp(small) {
     padding-left: $padding-body;

@@ -11,6 +11,14 @@ Please take a look at existing styles and try to code that way. A few things to 
 * Stick with relative unites like `em`, `%`, `vw`, `vh`, `vmin`, `vmax` if you can.
 * If you think your code could be hard to understand or needs explanation, write comments.
 
+## Layout Explanation
+
+To have a gap to the left and right of a section, extend the container class:
+`@extend %container`
+
+To ensure a max-width for content within a section, extend the container-content class:
+`%container-content`
+
 ## Grid Explanation
 The whole grid relies on `display: inline-block`. Because of the `whitepsace` issue every `grid__item` followed by a `grid__item` has to be sorrounded by HTML comments like so:
 
