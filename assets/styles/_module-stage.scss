@@ -3,6 +3,7 @@
 .stage { 
   position: relative;
   @extend %tac;
+  
   @extend %container;
 }
 
