@@ -1,6 +1,10 @@
 
 
-.stage { position: relative; }
+.stage { 
+  position: relative;
+  @extend %tac;
+  @extend %container;
+}
 
 .stage__image { max-width: 100%; }
 

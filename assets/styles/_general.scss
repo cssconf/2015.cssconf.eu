@@ -16,24 +16,34 @@ ul,
 ol { margin-top: 0; }
 
 body {
+
+}
+
+// apply this in order to have a gap to the left an right, as in the design
+%container {
   @include bp(small) {
     padding-left: $padding-body;
     padding-right: $padding-body;
   }
-
   @include bp(medium) {
     padding-left: $padding-body*2;
     padding-right: $padding-body*2;
   }
 }
 
-.container {
-  @extend %tac;
-  max-width: 66.666666667em;
-  margin: 0 auto;
+// apply this to any containing div / section that has content which should not be wider than 66.66em
+// further explanation here: http://lea.verou.me/more-css-secrets/#padding-auto
+%container-content {
+//  max-width: 66.666666667em;
+  padding-left: calc(50% - 33.333em);
+  padding-right: calc(50% - 33.333em);
 }
 
-.rw { @extend %grid--full; }
+
+.rw { 
+  @extend %grid--full;
+  @extend %container;
+}
 
 .cl {
   padding-left: 0;
@@ -93,9 +103,22 @@ section {
   margin-bottom: 2.5rem;
 }
 
-.c-cssfamily { @extend %bgc; }
+.c-cssfamily { 
+  @extend %bgc;
+  @extend %tac;
+}
 
-.g-coc,
-.g-call-for-speakers-intro,
-.g-call-for-speakers-help { @extend %tal; }
+.g-sponsors { @extend %tac;}
+
+// Collect all sections that should have a max-width
+// g-max-width is the generic non-semantic class 
+.c-coc, 
+.c-accessibility,
+.c-schedule,
+.c-sponsors,
+.c-blog,
+.c-info,
+.c-max-width {
+  @extend %container-content;
+}
 

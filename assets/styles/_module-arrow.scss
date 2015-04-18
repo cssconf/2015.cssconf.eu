@@ -1,4 +1,7 @@
 
+.arrow {
+  @extend %tac;
+}
 
 .arrow__svg { width: 15vw; }
 

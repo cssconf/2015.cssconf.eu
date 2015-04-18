@@ -5,14 +5,4 @@
   background: linear-gradient(to bottom, $color-black 0%, $color-black 50%, transparent 50%, transparent 100%);
   background-size: 100% 20%;
   clear: both;
-
-  @include bp(small) {
-    margin-left: -$padding-body;
-    margin-right: -$padding-body;
-  }
-
-  @include bp(medium) {
-    margin-left: -$padding-body*2;
-    margin-right: -$padding-body*2;
-  }
 }

@@ -1,6 +1,9 @@
 //TODO: Add responsive behaviour
 
-.social-bar { @extend %cf; }
+.social-bar { 
+  @extend %cf;
+  @extend %container;
+}
 
 .social-bar__list { @extend %nav; }
 

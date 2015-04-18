@@ -1,6 +1,8 @@
 
 
 .nav-main {
+  @extend %container;
+  
   font-size: .85em;
   text-align: left;
   display: flex;
@@ -9,19 +11,16 @@
   padding-top: 1.25rem;
   padding-bottom: .9375rem;
   align-items: center;
-  padding-left: $padding-body*2;
-  padding-right: $padding-body*2;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   background-color: $color-white;
   z-index: 100;
-  max-width: 66.666666667em;
 
   @include bp(xsmall) { font-size: 1em; }
 
-  @include bp(small) { margin-left: -$padding-body; }
+//  @include bp(small) { margin-left: -$padding-body; }
 
-  @include bp(medium) { margin-left: -$padding-body*2; }
+//  @include bp(medium) { margin-left: -$padding-body*2; }
 
   @include bp(xlarge) { margin-left: 0;} 
 }
