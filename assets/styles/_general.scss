@@ -43,7 +43,14 @@ body {
 section,
 footer {
   @extend %cf;
-  padding: $padding-section/2 $padding-body*2;
+  padding: $padding-section $padding-body*2;
+}
+
+section {
+  @include bp(medium) {
+    padding-top: $padding-section * 2;
+    padding-bottom: $padding-section * 2;
+  }
 }
 
 .c-thank-you { @extend %bgc; }
