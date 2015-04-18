@@ -1,8 +1,28 @@
+var babelify = require('babelify');
+
 module.exports = function(grunt) {
   'use strict';
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    browserify: {
+      dist: {
+        options: {
+          browserifyOptions: {
+            debug: true
+          },
+          transform: [
+            babelify.configure({
+              // allow ES7 features
+              stage: 0
+            })
+          ]
+        },
+        files: {
+          'dest/assets/js/cssconf.js': ['assets/js/cssconf.js']
+        }
+      }
+    },
     sass: {
       dist: {
         options: {
@@ -33,6 +53,10 @@ module.exports = function(grunt) {
       html: {
         files: 'templates/**/*.hbs',
         tasks: ['assemble']
+      },
+      js: {
+        files: 'assets/js/**/*.js',
+        tasks: ['browserify']
       }
     },
     assemble: {
@@ -71,9 +95,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-browserify');
 
   grunt.registerTask('styles', ['sass', 'autoprefixer']);
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('build', ['assemble', 'sass', 'autoprefixer', 'copy']);
+  grunt.registerTask('build', ['assemble', 'sass', 'autoprefixer', 'copy', 'browserify']);
   grunt.registerTask('dev', ['build', 'connect', 'watch']);
 };
