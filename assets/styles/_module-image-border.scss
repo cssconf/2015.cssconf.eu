@@ -1,9 +1,14 @@
 
 
 .speakers__item {
-  @extend %four-twelfths;
+  @extend %six-twelfths;
   @extend %tac;
+  margin-top: 5rem;
   margin-right: -4px;
+  p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 //TODO: Build mixin out ouf it
