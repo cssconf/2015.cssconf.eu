@@ -1,0 +1,47 @@
+---
+title: CSSconf EU 2015
+description: CSSconf EU 2015
+---
+
+{{> nav-main }}
+<div class="rw stage">
+  {{#parseJSON '{"large":"assets/img/stage-coc-2400.png", "medium":"assets/img/stage-coc-1200.png", "small":"assets/img/stage-coc-600.png", "altText":"A lot of shapes."}'}}
+    {{> stage }}
+  {{/parseJSON}}
+</div>
+
+{{!-- INTRODUCTION SECTION --}}
+<div class="rw g-coc">
+  <section class="c-coc">
+    <div class="cl">
+      <h1>Team</h1>
+      <p>Details tba</p>
+    </div>
+  </section>
+</div>
+{{!-- INTRODUCTION SECTION END --}}
+
+
+
+{{!-- INCLUDE ARROW WITH ADDITIONAL CLASS --}}
+{{#parseJSON '{"cssClass":"--is-black"}' }}
+  {{> arrow }}
+{{/parseJSON}}
+
+{{!-- INCLUDE ZEBRA-STRIPES --}}
+{{> zebra-stripes }}
+
+{{!-- INCLUDE NAV-SUB --}}
+{{> nav-sub }}
+
+{{!-- INCLUDE SOVIAL-BAR --}}
+{{> social-bar }}
+
+{{!-- INCLUDE PAGE-FOOTER --}}
+{{> page-footer }}
+
+{{!-- INCLUDE ARROW WITH ADDITIONAL CLASSES --}}
+{{#parseJSON '{"cssClass":"--is-blue", "cssClassTwo":"is-transformed"}'}}
+  {{> arrow }}
+{{/parseJSON}}
+
