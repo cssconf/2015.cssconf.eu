@@ -42,13 +42,13 @@ p > a,
   &:before {
     background-image: linear-gradient(transparent 85%, $color-yellow 15%);
     opacity: .8;
-    transition: opacity 1.2s;
+    transition: opacity $transition-duration;
   }
 
   &:after {
     background-image: linear-gradient(transparent 60%, $color-yellow 40%);
     opacity: 0;
-    transition: opacity 1.2s;
+    transition: opacity $transition-duration;
   }
 
   &:hover { color: $color-blue; }
