@@ -53,6 +53,15 @@ section {
   }
 }
 
+// this is for sections that should not be visually separated from the following one, e.g. sponsors and media partners. alternatively: don't have separate sections at all.
+.section--tight {
+  padding-bottom: 0;
+  @include bp(medium) {
+    padding-bottom: 0;
+  }
+}
+
+
 .c-thank-you { @extend %bgc; }
 
 .g-conference { @extend %tal; }
