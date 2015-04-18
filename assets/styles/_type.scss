@@ -90,6 +90,20 @@ h3,
 .fz-gamma {
   font-size: $font-size-14;
   color: $color-black;
+  font-family: montserratbold, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: $margin-base/2;
+
+  @include bp(small) { font-size: $font-size-24; }
+}
+
+.fz--is-grey { color: $color-grey; }
+
+h4,
+.fz-delta {
+  font-size: $font-size-14;
+  color: $color-black;
   font-family: nunitolight, sans-serif;
   font-weight: 300;
   margin-bottom: $margin-base/2;
@@ -98,8 +112,10 @@ h3,
   @include bp(small) { font-size: $font-size-24; }
 }
 
-h4,
-.fz-delta { margin-bottom: $margin-base/2; }
+h5,
+.fz-epsilon {
+  margin-bottom: $margin-base/2;
+}
 
 ul,
 ol { margin-bottom: $margin-base; }
