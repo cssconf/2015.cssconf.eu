@@ -26,7 +26,7 @@
   margin-bottom: 0;
   display: none;
 
-  @include bp(large) { display: block; }
+  @include bp(medium) { display: block; }
 }
 
 .nav-main__list[data-state=open] {
@@ -104,7 +104,7 @@
     bottom: 0;
   }
 
-  @include bp(large) { display: none; }
+  @include bp(medium) { display: none; }
 }
 
 .nav-toggle:before,
@@ -119,7 +119,7 @@
 .nav-main .btn--special {
   display: none;
 
-  @include bp(large) { display: block; }
+  @include bp(medium) { display: block; }
 }
 
 .nav-main + .rw {
