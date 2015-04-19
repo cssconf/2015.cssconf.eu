@@ -30,7 +30,7 @@
 
 .nav-sub__list-item {
 
-@include bp(large) { padding-right: 2%;
+@include bp(large) { padding-right: 1.5%;
 
   &:last-child { padding-right: 0; }
   }
