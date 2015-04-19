@@ -33,6 +33,11 @@
   }
 }
 
+// for column style on paragrpahs, not sections
+.two-columns--has-margin {
+  margin-bottom: $margin-base;
+}
+
 .column-first-heading {
   @include bp(medium) {
     column-span: all;
