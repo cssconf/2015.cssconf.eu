@@ -1,11 +1,15 @@
 
-
 body {
   font-size: $font-size-base;
   line-height: $line-height-base;
   color: $color-black;
   font-family: 'nunitolight', sans-serif;
   font-weight: 300;
+}
+
+%uppercase {
+  text-transform: uppercase;
+  letter-spacing: .015em;
 }
 
 p { margin-bottom: $margin-base; }
@@ -67,9 +71,10 @@ h1,
   color: $color-red;
   font-family: montserratbold, sans-serif;
   font-weight: 500;
-  text-transform: uppercase;
   margin-bottom: $margin-base;
   line-height: .9375;
+
+  @extend %uppercase;
 
   @include bp(small) { font-size: $font-size-64; }
 }
@@ -80,8 +85,9 @@ h2,
   color: $color-blue;
   font-family: montserratbold, sans-serif;
   font-weight: 500;
-  text-transform: uppercase;
   margin-bottom: $margin-base/2;
+  
+  @extend %uppercase;
 
   @include bp(small) { font-size: $font-size-34; }
 }
@@ -94,9 +100,10 @@ h3,
   color: $color-black;
   font-family: montserratbold, sans-serif;
   font-weight: 500;
-  text-transform: uppercase;
   margin-bottom: $margin-base/2;
   line-height: 1.2;
+  
+  @extend %uppercase;
 
   @include bp(small) { font-size: $font-size-24; }
 }
