@@ -43,13 +43,13 @@ ol { margin-top: 0; }
   padding-left: $padding-body;
   padding-right: $padding-body;
 // fine-tune here as needed
-//  @include bp(medium) {
-//    padding-left: calc(50% - 21em);
-//    padding-right: calc(50% - 21em);
-//  }
   @include bp(large) {
-    padding-left: calc(50% - 33.333em);
-    padding-right: calc(50% - 33.333em);
+    padding-left: calc(50% - 24em);
+    padding-right: calc(50% - 24em);
+  }
+  @include bp(xlarge) {
+    padding-left: calc(50% - 30em);
+    padding-right: calc(50% - 30em);
   }
 }
 
@@ -141,6 +141,7 @@ section {
 .c-thank-you,
 .c-venue,
 .c-speakers,
+.c-thank-you,
 .c-conference,
 .c-diversity,
 .c-max-width {
