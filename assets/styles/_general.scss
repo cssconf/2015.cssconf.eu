@@ -103,7 +103,8 @@ section {
   @extend %tac;
 }
 
-.g-sponsors { @extend %tac;}
+// this is the partial for sponsor and media partner logos, not to be confused with the sponsors page
+.g-sponsors-reel { @extend %tac;}
 
 // Collect all sections that should have a max-width
 // g-max-width is the generic non-semantic class 
