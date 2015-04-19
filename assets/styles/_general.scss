@@ -66,7 +66,9 @@ section {
   }
 }
 
-// this is for sections that should not be visually separated from the following one, e.g. sponsors and media partners. alternatively: don't have separate sections at all.
+// this is for sections that should not be visually separated as far from the following one,
+// e.g. sponsors and media partners.
+// alternatively: don't have separate sections at all.
 .section--tight {
   padding-bottom: 0;
   @include bp(medium) {
@@ -74,10 +76,6 @@ section {
   }
 }
 
-
-.c-thank-you { @extend %bgc; }
-
-.g-conference { @extend %tal; }
 
 .split__text,
 .split__media {
@@ -93,11 +91,6 @@ section {
 .c-conference .split__text,
 .c-venue .split__media { padding-left: 0; }
 
-.g-speakers { @extend %tal; }
-
-.c-speakers { @extend %bgc; }
-
-.g-venue { @extend %tal; }
 
 .cssconf-family-list__item {
   margin-right: .625rem;
@@ -111,20 +104,22 @@ section {
   margin-bottom: 2.5rem;
 }
 
+// add to sections to add beige background
+.c-speakers,
+.c-thank-you,
 .c-cssfamily {
   @extend %bgc;
-  @extend %tac;
 }
 
-.g-thank-you {
+// add to sections to center-align content
+.c-cssfamily,
+.g-thank-you,
+.g-sponsors-reel {
   @extend %tac;
 }
-
-// this is the partial for sponsor and media partner logos, not to be confused with the sponsors page
-.g-sponsors-reel { @extend %tac;}
 
 // Collect all sections that should have a max-width
-// g-max-width is the generic non-semantic class
+// c-max-width is the generic non-semantic class
 .c-coc,
 .c-accessibility,
 .c-schedule,
