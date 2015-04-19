@@ -1,5 +1,7 @@
 
 
+$offset: -2.25rem;
+
 .image--has-single-border {
   width: 100%;
   height: auto;
@@ -8,41 +10,35 @@
   overflow: hidden;
   padding-bottom: 1rem;
   box-sizing: content-box;
-  margin-left: -$padding-body*2;
   margin-bottom: 1.625rem;
-
   margin-left: auto;
-  float: left;
+  margin-right: auto;
 
   @include bp(small) { max-width: 400px; }
 
-  @include bp(medium) { margin-left: -$padding-body*4; }
+  @include bp(medium) { margin-left: $offset; }
 
   &:after {
     position: absolute;
     content: '';
     width: inherit;
     height: 1rem;
-    left: -$padding-body*3;
-    bottom: .8rem;
+    left: $offset;
+    bottom: 0rem;
     background-color: $color-blue;
     max-width: inherit;
-    mix-blend-mode: multiply;
-
-    @include bp(small) { left: -$padding-body*4; }
   }
 }
 
-//Left is default -> helper class
 .image--is-positioned-right {
-  float: right;
-  margin-right: auto;
-  margin-left: auto;
 
-  @include bp(medium) { margin-right: -$padding-body*4; }
+  @include bp(medium) {
+    margin-right: $offset;
+    float: right;
+  }
 
   &:after {
-    right: -$padding-body*3;
+    right: $offset;
     left: auto;
   }
 }
@@ -51,4 +47,5 @@
   width: inherit;
   height: inherit;
   max-width: inherit;
+  display: block;
 }
