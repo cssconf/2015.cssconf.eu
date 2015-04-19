@@ -16,6 +16,11 @@ ul,
 ol { margin-top: 0; }
 
 
+// link to top
+#top {
+  display: none;
+}
+
 // apply this in order to have a gap to the left and right, except on mobile
 %container {
 
@@ -138,6 +143,8 @@ section {
 // Collect all sections that should have a max-width
 // c-max-width is the generic non-semantic class
 .c-coc,
+.c-coc-short,
+.c-coc-long,
 .c-accessibility,
 .c-schedule,
 .c-sponsors,
