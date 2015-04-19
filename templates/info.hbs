@@ -6,29 +6,33 @@ description: CSSconf EU 2015
 {{!-- INCLUDE NAV-MAIN --}}
 {{> nav-main }}
 
+<div class="rw stage">
+  {{#parseJSON '{"large":"assets/img/stage-coc-2400.png", "medium":"assets/img/stage-coc-1200.png", "small":"assets/img/stage-coc-600.png", "altText":"A lot of shapes."}'}}
+    {{> stage }}
+  {{/parseJSON}}
+</div>
+
 {{!-- SECTION --}}
-<div class="rw">
-  <section class="c-max-width">
+<div class="rw g-info">
+  <section class="c-info">
     <h1>Info</h1>
     <h2>Dedicated to all people who love and write CSS</h2>
-    <p>In the late days of 2015’s summer, CSSconf EU will unite the CSS community in Berlin. This is your chance to meet top-notch engineers, world-class speakers, great web designers and all people who care about CSS. With this one-day, one-track conference, CSSconf EU aims to continue last year’s <a href="https://storify.com/CSSconfEU/cssconf-eu-2013" target="_blank">amazing community experience.</a></p>
+    <p>In the late days of 2015’s summer, CSSconf EU will unite the CSS community in Berlin. This is your chance to meet top-notch engineers, great web designers, world-class speakers and all people who care about CSS. With this one-day, one-track conference, CSSconf EU aims to continue last year’s <a href="https://www.youtube.com/watch?v=BhMf-DFEdOA&index=12&list=PL37ZVnwpeshHAnqFlTxhd0MIXWjLBbM3R" target="_blank">amazing community experience.</a></p>
     <p>Be a part of it, join us in Berlin!</p>
-    <a href="https://ti.to/cssconfeu/cssconf-eu-2015/" target="_blank" class="btn">Buy Ticket</a>
-  </section>
-</div>
-{{!-- SECTION END --}}
-
-{{!-- VENU SECTION --}}
-<div class="rw">
-  <section class="c-max-width g-bgc">
+    <p>
+      <a href="https://ti.to/cssconfeu/cssconf-eu-2015/" class="btn--special"><span class="btn__span" data-hover="Learn More">Buy Ticket</span></a>
+    </p>
     <h2>Date &amp; Venue</h2>
-    <p>CSSconf EU will happen on <strong>September 12 2014</strong> in Berlin and offers one day packed with promising talks and time to spend with great people. For details, see our <a href="/schedule">schedule</a>.</p>
+    <p>CSSconf EU will happen on <strong>September 26 2015</strong> in Berlin and offers one day packed with promising talks and time to spend with great people. <!-- For details, see our <a href="/schedule">schedule</a>. --></p>
     <p>The industrial building of <strong>Radialsystem V</strong> creates the perfect setting for a great day: located in the heart of Berlin, right next to the river Spree, our venue is very close to hotels, nightlife, restaurants and the buzzing Mitte, Kreuzberg and Friedrichshain districts.</p>
     <p><a href="//maps.google.com/?q=Radialsystem+V,+Holzmarktstraße+33,+10243+Berlin,+Germany" target="_blank">RADIALSYSTEM V - Holzmarktstraße 33, 10243 Berlin</a></p>
     <h2>How To Get There: Travel And Transport</h2>
     <h3>Berlin’s Airports</h3>
     <p>Berlin has two airports, both are located close to the city center at about a 30 minute taxi ride (ca. EUR 30) distance from the venue. There are also trains and buses that connect the airports to Berlin Ostbahnhof station, which is only a 5 minute walk to the venue.</p>
-    <p><a href="http://www.berlin-airport.de/en/travellers-txl/to-and-from/buses-and-trains/index.php" target="_blank">Berlin-Tegel<small>(TXL)</small></a><a href="http://www.berlin-airport.de/en/travellers-sxf/to-and-from/buses-and-trains/index.php" target="_blank">Berlin-Schönefeld<small>(SXF)</small></a></p>
+    <p>
+      <a href="http://www.berlin-airport.de/en/travellers-txl/to-and-from/buses-and-trains/index.php" target="_blank">Berlin-Tegel<small>(TXL)</small></a>
+      <a href="http://www.berlin-airport.de/en/travellers-sxf/to-and-from/buses-and-trains/index.php" target="_blank">Berlin-Schönefeld<small>(SXF)</small></a>
+    </p>
     <h3>Public Transport To The Venue</h3>
     <p>The venue is located on the bank of the Spree River, just across the street from the train station Ostbahnhof. A five minute walk away from the station, it can be easily reached with the S-Bahn, by bus and by local and express trains.</p>
     <ul>
@@ -76,23 +80,31 @@ description: CSSconf EU 2015
       <li><a href="http://www.nhow-hotels.com/berlin/en" target="_blank">Hotel NHow <span>20 min walk</span></a></li>
       <li><a href="http://www.michelbergerhotel.com/" target="_blank">Michelberger Hotel <span>20 min walk</span></a></li>
     </ul>
-    <p>We blocked a contingent of rooms for our attendees at the Ibis hotel. Read more in our <a href="http://2014.cssconf.eu/news/where-to-stay-when-travelling-to-cssconf-eu">blogpost about where to stay for CSSconf EU</a>.</p>
-    <h2>Friday Warm Up</h2>
+
+    <!-- <p>We blocked a contingent of rooms for our attendees at the Ibis hotel. Read more in our <a href="http://2014.cssconf.eu/news/where-to-stay-when-travelling-to-cssconf-eu">blogpost about where to stay for CSSconf EU</a>.</p> -->
+
+    <!-- <h2>Friday Warm Up</h2>
     <h3>Friday, Sept 25, 8pm, ??</h3>
     <p>We’re going to start CSSconf with relaxed hanging out at <a href="http://www.crackbellmer.de/">Crack Bellmer</a>, a typical Berlin-style bar in Berlin-Friedrichshain. There are two outside areas which allow you to chill and talk to people, or hit the dancefloor after 11pm in the main room. You’re welcome to bring along your friends as well! The event will also be the closing party of our friends from Reject JS, so expect to meet many community members there. Doors open at 8pm.</p>
     <h3>How To Get There</h3>
-    <p>The bar is located on the “R.A.W.-Gelände” – <a href="https://www.google.de/maps/place/Crack+Bellmer+Bar/@52.5080819,13.4553573,18z/data=!4m6!1m3!3m2!1s0x47a84e59a70cd9b1:0x617130d6e7f9c511!2sRAW-+Tempel+e.V.!3m1!1s0x0:0x7c076e8191f2662">Revaler Straße 99, 10245 Berlin</a>.</p>
+    <p>The bar is located on the “R.A.W.-Gelände” – <a href="https://www.google.de/maps/place/Crack+Bellmer+Bar/@52.5080819,13.4553573,18z/data=!4m6!1m3!3m2!1s0x47a84e59a70cd9b1:0x617130d6e7f9c511!2sRAW-+Tempel+e.V.!3m1!1s0x0:0x7c076e8191f2662">Revaler Straße 99, 10245 Berlin</a>.</p> -->
+
+
     <h2>Time to Party!</h2>
-    <h2>Saturday, Sept 26, 7:30pm, Universal am Osthafen</h2>
-    <p>A great day requires a great party and this is exactly what’s going to happen at the end of the day. Around 7pm, right after the big family photo has been taken, we’ll walk over to our party venue, <a href="https://www.google.com/maps/dir//Stralauer+Allee+1,+10245+Berlin,+Germany/@52.5021214,13.4303896,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x416523a2b6eb3025:0x1d1d6f66f67791ca!2m2!1d13.447214!2d52.502298">Universal Osthafen</a>. We invite you to celebrate with us, and enjoy cool drinks on the beautiful patio right next to the water. You’ll have plenty of room to chat and connect with friends old and new, and if you feel like dancing, our DJ has the right music for you!</p>
-    <h2>Dinner</h2>
+    <h3>Saturday, Sept 26, 7:30pm</h3>
+    <p>A great day requires a great party and this is exactly what’s going to happen at the end of the day. Around 7pm, right after the talks end and the big family photo has been taken, we’ll come togehter for snacks and driks and most importantly: Talking and discussing the day with your fellow CSSconf attendees. More details will be announced soon.
+    </p>
+
+    <!-- <p>A great day requires a great party and this is exactly what’s going to happen at the end of the day. Around 7pm, right after the big family photo has been taken, we’ll walk over to our party venue, <a href="https://www.google.com/maps/dir//Stralauer+Allee+1,+10245+Berlin,+Germany/@52.5021214,13.4303896,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x416523a2b6eb3025:0x1d1d6f66f67791ca!2m2!1d13.447214!2d52.502298">Universal Osthafen</a>. We invite you to celebrate with us, and enjoy cool drinks on the beautiful patio right next to the water. You’ll have plenty of room to chat and connect with friends old and new, and if you feel like dancing, our DJ has the right music for you!</p>
+    <h3>Dinner</h3>
     <p>Don’t worry about food: We’ll serve a light dinner at the beginning of the party, including vegetarian and vegan options.</p>
-    <h2>How To Get There</h2>
+    <h3>How To Get There</h3>
     <p>The party venue is located at <a href="https://www.google.com/maps/dir//Stralauer+Allee+1,+10245+Berlin,+Germany/@52.5021214,13.4303896,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x416523a2b6eb3025:0x1d1d6f66f67791ca!2m2!1d13.447214!2d52.502298">Universal Osthafen, Stralauer Allee 1</a>. We’ll walk over together, our volunteer team will lead the way! We’ll also assist to get taxis for those who prefer to drive.</p>
-    <p>By the way, if you are in Berlin only for the conference day and won’t get to do any sightseeing: On our walk to the party we’ll pass the famous <a href="http://en.wikipedia.org/wiki/East_Side_Gallery" target="_blank">Eastside Gallery</a>, the historical <a href="http://en.wikipedia.org/wiki/Oberbaum_Bridge">Oberbaumbrücke</a>, and from the patio at the party we’ll have a great view of the <a href="http://en.wikipedia.org/wiki/Molecule_Man_(sculpture)">Molecule Man</a>.</p>
+    <p>By the way, if you are in Berlin only for the conference day and won’t get to do any sightseeing: On our walk to the party we’ll pass the famous <a href="http://en.wikipedia.org/wiki/East_Side_Gallery" target="_blank">Eastside Gallery</a>, the historical <a href="http://en.wikipedia.org/wiki/Oberbaum_Bridge">Oberbaumbrücke</a>, and from the patio at the party we’ll have a great view of the <a href="http://en.wikipedia.org/wiki/Molecule_Man_(sculpture)">Molecule Man</a>.</p> -->
+
     <h2>Other Great Events</h2>
     <h3>Meet The Berlin Tech Community</h3>
-    <p>CSSconf EU is one of the core events of <a href="http://jsfest.berlin/" target="_blank">JSFest</a>: An entire week full of community-driven conferences, hackathons, workshops and social events. Here are our favorites and recommendations:</p>
+    <p>CSSconf EU is one of the core events of <a href="http://wwwtf.berlin/" target="_blank">WWWTFFest</a> – yes, you read that right: an entire TechFest celebrating the WWW. An entire week full of community-driven conferences, hackathons, workshops and social events. Here are our favorites and recommendations:</p>
 <!--let's try to re-use the schedule markup and styling here -->
     <dl>
       <dt>Tuesday, Sept 22</dt>
@@ -100,7 +112,7 @@ description: CSSconf EU 2015
       <dt>Thursday, Sept 24</dt>
       <dd><a href="http://rejectjs.org/" target="_blank">Reject JS</a> <i>– recommended event, not part of the CSSconf EU ticket</i></dd>
       <dt>Friday, Sept 25 and Sunday, Sept 27</dt>
-      <dd><a href="http://2015.JSconf.eu/" target="_blank">JSconf EU</a> <i>– recommended event, not part of the CSSconf EU ticket</i></dd>
+      <dd><a href="http://2015.jsconf.eu/" target="_blank">JSconf EU</a> <i>– recommended event, not part of the CSSconf EU ticket</i></dd>
     </dl>
     <h2>Berlin</h2>
     <h3>Explore Germany’s Capital</h3>
