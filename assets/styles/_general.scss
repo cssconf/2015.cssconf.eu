@@ -1,6 +1,6 @@
-//TODO: Refactor the @extend rules!!!
 
 
+//TODO: REFACTOR THE @extend RULES
 html { box-sizing: border-box; }
 
 *,
@@ -17,13 +17,15 @@ ol { margin-top: 0; }
 
 // apply this in order to have a gap to the left and right, except on mobile
 %container {
+
   @include bp(small) {
     padding-left: $padding-body;
     padding-right: $padding-body;
   }
+
   @include bp(medium) {
-    padding-left: $padding-body*2;
-    padding-right: $padding-body*2;
+    padding-left: $padding-body * 2;
+    padding-right: $padding-body * 2;
   }
 }
 
@@ -31,9 +33,10 @@ ol { margin-top: 0; }
 %container-nav {
   padding-left: $padding-body;
   padding-right: $padding-body;
+
   @include bp(medium) {
-    padding-left: $padding-body*2;
-    padding-right: $padding-body*2;
+    padding-left: $padding-body * 2;
+    padding-right: $padding-body * 2;
   }
 }
 
@@ -42,11 +45,13 @@ ol { margin-top: 0; }
 %container-content {
   padding-left: $padding-body;
   padding-right: $padding-body;
+
 // fine-tune here as needed
   @include bp(large) {
     padding-left: calc(50% - 24em);
     padding-right: calc(50% - 24em);
   }
+
   @include bp(xlarge) {
     padding-left: calc(50% - 30em);
     padding-right: calc(50% - 30em);
@@ -79,31 +84,22 @@ section {
 // this is for sections that should not be visually separated as far from the following one,
 // e.g. sponsors and media partners.
 // alternatively: don't have separate sections at all.
-.section--tight {
-  padding-bottom: 0;
-  @include bp(medium) {
-    padding-bottom: 0;
-  }
-}
+.section--tight { padding-bottom: 0;
 
+  @include bp(medium) { padding-bottom: 0; }
+}
 
 .split__text,
 .split__media {
   @extend %cf;
   @extend %lap--six-twelfths;
-  margin-bottom: $margin-base*2;
+  margin-bottom: $margin-base * 1.5;
 
-  @include bp(medium) {
-    margin-bottom: 0;
-  }
+  @include bp(medium) { margin-bottom: 0; }
 }
 
 .split__text + .split__media,
-.split__media + .split__text {
-  margin-bottom: 0;
-
-  // @include bp(medium) { margin-bottom: $margin-base*2; }
-}
+.split__media + .split__text { margin-bottom: 0; }
 
 .c-conference .split__text,
 .c-venue .split__media { padding-left: 0; }
@@ -180,4 +176,22 @@ section {
     width: 7rem;
     top: -3rem;
   }
+}
+
+.c-conference {
+  display: flex;
+  flex-direction: column;
+
+  @include bp(medium) {
+    display: block;
+  }
+}
+
+.c-conference .split__media {
+  order: 1;
+  margin-bottom: $margin-base * 1.5;
+}
+
+.c-conference .split__text {
+  order: 2;
 }
