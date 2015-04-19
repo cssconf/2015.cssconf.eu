@@ -84,7 +84,7 @@
 
 .nav-main__link {
   color: $color-black;
-  text-transform: uppercase;
+  @extend %uppercase;
 }
 
 .nav-toggle {

@@ -20,7 +20,7 @@
 
 .btn-caps {
   @extend .btn;
-  text-transform: uppercase;
+  @extend %uppercase;
   font-size: 90%;
 }
 

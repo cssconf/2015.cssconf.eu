@@ -69,25 +69,25 @@ h1,
 .fz-alpha {
   font-size: $font-size-39;
   color: $color-red;
-  font-family: montserratbold, sans-serif;
+  font-family: montserratregular, sans-serif;
   font-weight: 500;
   margin-bottom: $margin-base;
   line-height: .9375;
 
   @extend %uppercase;
 
-  @include bp(small) { font-size: $font-size-64; }
+  @include bp(small) { font-size: $font-size-56; }
+
+  @include bp(large) { font-size: $font-size-64; }
 }
 
 h2,
 .fz-beta {
   font-size: $font-size-22;
   color: $color-blue;
-  font-family: montserratbold, sans-serif;
+  font-family: montserratregular, sans-serif;
   font-weight: 500;
   margin-bottom: $margin-base/2;
-  
-  @extend %uppercase;
 
   @include bp(small) { font-size: $font-size-34; }
 }
@@ -98,17 +98,13 @@ h3,
 .fz-gamma {
   font-size: $font-size-14;
   color: $color-black;
-  font-family: montserratbold, sans-serif;
+  font-family: montserratregular, sans-serif;
   font-weight: 500;
   margin-bottom: $margin-base/2;
   line-height: 1.2;
-  
-  @extend %uppercase;
 
   @include bp(small) { font-size: $font-size-24; }
 }
-
-.fz-gamma { text-transform: initial; }
 
 .fz--is-grey { color: $color-grey; }
 
