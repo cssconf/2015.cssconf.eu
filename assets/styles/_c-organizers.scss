@@ -134,6 +134,9 @@
   margin-right: -$padding-body*2; //
   margin-left: -$padding-body*2; //
   margin-bottom: $padding-body*2; //
+  @include bp(medium) {
+    margin-top: -$padding-body*10;
+  }
 }
 
 .img-row__element {
