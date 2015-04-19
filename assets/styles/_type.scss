@@ -26,6 +26,14 @@ ul, ol, blockquote {
   @extend %wide-letter;
 }
 
+hr {
+  display: block;
+  border: 0;
+  border-top: 2px solid $color-grey;
+  margin: 2em 0;
+  padding: 0;
+}
+
 a {
   color: $color-blue;
   text-decoration: none;

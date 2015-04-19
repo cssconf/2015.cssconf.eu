@@ -15,6 +15,7 @@ p,
 ul,
 ol { margin-top: 0; }
 
+
 // apply this in order to have a gap to the left and right, except on mobile
 %container {
 
@@ -129,7 +130,8 @@ section {
 // add to sections to center-align content
 .c-cssfamily,
 .g-thank-you,
-.g-sponsors-reel {
+.g-sponsors-reel,
+.c-call-for-speakers-intro {
   @extend %tac;
 }
 
@@ -148,7 +150,7 @@ section {
 .c-conference,
 .c-diversity,
 .c-call-for-speakers-intro,
-.c-call-for-speakers-help,
+.c-call-for-speakers-content,
 .c-max-width {
   @extend %container-content;
 }
