@@ -78,6 +78,12 @@
   display: inline-block;
   margin-right: -4px;
   margin-left: 3vw;
+  text-align: center;
+  margin-bottom: 1rem;
+
+  @include bp(medium) { margin-bottom: 2rem; }
+
+  @include bp(large) { margin-bottom: 0; }
 
   &:first-of-type { margin-left: 0;}
 }
@@ -85,6 +91,8 @@
 .nav-main__link {
   color: $color-black;
   @extend %uppercase;
+  word-break: break-word;
+  line-height: 1;
 }
 
 .nav-toggle {
