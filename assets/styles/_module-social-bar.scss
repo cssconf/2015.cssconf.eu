@@ -27,6 +27,8 @@
   text-transform: lowercase;
   border: 3px solid;
 
+  @include bp(medium) { border: 6px solid; }
+
   &:hover { background-color: transparent; }
 }
 
