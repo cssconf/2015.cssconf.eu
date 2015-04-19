@@ -15,12 +15,22 @@ p,
 ul,
 ol { margin-top: 0; }
 
-// apply this in order to have a gap to the left and right, as in the design
+// apply this in order to have a gap to the left and right, except on mobile
 %container {
   @include bp(small) {
     padding-left: $padding-body;
     padding-right: $padding-body;
   }
+  @include bp(medium) {
+    padding-left: $padding-body*2;
+    padding-right: $padding-body*2;
+  }
+}
+
+// apply this in order to have a gap to the left and right, also on mobile
+%container-nav {
+  padding-left: $padding-body;
+  padding-right: $padding-body;
   @include bp(medium) {
     padding-left: $padding-body*2;
     padding-right: $padding-body*2;

@@ -1,8 +1,8 @@
 
 
 .nav-main {
-  @extend %container;
-  
+  @extend %container-nav;
+
   font-size: .85em;
   text-align: left;
   display: flex;
@@ -18,11 +18,7 @@
 
   @include bp(xsmall) { font-size: 1em; }
 
-//  @include bp(small) { margin-left: -$padding-body; }
-
-//  @include bp(medium) { margin-left: -$padding-body*2; }
-
-  @include bp(xlarge) { margin-left: 0;} 
+  @include bp(xlarge) { margin-left: 0;}
 }
 
 .nav-main__list {
