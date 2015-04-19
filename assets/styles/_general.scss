@@ -71,8 +71,8 @@ footer {
 
 section {
   @include bp(medium) {
-    padding-top: $padding-section * 2;
-    padding-bottom: $padding-section * 2;
+    padding-top: $padding-section * 1.5;
+    padding-bottom: $padding-section * 1.5;
   }
 }
 
@@ -96,6 +96,13 @@ section {
   @include bp(medium) {
     margin-bottom: 0;
   }
+}
+
+.split__text + .split__media,
+.split__media + .split__text {
+  margin-bottom: 0;
+
+  // @include bp(medium) { margin-bottom: $margin-base*2; }
 }
 
 .c-conference .split__text,
@@ -150,6 +157,27 @@ section {
   @extend %container-content;
 }
 
-.c-cssfamily {
-  margin-bottom: $margin-base;
+.c-cssfamily { margin-bottom: $margin-base; }
+
+.c-thank-you { position: relative; }
+
+.c-thank-you__svg {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 5rem;
+  height: auto;
+  top: -2rem;
+  fill: $color-blue;
+
+  @include bp(small) {
+    width: 6rem;
+    top: -2.5rem;
+  }
+
+  @include bp(medium) {
+    width: 7rem;
+    top: -3rem;
+  }
 }
