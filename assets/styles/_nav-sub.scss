@@ -5,6 +5,7 @@
   padding-bottom: $padding-section/2;
   line-height: 1.666666667;
   @extend %container;
+  @extend %tac;
 }
 
 .nav-sub__list {
