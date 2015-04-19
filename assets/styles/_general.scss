@@ -35,7 +35,7 @@ ol { margin-top: 0; }
   padding-right: calc(50% - 33.333em);
 }
 
-.rw { 
+.rw {
   @extend %grid--full;
   @extend %container;
 }
@@ -98,8 +98,12 @@ section {
   margin-bottom: 2.5rem;
 }
 
-.c-cssfamily { 
+.c-cssfamily {
   @extend %bgc;
+  @extend %tac;
+}
+
+.g-thank-you {
   @extend %tac;
 }
 
@@ -107,8 +111,8 @@ section {
 .g-sponsors-reel { @extend %tac;}
 
 // Collect all sections that should have a max-width
-// g-max-width is the generic non-semantic class 
-.c-coc, 
+// g-max-width is the generic non-semantic class
+.c-coc,
 .c-accessibility,
 .c-schedule,
 .c-sponsors,
