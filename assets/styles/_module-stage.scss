@@ -1,13 +1,16 @@
 
 
-.stage { 
+.stage {
   position: relative;
   @extend %tac;
-  
+
   @extend %container;
 }
 
-.stage__image { max-width: 100%; }
+.stage__image {
+  width: 100%;
+  max-width: 100%;
+}
 
 .stage__content {
   position: absolute;
