@@ -2,18 +2,27 @@
 speakers:
   - name: 'Lea Verou'
     bio: 'Lea is a speaker, author of “CSS Secrets”, and an Invited Expert in the CSS Working Group. She worked as a Developer Advocate for the W3C and is currently a Research Assistant at MIT.'
-    image-path: 'assets/img/speakers/lea-verou.jpg'
+    imageLarge: 'assets/img/speakers/lea-verou.jpg'
+    imageMedium: 'assets/img/speakers/lea-verou.jpg'
+    imageSmall: 'assets/img/speakers/lea-verou.jpg'
+    altText: 'A portrait picture of Lea Verou.'
 
   - name: Claudina Sarahe
     bio: 'Claudina is an NYC-based entrepreneur, front-end architect, tech event organizer, and speaker. She curates SassConf and runs the monthly NYC Sass meetup.'
-    image-path: 'assets/img/speakers/claudina-sarahe.jpg'
+    imageLarge: 'assets/img/speakers/claudina-sarahe.jpg'
+    imageMedium: 'assets/img/speakers/claudina-sarahe.jpg'
+    imageSmall: 'assets/img/speakers/claudina-sarahe.jpg'
+    altText: 'A portrait picture of Claudina Sarahe.'
 ---
 {{!-- <div class="speakers__slider">
   <div class="speakers__slider-element">
   {{#forEach speaker.speakers}}
     <div class="speakers__item">
       <div class="image--has-border">
-        <img src="{{ image-path }}" alt="">
+        <img srcset="{{ imageLarge }} 320w,
+                     {{ imageMedium }} 256w,
+                     {{ imageSmall }} 200w"
+             src="{{ imageSmall }}" alt="{{ altText }}">
         <div class="speakers__overlay"></div>
       </div>
       <h2>
@@ -27,12 +36,15 @@ speakers:
 {{#forEach speaker.speakers}}
   <div class="cl speakers__item">
     <div class="image--has-border">
-      <img src="{{ image-path }}" alt="">
+      <img srcset="{{ imageLarge }} 320w,
+                   {{ imageMedium }} 256w,
+                   {{ imageSmall }} 200w"
+           src="{{ imageSmall }}" alt="{{ altText }}">
       <div class="speakers__overlay"></div>
     </div>
     <h2>
       {{name}}
     </h2>
-    <p>{{ bio }}</p>
+    <p class="speakers__paragraph">{{ bio }}</p>
   </div>
 {{/forEach}}
