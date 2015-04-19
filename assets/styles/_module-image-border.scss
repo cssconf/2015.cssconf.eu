@@ -51,7 +51,17 @@
   width: 12.5rem;
   height: 12.5rem;
   display: block;
-  margin-bottom: 4rem; //TODO: Remove — just for demo purposes
+  margin-bottom: 3rem;
+
+  @include bp(medium) {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  @include bp(large) {
+    width: 20rem;
+    height: 20rem;
+  }
 
   > img { //TODO: GET RID OF THE ELEMENT STYLING
     width: inherit;
