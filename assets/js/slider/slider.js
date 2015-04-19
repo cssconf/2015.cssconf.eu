@@ -158,7 +158,6 @@ let onEnd = () => {
 };
 
 let onMove = (x, y, e) => {
-  console.log(x, y);
   if (input.isDragging) {
     let pos = new Vector(x, y, 0);
     input.moved = true;
