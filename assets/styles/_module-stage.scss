@@ -2,6 +2,7 @@
 
 .stage {
   position: relative;
+  min-height: 16rem;
   @extend %tac;
 
   @extend %container;
