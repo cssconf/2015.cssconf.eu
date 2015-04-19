@@ -1,8 +1,12 @@
 //TODO: Add responsive behaviour
 
-.social-bar { 
+.social-bar {
   @extend %cf;
   @extend %container;
+
+  @include bp(medium) { font-size: $font-size-34; }
+
+  @include bp(large) { font-size: $font-size-56; }
 }
 
 .social-bar__list { @extend %nav; }

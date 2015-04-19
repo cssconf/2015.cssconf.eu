@@ -107,6 +107,8 @@ section {
   display: inline-block;
 
   &:last-child { margin-right: 0; }
+
+  @include bp(medium) { margin-right: 1.3rem; }
 }
 
 .cssconf-family-logo {
@@ -145,3 +147,6 @@ section {
   @extend %container-content;
 }
 
+.c-cssfamily {
+  margin-bottom: $margin-base;
+}

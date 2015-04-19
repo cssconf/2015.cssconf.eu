@@ -1,9 +1,10 @@
 
-.arrow {
-  @extend %tac;
-}
+.arrow { @extend %tac; }
 
-.arrow__svg { width: 15vw; }
+.arrow__svg {
+  width: 15vw;
+  max-width: 5rem;
+}
 
 .arrow--is-blue .arrow__svg { fill: $color-blue; }
 
