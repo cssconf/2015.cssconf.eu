@@ -6,19 +6,20 @@ description: CSSconf EU 2015
 {{!-- INCLUDE NAV-MAIN --}}
 {{> nav-main }}
 
-{{!-- CFS INTRO SECTION --}}
-<div class="rw g-call-for-speakers-intro section-tight">
-  <section class="c-call-for-speakers-intro">
+<div class="rw stage">
+  {{#parseJSON '{"large":"assets/img/stage-coc-2400.png", "medium":"assets/img/stage-coc-1200.png", "small":"assets/img/stage-coc-600.png", "altText":"A lot of shapes."}'}}
+    {{> stage }}
+  {{/parseJSON}}
+  <div class="stage__content stage__content--subpage">
     <h1>Call for Speakers</h1>
-    <p>We are inviting the CSS community to submit proposals for presentations at CSSconf EU 2015.
-      <br/>
-      Proposals can be submitted until July 15, 2015 midnight CEST.
-    </p>
-  </section>
+  </div>
 </div>
 
 <div class="rw ">
   <section class="c-call-for-speakers-content">
+    <h2>Submit Now!</h2>
+    <p>We are inviting the CSS community to submit proposals for presentations at CSSconf EU 2015. Proposals can be submitted until July 15, 2015 midnight CEST.</p>
+
     <h2>Topics</h2>
     <p>CSSconf EU is targeted at CSS professionals, CSS creatives, CSS aficionados. It doesn’t matter whether you are a professional front end developer, a creative wizard who practices CSS magic in their spare time, or you just love CSS and want to share your knowledge. We’re interested in topics that make us go, “Oh, wow! Yes! Cool! I wanna hear about that!”</p>
     <p>To get your ideas flowing, here are some of the topics we are particularly interested in:</p>
@@ -103,14 +104,14 @@ description: CSSconf EU 2015
     <h2>Video Recordings</h2>
     <p>We plan to record and publish all talks online for free, along with a recording of the slide deck, live demo, and any on-presenter-screen activity. We do this for the benefit of the larger CSS community and those who couldn’t make it to the conference. We hope you agree with us, but if you are uncomfortable with this in any way, let us know and we will work things out.</p>
     <p>Finally, since you retain full ownership of your slides and recording, we’d like to ask you to make your materials and recording available under a Creative Commons (we default to non-commercial reuse) or other open source license.</p>
-    
+
     <hr>
-    
+
     <h2>Code of Conduct</h2>
     <p>Our <a href="http://2015.cssconf.eu/code-of-conduct">Code of Conduct</a> aims to create a safe and welcoming space for our community members, and to protect every attendee, staff member and speaker from harassment. We thus need you to read, understand, and comply with our <a href="http://2015.cssconf.eu/code-of-conduct">Code of Conduct</a>.</p>
-    
+
     <hr>
-    
+
     <h2>Submit Your Talk</h2>
     <p>We are looking forward to reading it! If you are unsure, don’t know where to start or how to phrase things, or are curious about what would make your proposal stand out, then read our blog post on <a href="http://2014.cssconf.eu/news/how-to-write-a-great-talk-proposal-for-a-tech">how to write a great proposal for a tech conference</a>.</p>
     <iframe src="https://docs.google.com/forms/d/1zGh1isqGfkRctH0R-uLuyca9ySmUla8LP5gJ9rjrz8w/viewform?embedded=true#start=embed" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>

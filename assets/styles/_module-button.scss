@@ -5,7 +5,7 @@
   color: $color-white;
   background-color: $color-blue;
   font-size: $font-size-base;
-  padding: .4rem 1rem .3rem;
+  padding: .7rem 1.2rem .6rem;
   border: 3px solid $color-blue;
   margin-bottom: $margin-base;
   display: inline-block;
@@ -41,7 +41,7 @@
 .btn__span {
   position: relative;
   display: inline-block;
-  padding: .5rem 1rem .4rem;
+  padding: .7rem 1.2rem .6rem;
   background: $color-blue;
   transition: transform .3s;
   transform-origin: 50% 0;
@@ -58,7 +58,7 @@
     transition: background .3s;
     transform: rotateX(-90deg);
     transform-origin: 50% 0;
-    padding-top: .4375rem;
+    padding-top: .6375rem;
     text-align: center;
   }
 }
