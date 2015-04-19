@@ -1,10 +1,28 @@
 
+.speakers__slider {
+  margin-top: 5rem;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.speakers__slider-element {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 1.25rem;
+  transform: translate3d(0,0,0);
+
+  .speakers__item {
+    flex: 0 0 280px;
+    text-align: center;
+  }
+}
 
 .speakers__item {
-  @extend %six-twelfths;
-  @extend %tac;
-  margin-top: 5rem;
-  margin-right: -4px;
   p {
     padding-left: 1rem;
     padding-right: 1rem;
