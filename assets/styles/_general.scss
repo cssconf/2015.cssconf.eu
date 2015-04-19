@@ -15,10 +15,6 @@ p,
 ul,
 ol { margin-top: 0; }
 
-body {
-
-}
-
 // apply this in order to have a gap to the left and right, as in the design
 %container {
   @include bp(small) {
@@ -38,7 +34,6 @@ body {
   padding-left: calc(50% - 33.333em);
   padding-right: calc(50% - 33.333em);
 }
-
 
 .rw { 
   @extend %grid--full;
