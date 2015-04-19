@@ -8,8 +8,13 @@ let SLIDER_INNER_WIDTH;
 let INTEGRATION_STEPS;
 let SLIDE_THRESHOLD;
 let sliderEl = document.querySelector('.speakers__slider');
-let slidesEl = sliderEl.querySelector('.speakers__slider-element');
-let slides   = [].slice.call(slidesEl.querySelectorAll('.speakers__item'), 0);
+let slidesEl;
+let slides;
+
+if (sliderEl) {
+  slidesEl = sliderEl.querySelector('.speakers__slider-element');
+  slides   = [].slice.call(slidesEl.querySelectorAll('.speakers__item'), 0);
+}
 
 function updateDimensions() {
   SLIDE_WIDTH        = 280;
@@ -20,16 +25,16 @@ function updateDimensions() {
 }
 
 const STATE = {
-  PAUSED: 0,
-  DRAGGING: 1,
-  DECELERATE: 2,
-  SNAPPING: 3
+  PAUSED: 'PAUSED',//0,
+  DRAGGING: 'DRAGGING',//1,
+  DECELERATE: 'DECELERATE',//2,
+  SNAPPING: 'SNAPPING'//3
 }
 
 let world = {
   drag: 0.1,
   springThickness: 50,
-  springDamper: 17,
+  springDamper: 4,
   snapThreshold: 0.2
 };
 
@@ -37,14 +42,14 @@ let input = {
   isDragging: false,
   isScrolling: false,
   moved: false,
-  pos: origin,
-  lastPos: origin
+  pos: origin.clone(),
+  lastPos: origin.clone()
 };
 
 let slider = {
-  slider: STATE.PAUSED,
-  pos: origin,
-  velocity: origin,
+  state: STATE.PAUSED,
+  pos: origin.clone(),
+  velocity: origin.clone(),
   targetX: false
 };
 
@@ -84,7 +89,6 @@ let decelerate = (dt) => {
 };
 
 let snapToGrid = (dt) => {
-
   let pos = slider.pos.elements[0];
   let velocity = slider.velocity.elements[0];
   let distance = slider.targetX - pos;
@@ -100,9 +104,10 @@ let snapToGrid = (dt) => {
   slider.velocity.elements[0] = velocity;
   slider.pos.elements[0] = pos;
 
-  if (slider.velocity.magnitude() <= 0.05 && Math.abs(distance) < 2) {
+  console.log('snap', slider.targetX);
+  if (slider.velocity.magnitude() <= 0.1 && Math.abs(distance) < 2) {
     slider.pos.elements[0] = slider.targetX;
-    slider.velocity = origin;
+    slider.velocity = origin.clone();
     slider.state = STATE.PAUSED;
   }
 };
@@ -181,7 +186,20 @@ let onMove = (x, y, e) => {
   }
 };
 
+let slideTo = (i) => {
+  slider.pos = slider.pos.clone();
+  slider.velocity = slider.velocity.clone();
+  slider.velocity.elements[0] = 1;
+  slider.targetX = i * SLIDE_WIDTH;
+  slider.targetX = Math.min(Math.max(slider.targetX, 0), Math.max(SLIDER_INNER_WIDTH - SLIDER_WIDTH, 0));
+  slider.state = STATE.SNAPPING;
+};
+
 export default function() {
+
+  if (!sliderEl) {
+    return;
+  }
 
   updateDimensions();
 
@@ -198,6 +216,16 @@ export default function() {
   document.addEventListener('mousemove', (e) => onMove(e.clientX, e.clientY) );
   document.addEventListener('mouseup', onEnd);
 
+  // add indicator
+  let container = document.createElement('div');
+  // insertafter
+  sliderEl.parentNode.insertBefore(container, sliderEl.nextSibling);
+  for (let i = 0; i < slides.length; i++) {
+    let indicator = document.createElement('span');
+    indicator.innerHTML = i;
+    container.appendChild(indicator);
+    indicator.addEventListener('click', () => slideTo(i));
+  }
 };
 
 function debounce(func, wait, immediate) {

@@ -1,28 +1,42 @@
 
-.speakers__slider {
-  margin-top: 5rem;
-  overflow: hidden;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
+// slider styles
+// .speakers__slider {
+//   margin-top: 5rem;
+//   overflow: hidden;
+//   -webkit-touch-callout: none;
+//   -webkit-user-select: none;
+//   -khtml-user-select: none;
+//   -moz-user-select: none;
+//   -ms-user-select: none;
+//   user-select: none;
+// }
 
-.speakers__slider-element {
-  display: flex;
-  flex-wrap: nowrap;
-  padding-top: 1.25rem;
-  transform: translate3d(0,0,0);
+// .speakers__slider-element {
+//   display: flex;
+//   flex-wrap: nowrap;
+//   padding-top: 1.25rem;
+//   transform: translate3d(0,0,0);
 
-  .speakers__item {
-    flex: 0 0 280px;
-    text-align: center;
-  }
-}
+//   .speakers__item {
+//     flex: 0 0 280px;
+//     text-align: center;
+//   }
+// }
+// end slider styles
+
 
 .speakers__item {
+  @extend %tac;
+  @extend %six-twelfths;
+  margin-top: 5rem;
+  margin-right: -4px;
+
+  // Todo: Can not extend classes with media queries, so we need to manually overwrite the column style on mobile
+  @media only screen and (max-width: 34.375em) {
+    width: 100%;
+    margin-right: 0;
+  }
+
   p {
     padding-left: 1rem;
     padding-right: 1rem;
