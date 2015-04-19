@@ -30,9 +30,17 @@ ol { margin-top: 0; }
 // apply this to any containing div / section that has content which should not be wider than 66.66em
 // further explanation here: http://lea.verou.me/more-css-secrets/#padding-auto
 %container-content {
-//  max-width: 66.666666667em;
-  padding-left: calc(50% - 33.333em);
-  padding-right: calc(50% - 33.333em);
+  padding-left: $padding-body;
+  padding-right: $padding-body;
+// fine-tune here as needed
+//  @include bp(medium) {
+//    padding-left: calc(50% - 21em);
+//    padding-right: calc(50% - 21em);
+//  }
+  @include bp(large) {
+    padding-left: calc(50% - 33.333em);
+    padding-right: calc(50% - 33.333em);
+  }
 }
 
 .rw {
