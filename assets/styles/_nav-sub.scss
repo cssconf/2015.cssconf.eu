@@ -6,13 +6,22 @@
   line-height: 1.666666667;
   @extend %container;
   @extend %tac;
+
+  @include bp(medium) {
+    font-size: .98em;
+  }
+
+  @include bp(medium) {
+    padding-top: $padding-section;
+    padding-bottom: $padding-section;
+  }
 }
 
 .nav-sub__list {
   @extend %nav;
   margin-bottom: 0;
 
-  @include bp(medium) {
+  @include bp(large) {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -21,7 +30,7 @@
 
 .nav-sub__list-item {
 
-@include bp(medium) { padding-right: 2%;
+@include bp(large) { padding-right: 2%;
 
   &:last-child { padding-right: 0; }
   }
