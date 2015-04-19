@@ -75,6 +75,11 @@ section {
 .split__media {
   @extend %cf;
   @extend %lap--six-twelfths;
+  margin-bottom: $margin-base*2;
+
+  @include bp(medium) {
+    margin-bottom: 0;
+  }
 }
 
 .c-conference .split__text,
