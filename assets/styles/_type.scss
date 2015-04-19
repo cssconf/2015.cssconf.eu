@@ -12,7 +12,19 @@ body {
   letter-spacing: .015em;
 }
 
-p { margin-bottom: $margin-base; }
+// as laid out in mockups, quite wide letter-spacing per default. TO DO might want to limit it to only withing sections
+%wide-letter {
+  letter-spacing: .05em;
+}
+
+p { 
+  margin-bottom: $margin-base;
+  @extend %wide-letter;
+}
+
+ul, ol, blockquote {
+  @extend %wide-letter;
+}
 
 a {
   color: $color-blue;
@@ -88,6 +100,7 @@ h2,
   font-family: montserratregular, sans-serif;
   font-weight: 500;
   margin-bottom: $margin-base/2;
+  line-height: 1.125;
 
   @include bp(small) { font-size: $font-size-34; }
 }
