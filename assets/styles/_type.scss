@@ -37,7 +37,7 @@ hr {
 a {
   color: $color-blue;
   text-decoration: none;
-  word-break: break-all;
+ // word-break: break-all;
 
   &:hover { color: lighten($color-blue, 20%); }
 }
