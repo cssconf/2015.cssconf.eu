@@ -18,7 +18,11 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-  bottom: 10%;
+  bottom: 18%;
+
+  @include bp(small) { bottom: 15%; }
+
+  @include bp(xlarge) { bottom: 22%; }
 }
 
 .stage__content--subpage {
