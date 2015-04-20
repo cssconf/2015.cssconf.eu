@@ -1,9 +1,35 @@
+---
+default_title:       CSSconf EU 2015
+default_description: 'CSSconf EU is a community conference dedicated to the designers and developers who build the world’s most engaging user interfaces. For the community, from the community.'
+default_keywords:    'css, css3, conference, js, html5, berlin, frontend, conf, designer, developer, engineer, user interface, ui'
+og_image:            http://2015.cssconf.eu/assets/img/og-cssconf-2015.png
+---
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-<meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>{{title}}</title>
-<meta name="description" content="{{description}}">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{#if title}}{{title}} - {{/if}}{{head.default_title}}</title>
+<meta name="google-site-verification" content="1CTUdFRgCVVYU3zsvk8GGPmjABOueCcIuxsAb6h_LCE" />
+<meta name="google-site-verification" content="9ZHEmW3Y2FDcy4FtmSiHZe3BICdZK8X5uSS1bkmCqsg" />
+<meta name="revisit-after" content="7 days" />
+<meta name="robots" content="index,follow" />
+<meta name="publisher" content="CSSconf EU" />
+<meta name="author" content="CSSconf EU Team" />
+{{!-- KEY DESC --}}
+<meta name="description" content="{{#if description}}{{description}}{{else}}{{head.default_description}}{{/if}}" />
+<meta name="keywords" content="{{#if keywords}}{{keywords}}{{else}}{{head.default_keywords}}{{/if}}" />
+{{!-- FACEBOOK --}}
+<meta property="fb:admins" content="100000951092646" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{#if title}}{{title}} - {{/if}}{{head.default_title}}" />
+<meta name="og:description" content="{{#if description}}{{description}}{{else}}{{head.default_description}}{{/if}}" />
+<meta property="og:image" content="{{head.og_image}}">
+{{!-- TWITTER --}}
+<meta name="twitter:site" content="@CSSconfeu" />
+<meta name="twitter:title" content="{{#if title}}{{title}} - {{/if}}{{head.default_title}}" />
+<meta name="twitter:description" content="{{#if description}}{{description}}{{else}}{{head.default_description}}{{/if}}" />
+<meta name="twitter:image" content="{{head.og_image}}" />
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
 {{!--<link rel="apple-touch-icon" href="apple-touch-icon.png">--}}
 <link rel="stylesheet" href="/assets/cssconf-2015.css">
