@@ -85,7 +85,16 @@
 
   @include bp(large) { margin-bottom: 0; }
 
-  &:first-of-type { margin-left: 0;}
+  &:first-of-type { margin-left: 0; }
+
+  &:first-of-type .nav-main__link-decoration {
+    @include bp(large) { margin-left: -1.25rem; }
+  }
+
+  &:nth-of-type(4) .nav-main__link-decoration {
+
+    @include bp(large) { margin-left: -1rem; }
+  }
 }
 
 .nav-main__link {
@@ -124,8 +133,7 @@
   right: 0;
 }
 
-.nav-main .btn--special {
-  display: none;
+.nav-main .btn--special { display: none;
 
   @include bp(large) { display: block; }
 }
