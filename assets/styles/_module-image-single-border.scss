@@ -15,10 +15,9 @@ $offset: -2.25rem;
 
   @include bp(small) { max-width: 400px; }
 
-  @include bp(medium) {
-    margin-left: $offset;
-    max-width: 500px;
-  }
+  @include bp(medium) { margin-left: $offset; }
+
+  @include bp(xlarge) { max-width: 500px; }
 
   &:after {
     position: absolute;
