@@ -67,7 +67,7 @@ ol { margin-top: 0; }
 %container-content--narrow {
   padding-left: $padding-body;
   padding-right: $padding-body;
-  @include bp(large) {
+  @include bp(medium) {
     padding-left: calc(50% - 20em);
     padding-right: calc(50% - 20em);
   }
