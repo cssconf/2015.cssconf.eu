@@ -52,7 +52,11 @@ module.exports = function(grunt) {
         tasks: ['styles']
       },
       html: {
-        files: 'templates/**/*.hbs',
+        files: 'templates/**/*',
+        tasks: ['assemble']
+      },
+      content: {
+        files: 'content/**/*',
         tasks: ['assemble']
       },
       js: {

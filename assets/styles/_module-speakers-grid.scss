@@ -1,0 +1,38 @@
+.speakers__grid {
+  margin-top: 5rem;
+  @include bp(small) {
+    margin-top: 2rem;
+  }
+
+  @include bp(small) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .image {
+    margin: auto;
+    max-width: 50%;
+
+    @include bp(small) {
+      max-width: none;
+      width: 20%;
+    }
+  }
+
+  .image--has-border {
+    width: 100%;
+    height: 100%;
+  }
+
+  img {
+    display: block;
+  }
+
+  .info {
+    @include bp(small) {
+      flex: 1;
+      margin-left: 7%;
+    }
+  }
+}
