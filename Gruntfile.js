@@ -1,3 +1,4 @@
+var path = require('path');
 var babelify = require('babelify');
 
 module.exports = function(grunt) {
@@ -88,7 +89,17 @@ module.exports = function(grunt) {
       server: {
         options: {
           port: 3000,
-          base: 'dest'
+          base: 'dest',
+          middleware: function(connect, options, middlewares) {
+            middlewares.unshift(function(req, res, next) {
+              var ext = path.extname(req.url);
+              if (ext === '' && req.url.length > 1) {
+                req.url = req.url.substr(0, req.url.length -1) + '.html';
+              }
+              return next();
+            });
+            return middlewares;
+          }
         }
       }
     },
