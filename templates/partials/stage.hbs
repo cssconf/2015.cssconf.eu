@@ -2,6 +2,9 @@
 srcset="{{{ large }}} 2400w, {{!-- path for the largest image, and so on --}}
        {{{ medium }}} 1200w, {{!-- ... --}}
        {{{ small }}} 600w" {{!-- ... --}}
+sizes="(min-width: 34.375em) calc(100vw - 1.5rem),
+       (min-width: 50em) calc(100vw - 3rem),
+       100vw"
 src="{{{ small }}}" {{!-- default image for browsers which do not support srcset --}}
 alt="{{{ altText }}}" />
 
