@@ -120,7 +120,11 @@ description: CSSconf EU 2015
 
 {{!-- INCLUDE ARROW WITH ADDITIONAL CLASS --}}
 {{#parseJSON '{"cssClass":"--is-black"}' }}
-  {{> arrow }}
+  <div class="arrow">
+    <a class="arrow__link" href="#bottom">
+    {{> arrow }}
+    </a>
+  </div>
 {{/parseJSON}}
 
 {{!-- INCLUDE ZEBRA-STRIPES --}}
@@ -137,5 +141,9 @@ description: CSSconf EU 2015
 
 {{!-- INCLUDE ARROW WITH ADDITIONAL CLASSES --}}
 {{#parseJSON '{"cssClass":"--is-blue", "cssClassTwo":"is-transformed"}'}}
-  {{> arrow }}
+  <div class="arrow">
+    <a class="arrow__link" href="#top">
+      {{> arrow }}
+    </a>
+  </div>
 {{/parseJSON}}

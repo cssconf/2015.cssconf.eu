@@ -41,19 +41,32 @@ description: CSSconf EU 2015
 </div>
 <!-- THANK YOU SECTION END -->
 
-
+{{!-- INCLUDE ARROW WITH ADDITIONAL CLASS --}}
 {{#parseJSON '{"cssClass":"--is-black"}' }}
-  {{> arrow }}
+  <div class="arrow">
+    <a class="arrow__link" href="#bottom">
+    {{> arrow }}
+    </a>
+  </div>
 {{/parseJSON}}
 
+{{!-- INCLUDE ZEBRA STRIPES --}}
 {{> zebra-stripes }}
 
+{{!-- INCLUDE NAV-SUB --}}
 {{> nav-sub }}
 
+{{!-- INCLUDE SOCIAL BAR --}}
 {{> social-bar }}
 
+{{!-- INCLUDE PAGE FOOTER --}}
 {{> page-footer }}
 
+{{!-- INCLUDE ARROW WITH ADDITIONAL CLASSES --}}
 {{#parseJSON '{"cssClass":"--is-blue", "cssClassTwo":"is-transformed"}'}}
-  {{> arrow }}
+  <div class="arrow">
+    <a class="arrow__link" href="#top">
+      {{> arrow }}
+    </a>
+  </div>
 {{/parseJSON}}
