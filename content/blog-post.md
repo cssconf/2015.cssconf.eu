@@ -1,4 +1,4 @@
-<time datetime="2014-06-12 11:47:00 GMT">12 June 2014</time>
+<time datetime="2014-06-12 11:47:00 GMT">21 April, 2015</time>
 
 
 ##Announcing First Speakers, Regular Ticket Sale Opens
