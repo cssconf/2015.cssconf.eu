@@ -37,7 +37,8 @@ module.exports = function(grunt) {
     autoprefixer: {
       dist: {
         options: {
-          map: true
+          map: true,
+          browsers: ['last 2 versions']
         },
         files: {
           'dest/assets/cssconf-2015.css': 'dest/assets/cssconf-2015.css',
