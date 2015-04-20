@@ -6,9 +6,9 @@
   max-width: 5rem;
 }
 
-.arrow--is-blue .arrow__svg { fill: $color-blue; }
+.arrow--is-blue { fill: $color-blue; }
 
-.arrow--is-black .arrow__svg { fill: $color-black; }
+.arrow--is-black { fill: $color-black; }
 
 .arrow__link { display: inline-block; }
 
