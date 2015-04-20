@@ -2,8 +2,10 @@
 .arrow { @extend %tac; }
 
 .arrow__svg {
+  display: block;
   width: 15vw;
   max-width: 5rem;
+  margin-bottom: -.4375rem;
 }
 
 .arrow--is-blue { fill: $color-blue; }
