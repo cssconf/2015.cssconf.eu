@@ -64,6 +64,15 @@ ol { margin-top: 0; }
   }
 }
 
+%container-content--narrow {
+  padding-left: $padding-body;
+  padding-right: $padding-body;
+  @include bp(large) {
+    padding-left: calc(50% - 20em);
+    padding-right: calc(50% - 20em);
+  }
+}
+
 .rw {
   @extend %grid--full;
   @extend %container;
@@ -146,20 +155,25 @@ section {
 .c-coc-short,
 .c-coc-long,
 .c-accessibility,
-.c-schedule,
-.c-sponsors,
-.c-blog,
-.c-info,
-.c-thank-you,
-.c-venue,
-.c-speakers,
-.c-thank-you,
 .c-conference,
-.c-diversity,
-.c-call-for-speakers-intro,
-.c-call-for-speakers-content,
+.c-speakers,
+.c-venue,.c-schedule,
+.c-thank-you,
+.c-schedule,
 .c-max-width {
   @extend %container-content;
+}
+
+// Collect all sections that should have a narrow max-width
+// works well for longer one-column texts
+
+.c-info,
+.c-sponsors,
+.c-blog,
+.c-diversity,
+.c-call-for-speakers-intro,
+.c-call-for-speakers-content {
+  @extend %container-content--narrow;
 }
 
 .c-cssfamily { margin-bottom: $margin-base; }
