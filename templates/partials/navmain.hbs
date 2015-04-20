@@ -17,7 +17,7 @@ menu:
   <ul class="nav-main__list" data-state="closed">
     {{#forEach navmain.menu}}
       <li class="nav-main__list-item">
-        <a href="{{route}}/" class="nav-main__link{{#is ../page.basename route }} nav-main__link--is-active{{/is}}">{{title}}</a>
+        <a href="/{{route}}/" class="nav-main__link{{#is ../page.basename route }} nav-main__link--is-active{{/is}}">{{title}}</a>
         {{#is ../page.basename route}}
           <svg class="nav-main__link-decoration">
             <use xlink:href="#nav-main__svg"></use>
