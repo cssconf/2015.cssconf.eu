@@ -15,7 +15,10 @@ $offset: -2.25rem;
 
   @include bp(small) { max-width: 400px; }
 
-  @include bp(medium) { margin-left: $offset; }
+  @include bp(medium) {
+    margin-left: $offset;
+    max-width: 500px;
+  }
 
   &:after {
     position: absolute;
@@ -50,3 +53,35 @@ $offset: -2.25rem;
 }
 
 .c-venue__link { width: inherit; }
+
+.image--has-geo-element:before {
+  content: '';
+  position: absolute;
+  width: 6.25rem;
+  height: 12.5rem;
+  background-color: $color-yellow;
+  transform: rotate(-21deg);
+  right: -5.625rem;
+  top: .625rem;
+  
+  @include bp(xsmall) {
+    right: -5rem;
+    top: .9375rem;
+  }
+
+  @include bp(small) { top: 1.25rem; }
+
+  @include bp(medium) {
+    top: 1.5625rem;
+  }
+
+  @include bp(large) {
+    right: -4.9375rem;
+    top: .9375rem;
+  }
+
+  @include bp(xlarge) {
+    right: -3.8125rem;
+    top: 1.25rem;
+  }
+}
