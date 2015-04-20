@@ -37,10 +37,10 @@ Today we launch our new website and with it come some exciting news. We are deli
 
 ###Call for Speakers Now Open
 
-If you have an idea for a talk yourself, we would love to hear it! We recently opened our [Call for Speakers](/call-for-speakers.html) and are accepting talk proposals until July 15. If you’re not sure where to start, have a look at our guide on how to write a great talk proposal.
+If you have an idea for a talk yourself, we would love to hear it! We recently opened our [Call for Speakers](/call-for-speakers.html) and are accepting talk proposals until July 15. If you’re not sure where to start, have a look at our [guide on how to write a great talk proposal](http://2014.cssconf.eu/news/how-to-write-a-great-talk-proposal-for-a-tech).
 
 ###Regular Ticket Sale Opens
 
-Our first batch of regular tickets goes on sale today, April 21, at 10am CEST. We also offer a number of Diversity Support Tickets as part of our strife to make this as inclusive an event as possible. You can learn more about the Diversity Support Tickets here.
+Our first batch of regular tickets goes on sale today, April 21, at 10am CEST. We also offer a number of Diversity Support Tickets as part of our strife to make this as inclusive an event as possible. You can learn more about the [Diversity Support Tickets here](/diversity-support-tickets/).
 
 
