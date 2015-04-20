@@ -2,7 +2,6 @@
 
 .nav-main {
   @extend %container-nav;
-
   font-size: .85em;
   text-align: left;
   display: flex;
@@ -18,7 +17,7 @@
 
   @include bp(xsmall) { font-size: 1em; }
 
-  @include bp(xlarge) { margin-left: 0;}
+  @include bp(xlarge) { margin-left: 0; }
 }
 
 .nav-main__list {
@@ -31,9 +30,9 @@
 
 .nav-main__list[data-state=open] {
   position: absolute;
-  height: calc(100vh - 67px);
+  height: calc(100vh - 4.1875rem);
   width: 100vw;
-  top: 67px;
+  top: 4.1875rem;
   left: 0;
   background-color: $color-white;
   z-index: 100;
@@ -44,8 +43,8 @@
   max-width: 66.666666667em;
 
   @include bp(xsmall) {
-    top: 73px;
-    height: calc(100vh -73px);
+    top: 4.5625rem;
+    height: calc(100vh - 4.5625rem);
   }
 }
 
