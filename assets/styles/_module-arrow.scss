@@ -12,6 +12,11 @@
 
 .arrow--is-black { fill: $color-black; }
 
-.arrow__link { display: inline-block; }
+.arrow__link { display: inline-block;
+
+  &:hover .arrow--is-black { fill: lighten($color-black, 10%); }
+
+  &:hover .arrow--is-blue { fill: lighten($color-blue, 10%); }
+}
 
 .is-transformed { transform: rotate(180deg); }
