@@ -25,8 +25,12 @@
 }
 
 .btn--special {
+  z-index: 200;
   color: $color-white;
+  display: inline-block;
   perspective: 1000px;
+  outline: none;
+  position: relative;
 
   &:hover .btn__span,
   &:focus .btn__span {
