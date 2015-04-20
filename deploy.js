@@ -9,7 +9,10 @@ if (config.destination) {
   var rsync = Rsync.build({
     source:      sourceDir,
     destination: config.destination,
-    exclude:     ['.git'],
+    exclude:     [
+                    '.git',
+                    '*.map'
+                 ],
     flags:       'avz',
     shell:       'ssh'
   });
