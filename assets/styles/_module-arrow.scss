@@ -14,9 +14,11 @@
 
 .arrow__link { display: inline-block;
 
-  &:hover .arrow--is-black { fill: lighten($color-black, 10%); }
+  &:hover .arrow--is-black,
+  &:active .arrow--is-black { fill: lighten($color-black, 10%); }
 
-  &:hover .arrow--is-blue { fill: lighten($color-blue, 10%); }
+  &:hover .arrow--is-blue,
+  &:active .arrow--is-blue { fill: lighten($color-blue, 10%); }
 }
 
 .is-transformed { transform: rotate(180deg); }
