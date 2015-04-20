@@ -10,9 +10,9 @@ Today we launch our new website and with it come some exciting news. We are deli
 <div class="speakers__grid">
   <div class="image">
     <div class="image--has-border">
-      <img srcset="assets/img/speakers/lea-verou-l.jpg 320w,
-                   assets/img/speakers/lea-verou-m.jpg 256w,
-                   assets/img/speakers/lea-verou.jpg 200w" src="assets/img/speakers/lea-verou.jpg" alt="A portrait picture of Lea Verou.">
+      <img srcset="/assets/img/speakers/lea-verou-l.jpg 320w,
+                   /assets/img/speakers/lea-verou-m.jpg 256w,
+                   /assets/img/speakers/lea-verou.jpg 200w" src="/assets/img/speakers/lea-verou.jpg" alt="A portrait picture of Lea Verou.">
       <div class="speakers__overlay"></div>
     </div>
   </div>
@@ -24,9 +24,9 @@ Today we launch our new website and with it come some exciting news. We are deli
 <div class="speakers__grid">
   <div class="image">
     <div class="image--has-border">
-      <img srcset="assets/img/speakers/claudina-sarahe-l.jpg 320w,
-                   assets/img/speakers/claudina-sarahe-m.jpg 256w,
-                   assets/img/speakers/claudina-sarahe.jpg 200w" src="assets/img/speakers/claudina-sarahe.jpg" alt="A portrait picture of Claudina Sarahe.">
+      <img srcset="/assets/img/speakers/claudina-sarahe-l.jpg 320w,
+                   /assets/img/speakers/claudina-sarahe-m.jpg 256w,
+                   /assets/img/speakers/claudina-sarahe.jpg 200w" src="/assets/img/speakers/claudina-sarahe.jpg" alt="A portrait picture of Claudina Sarahe.">
       <div class="speakers__overlay"></div>
     </div>
   </div>
