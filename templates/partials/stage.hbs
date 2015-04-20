@@ -1,18 +1,16 @@
-<img class="stage__image"
-srcset="{{{ large }}} 2400w, {{!-- path for the largest image, and so on --}}
-       {{{ medium }}} 1200w, {{!-- ... --}}
-       {{{ small }}} 600w" {{!-- ... --}}
-sizes="(min-width: 34.375em) calc(100vw - 1.5rem),
-       (min-width: 50em) calc(100vw - 3rem),
-       100vw"
-src="{{{ small }}}" {{!-- default image for browsers which do not support srcset --}}
-alt="{{{ altText }}}" />
 
-{{!-- Following a example how to include the stage partial:
 
-{{#parseJSON '{"large":"assets/img/stage-2400.png",
-"medium":"assets/img/stage-1200.png", "small":"assets/img/stage-600.png", "altText":"CSSconf written in line artwork."}' }}
-  {{> stage }}
-{{/parseJSON}}
+<picture>
+  <source media="(min-width: 50em)"
+          srcset="{{{ large }}} 2400w,
+                  {{{ large }}} 2x"
+          sizes="clac(100vw - 3rem)"/>
 
---}}
+  <source media="(min-width: 34.375em)"
+          srcset="{{{ medium }}} 1200w"
+          sizes="calc(100vw - 1.5rem)" />
+
+  <source srcset="{{{ small }}}"/>
+
+  <img class="stage__img" src="{{{ small }}}" alt="{{{ altText }}}">
+</picture>
