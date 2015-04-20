@@ -75,6 +75,7 @@
 .nav-main__link-home { float: left; }
 
 .nav-main__list-item {
+  position: relative;
   display: inline-block;
   margin-right: -4px;
   margin-left: 3vw;
@@ -130,10 +131,27 @@
   @include bp(large) { display: block; }
 }
 
-.nav-main + .rw {
-  padding-top: 4.5rem;
+.nav-main + .rw { padding-top: 4.5rem;
 
-  @include bp(small) {
-    padding-top: 4.875rem;
-  }
+  @include bp(small) { padding-top: 4.875rem; }
 }
+
+.nav-main__link-decoration { display: none; }
+
+.nav-main__link--is-active + .nav-main__link-decoration {
+  display: block;
+  position: absolute;
+  width: 5.5rem;
+  height: .75rem;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  fill: $color-blue;
+  transform: scale(1.4);
+
+  @include bp(medium) { transform: scale(2); }
+
+  @include bp(large) { transform: scale(1); }
+}
+
