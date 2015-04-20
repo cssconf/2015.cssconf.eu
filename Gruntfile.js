@@ -74,7 +74,7 @@ module.exports = function(grunt) {
       main: {
         files: [{
           expand: true,
-          src: ['assets/img/**', 'assets/js/**'],
+          src: ['assets/img/**'],
           dest: 'dest/'
         }]
       }
@@ -86,19 +86,63 @@ module.exports = function(grunt) {
           base: 'dest'
         }
       }
+    },
+    clean: ['dest'],
+    csso: {
+      dist: {
+        options: {
+          report: 'gzip'
+        },
+        files: {
+          'dest/assets/cssconf-2015.css': ['dest/assets/cssconf-2015.css'],
+          'dest/assets/fonts.css': ['dest/assets/fonts.css']
+        }
+      }
+    },
+    uglify: {
+      dist: {
+        files: {
+          'dest/assets/js/cssconf.js': ['dest/assets/js/cssconf.js']
+        }
+      }
     }
   });
 
   grunt.loadNpmTasks('assemble');
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-browserify');
+  grunt.loadNpmTasks('grunt-csso');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
-  grunt.registerTask('styles', ['sass', 'autoprefixer']);
-  grunt.registerTask('default', ['build']);
-  grunt.registerTask('build', ['assemble', 'sass', 'autoprefixer', 'copy', 'browserify']);
-  grunt.registerTask('dev', ['build', 'connect', 'watch']);
+
+  grunt.registerTask('styles', [
+    'sass',
+    'autoprefixer'
+  ]);
+
+  grunt.registerTask('default', [
+    'clean',
+    'assemble',
+    'sass',
+    'autoprefixer',
+    'copy',
+    'browserify'
+  ]);
+
+  grunt.registerTask('build', [
+    'default',
+    'csso',
+    'uglify'
+  ]);
+
+  grunt.registerTask('dev', [
+    'default',
+    'connect',
+    'watch'
+  ]);
 };

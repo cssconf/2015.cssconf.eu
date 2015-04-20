@@ -137,7 +137,7 @@
 
 .nav-main__link-decoration { display: none; }
 
-.nav-main__link--is-active + .nav-main__link-decoration {
+.nav-main__link + .nav-main__link-decoration {
   display: block;
   position: absolute;
   width: 5.5rem;

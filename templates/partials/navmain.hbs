@@ -1,0 +1,33 @@
+---
+menu:
+  - title: Info
+    route: info
+  - title: Call for Speakers
+    route: call-for-speakers
+  - title: Sponsors
+    route: sponsors
+  - title: blog
+    route: blog
+---
+<nav class="nav-main">
+  <a class="nav-main__link-home" href="/">
+    <h1 class="nav-main__headline-one">CSSconf EU</h1>
+    <h2 class="nav-main__headline-two">Berlin, September 26, 2015</h2>
+  </a>
+  <ul class="nav-main__list" data-state="closed">
+    {{#forEach navmain.menu}}
+      <li class="nav-main__list-item">
+        <a href="{{route}}.html" class="nav-main__link{{#is ../page.basename route }} nav-main__link--is-active{{/is}}">{{title}}</a>
+        {{#is ../page.basename route}}
+          <svg class="nav-main__link-decoration">
+            <use xlink:href="#nav-main__svg"></use>
+          </svg>
+        {{/is}}
+      </li>
+    {{/forEach}}
+  </ul>
+  <a class="nav-toggle" href="/">Menu</a>
+  <a href="https://ti.to/cssconfeu/cssconf-eu-2015/" class="btn--special">
+    <span class="btn__span" data-hover="Buy Ticket">Buy Ticket</span>
+  </a>
+</nav>
