@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fastclick": "1.0.6"
+    "fastclick": "1.0.6",
+    "picturefill": "2.3.1"
   },
   "devDependencies": {
     "assemble": "0.4.42",
