@@ -14,7 +14,7 @@
   position: fixed;
   width: 100%;
   background-color: $color-white;
-  z-index: 100;
+  z-index: 201;
 
   @include bp(xsmall) { font-size: 1em; }
 
@@ -31,9 +31,9 @@
 
 .nav-main__list[data-state=open] {
   position: absolute;
-  height: calc(100vh - 72px);
+  height: calc(100vh - 67px);
   width: 100vw;
-  top: 72px;
+  top: 67px;
   left: 0;
   background-color: $color-white;
   z-index: 100;
@@ -44,8 +44,8 @@
   max-width: 66.666666667em;
 
   @include bp(xsmall) {
-    top: 78px;
-    height: calc(100vh -78px);
+    top: 73px;
+    height: calc(100vh -73px);
   }
 }
 
@@ -137,4 +137,3 @@
     padding-top: 4.875rem;
   }
 }
-
