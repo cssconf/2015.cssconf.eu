@@ -53,6 +53,10 @@
   @extend %lap--ten-twelfths;
   margin: 0 auto;
   max-width: 36.111111111em;
+
+  @include bp(large) {
+    font-size: 1.2em;
+  }
 }
 
 .c-organizers__svg {
@@ -135,9 +139,15 @@
   margin-right: -$padding-body*2; //
   margin-left: -$padding-body*2; //
   margin-bottom: $padding-body*2; //
+
+  @include bp(small) { margin-bottom: $padding-body*3; }
+
   @include bp(medium) {
     margin-top: -$padding-body*10;
+    margin-bottom: $padding-body*3.5;
   }
+
+  @include bp(large) { margin-bottom: $padding-body*4; }
 }
 
 .img-row__element {
