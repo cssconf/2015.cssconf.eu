@@ -70,7 +70,9 @@ module.exports = function(grunt) {
         flatten: true,
         partials: ['templates/partials/*.hbs'],
         layoutdir: 'templates/layouts',
-        layout: 'default.hbs'
+        layout: 'default.hbs',
+        data: 'package.json',
+        helpers: ['./helpers.js']
       },
       site: {
         files: { 'dest/': ['templates/*.hbs'] }
@@ -91,6 +93,8 @@ module.exports = function(grunt) {
           port: 3000,
           base: 'dest',
           middleware: function(connect, options, middlewares) {
+
+            // rewrite folders to html files
             middlewares.unshift(function(req, res, next) {
               var ext = path.extname(req.url);
               if (ext === '' && req.url.length > 1) {
@@ -98,6 +102,15 @@ module.exports = function(grunt) {
               }
               return next();
             });
+
+            // rewrite cache busting urls
+            middlewares.unshift(function(req, res, next) {
+              if (req.url.match(/^\/assets\/\d+\.\d+\.\d+\//)) {
+                req.url = req.url.replace(/^\/assets\/\d+\.\d+\.\d+\//, '/assets/');
+              }
+              return next();
+            });
+
             return middlewares;
           }
         }

@@ -1,16 +1,14 @@
-
-
 <picture>
   <source media="(min-width: 50em)"
-          srcset="{{{ large }}} 2400w,
-                  {{{ large }}} 2x"
+          srcset="/assets/{{version '_'}}/img/{{{ large }}} 2400w,
+                  /assets/{{version '_'}}/img/{{{ large }}} 2x"
           sizes="clac(100vw - 3rem)"/>
 
   <source media="(min-width: 34.375em)"
-          srcset="{{{ medium }}} 1200w"
+          srcset="/assets/{{version '_'}}/img/{{{ medium }}} 1200w"
           sizes="calc(100vw - 1.5rem)" />
 
-  <source srcset="{{{ small }}}"/>
+  <source srcset="/assets/{{version '_'}}/img/{{{ small }}}"/>
 
-  <img class="stage__img" src="{{{ small }}}" alt="{{{ altText }}}">
+  <img class="stage__img" src="/assets/{{version '_'}}/img/{{{ small }}}" alt="{{{ altText }}}">
 </picture>

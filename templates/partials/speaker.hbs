@@ -2,16 +2,16 @@
 speakers:
   - name: 'Lea Verou'
     bio: 'Lea is a speaker, author of “CSS Secrets”, and an Invited Expert in the CSS Working Group. She worked as a Developer Advocate for the W3C and is currently a Research Assistant at MIT.'
-    imageLarge: '/assets/img/speakers/lea-verou-l.jpg'
-    imageMedium: '/assets/img/speakers/lea-verou-m.jpg'
-    imageSmall: '/assets/img/speakers/lea-verou.jpg'
+    imageLarge: 'img/speakers/lea-verou-l.jpg'
+    imageMedium: 'img/speakers/lea-verou-m.jpg'
+    imageSmall: 'img/speakers/lea-verou.jpg'
     altText: 'A portrait picture of Lea Verou.'
 
   - name: Claudina Sarahe
     bio: 'Claudina is an NYC-based entrepreneur, front end architect, tech event organizer, and speaker. She curates SassConf and runs the monthly NYC Sass meetup.'
-    imageLarge: '/assets/img/speakers/claudina-sarahe-l.jpg'
-    imageMedium: '/assets/img/speakers/claudina-sarahe-m.jpg'
-    imageSmall: '/assets/img/speakers/claudina-sarahe.jpg'
+    imageLarge: 'img/speakers/claudina-sarahe-l.jpg'
+    imageMedium: 'img/speakers/claudina-sarahe-m.jpg'
+    imageSmall: 'img/speakers/claudina-sarahe.jpg'
     altText: 'A portrait picture of Claudina Sarahe.'
 ---
 {{!-- <div class="speakers__slider">
@@ -36,15 +36,13 @@ speakers:
 {{#forEach speaker.speakers}}
   <div class="cl speakers__item">
     <div class="image--has-border">
-      <img srcset="{{ imageLarge }} 320w,
-                   {{ imageMedium }} 256w,
-                   {{ imageSmall }} 200w"
-           src="{{ imageSmall }}" alt="{{ altText }}">
+      <img srcset="/assets/{{version '_'}}/{{ imageLarge }} 320w,
+                   /assets/{{version '_'}}/{{ imageMedium }} 256w,
+                   /assets/{{version '_'}}/{{ imageSmall }} 200w"
+           src="/assets/{{version '_'}}/{{ imageSmall }}" alt="{{ altText }}">
       <div class="speakers__overlay"></div>
     </div>
-    <h2>
-      {{name}}
-    </h2>
+    <h2>{{name}}</h2>
     <p class="speakers__paragraph">{{ bio }}</p>
   </div>
 {{/forEach}}
