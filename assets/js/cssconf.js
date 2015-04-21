@@ -5,8 +5,6 @@ import picturefill from 'picturefill'
 
 picturefill();
 
-document.addEventListener('DOMContentLoaded', () => {
-  FastClick.attach(document.body);
-  // slider();
-  let navToggle = new ToggleState('.nav-toggle', '.nav-main ul');
-}, false);
+FastClick.attach(document.body);
+// slider();
+let navToggle = new ToggleState('.nav-toggle', '.nav-main ul');
