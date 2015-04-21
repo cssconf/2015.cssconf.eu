@@ -85,6 +85,14 @@ module.exports = function(grunt) {
           src: ['assets/img/**', 'assets/js/modernizr.custom.js'],
           dest: 'dest/'
         }]
+      },
+      favicon: {
+        files: [{
+          expand: true,
+          cwd: 'assets',
+          src: ['favicon.ico'],
+          dest: 'dest/'
+        }]
       }
     },
     connect: {
