@@ -1,4 +1,5 @@
 .speakers__overlay {
+  display: none;
   width: inherit;
   height: inherit;
   position: absolute;
@@ -7,12 +8,11 @@
   z-index: 2;
   opacity: .9;
   mix-blend-mode: multiply;
-}
 
-@-moz-document url-prefix() {
-  .speakers__overlay {
-    z-index: 0;
+  .mix-blend-mode & {
+    display: block;
   }
+
 }
 
 .image--has-border:hover .speakers__overlay { opacity: 0; }
