@@ -80,7 +80,7 @@ module.exports = function(grunt) {
       main: {
         files: [{
           expand: true,
-          src: ['assets/img/**'],
+          src: ['assets/img/**', 'assets/js/modernizr.custom.js'],
           dest: 'dest/'
         }]
       }
@@ -118,7 +118,8 @@ module.exports = function(grunt) {
     uglify: {
       dist: {
         files: {
-          'dest/assets/js/cssconf.js': ['dest/assets/js/cssconf.js']
+          'dest/assets/js/cssconf.js': ['dest/assets/js/cssconf.js'],
+          'dest/assets/js/modernizr.custom.js': ['dest/assets/js/modernizr.custom.js'],
         }
       }
     }
