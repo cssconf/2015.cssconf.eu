@@ -69,3 +69,18 @@ You include breakpoints like this:
 ```
 Make sure to check for predefined breakpoint names.
 
+## Deployment
+
+You need to have the `config.deployment.json` in your project root.
+
+If a new release is deployed to live, make sure to update the `version` in the `package.json`. This version number is used as a prefix for the assets folder to enable filename based cache busting.
+
+**Deploy to staging:**
+```
+$ ./deploy.js staging
+```
+
+**Deploy to live:**
+```
+$ ./deploy.js live
+```
