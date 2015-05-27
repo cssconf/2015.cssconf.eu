@@ -37,9 +37,7 @@
 // for column style on paragraphs, not sections
 .two-columns--has-margin { margin-bottom: $margin-base; }
 
-.column-first-heading {
-  @include bp(medium) { column-span: all; }
-}
+.column-first-heading { @include bp(medium) { column-span: all; } }
 
 
 // simple list style

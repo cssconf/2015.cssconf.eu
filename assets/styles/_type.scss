@@ -13,18 +13,14 @@ body {
 }
 
 // as laid out in mockups, quite wide letter-spacing per default. TO DO might want to limit it to only withing sections
-%wide-letter {
-  letter-spacing: .05em;
-}
+%wide-letter { letter-spacing: .05em; }
 
-p { 
+p {
   margin-bottom: $margin-base;
   @extend %wide-letter;
 }
 
-ul, ol, blockquote {
-  @extend %wide-letter;
-}
+ul, ol, blockquote { @extend %wide-letter; }
 
 hr {
   display: block;
@@ -33,7 +29,7 @@ hr {
   margin-top: $margin-base;
   margin-bottom: $margin-base;
   padding: 0;
-  @include bp(medium) { 
+  @include bp(medium) {
     margin-top: $margin-base * 2;
     margin-bottom: $margin-base * 2;
   }

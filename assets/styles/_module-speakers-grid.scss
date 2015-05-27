@@ -1,8 +1,9 @@
+
+
 .speakers__grid {
   margin-top: 5rem;
-  @include bp(small) {
-    margin-top: 2rem;
-  }
+
+  @include bp(small) { margin-top: 2rem; }
 
   @include bp(small) {
     display: flex;
@@ -25,9 +26,7 @@
     height: 100%;
   }
 
-  img {
-    display: block;
-  }
+  img { display: block; }
 
   .info {
     @include bp(small) {

@@ -7,9 +7,7 @@
   @extend %container-nav;
   @extend %tac;
 
-  @include bp(medium) {
-    font-size: .98em;
-  }
+  @include bp(medium) { font-size: .98em; }
 
   @include bp(medium) {
     padding-top: $padding-section;

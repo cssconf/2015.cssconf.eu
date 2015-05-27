@@ -62,7 +62,7 @@ $offset: -2.25rem;
   transform: rotate(-21deg);
   right: -5.625rem;
   top: .625rem;
-  
+
   @include bp(xsmall) {
     right: -5rem;
     top: .9375rem;
@@ -70,9 +70,7 @@ $offset: -2.25rem;
 
   @include bp(small) { top: 1.25rem; }
 
-  @include bp(medium) {
-    top: 1.5625rem;
-  }
+  @include bp(medium) { top: 1.5625rem; }
 
   @include bp(large) {
     right: -4.9375rem;

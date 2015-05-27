@@ -17,9 +17,7 @@ ol { margin-top: 0; }
 
 
 // link to top
-#top {
-  display: none;
-}
+#top { display: none; }
 
 // apply this in order to have a gap to the left and right, except on mobile
 %container {
@@ -137,17 +135,13 @@ section {
 // add to sections to add beige background
 .c-speakers,
 .c-thank-you,
-.c-cssfamily {
-  @extend %bgc;
-}
+.c-cssfamily { @extend %bgc; }
 
 // add to sections to center-align content
 .c-cssfamily,
 .g-thank-you,
 .g-sponsors-reel,
-.c-call-for-speakers-intro {
-  @extend %tac;
-}
+.c-call-for-speakers-intro { @extend %tac; }
 
 // Collect all sections that should have a max-width
 // c-max-width is the generic non-semantic class
@@ -160,9 +154,7 @@ section {
 .c-venue,.c-schedule,
 .c-thank-you,
 .c-schedule,
-.c-max-width {
-  @extend %container-content;
-}
+.c-max-width { @extend %container-content; }
 
 // Collect all sections that should have a narrow max-width
 // works well for longer one-column texts
@@ -172,9 +164,7 @@ section {
 .c-blog,
 .c-diversity,
 .c-call-for-speakers-intro,
-.c-call-for-speakers-content {
-  @extend %container-content--narrow;
-}
+.c-call-for-speakers-content { @extend %container-content--narrow; }
 
 .c-cssfamily { margin-bottom: $margin-base; }
 
@@ -205,9 +195,7 @@ section {
   display: flex;
   flex-direction: column;
 
-  @include bp(medium) {
-    display: block;
-  }
+  @include bp(medium) { display: block; }
 }
 
 .c-conference .split__media {
@@ -219,7 +207,5 @@ section {
 
 .margin-special { margin-bottom: $margin-base * 2; }
 
+.blog__post { margin-bottom: 90px; }
 
-.blog__post {
-  margin-bottom: 90px;
-}

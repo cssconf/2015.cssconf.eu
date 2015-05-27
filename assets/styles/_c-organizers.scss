@@ -1,4 +1,5 @@
 
+
 .g-organizers {
   @extend %tac;
   margin-bottom: $padding-section/2;
@@ -54,9 +55,7 @@
   margin: 0 auto;
   max-width: 36.111111111em;
 
-  @include bp(large) {
-    font-size: 1.2em;
-  }
+  @include bp(large) { font-size: 1.2em; }
 }
 
 .c-organizers__svg {
