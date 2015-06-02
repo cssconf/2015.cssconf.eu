@@ -3,23 +3,12 @@ title: Team
 ---
 
 {{> navmain }}
-<div class="rw stage">
-  {{#parseJSON '{"large":"stage-coc-2400.png", "medium":"stage-coc-1200.png", "small":"stage-coc-600.png", "altText":"A lot of shapes."}'}}
-    {{> stage }}
-  {{/parseJSON}}
-</div>
 
-{{!-- INTRODUCTION SECTION --}}
-<div class="rw g-coc">
-  <section class="c-coc">
-    <div class="cl">
-      <h1>{{title}}</h1>
-      <p>Details tba</p>
-    </div>
-  </section>
-</div>
-{{!-- INTRODUCTION SECTION END --}}
+{{!-- INCLUDE ORGANIZERS SECTION --}}
+{{> organizers }}
 
+{{!-- INCLUDE TEAM SECTION --}}
+{{> team }}
 
 
 {{!-- INCLUDE ARROW WITH ADDITIONAL CLASS --}}
