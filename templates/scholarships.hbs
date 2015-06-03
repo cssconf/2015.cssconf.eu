@@ -1,0 +1,46 @@
+---
+title: Scholarships
+---
+
+{{> navmain }}
+
+
+<!-- SECTION -->
+<div class="rw g-scholarships">
+  <section class="c-scholarships">
+    <h1>{{title}}</h1>
+      <p>This year CSSconf EU is offering dedicated scholarships to individuals from under-represented and disadvantaged backgrounds who wouldn’t otherwise be able to attend the conference. Granting these scholarships is made possible thanks to our <a href="/diversity-support-tickets/">Diversity Support Tickets</a> initiative and contributions made by our sponsors.</p>
+
+      <p>We are currently in the process of ironing out the details of the application process and the number of scholarships we’ll be able to grant this year. If you’re interested in applying, or you know someone who would be, please note that all announcements regarding the application process will made on <a href="https://twitter.com/CSSconfeu">twitter</a>, on our <a href="http://2015.cssconf.eu/blog/">blog</a>, and on this page. If you have any further questions, feel free to drop us a line: <a href="mailto:contact@cssconf.eu">contact@cssconf.eu</a></p>
+  </section>
+</div>
+
+{{!-- INCLUDE ARROW WITH ADDITIONAL CLASS --}}
+{{#parseJSON '{"cssClass":"--is-black"}' }}
+  <div class="arrow">
+    <a class="arrow__link" href="#bottom">
+    {{> arrow }}
+    </a>
+  </div>
+{{/parseJSON}}
+
+{{!-- INCLUDE ZEBRA STRIPES --}}
+{{> zebra-stripes }}
+
+{{!-- INCLUDE NAV-SUB --}}
+{{> nav-sub }}
+
+{{!-- INCLUDE SOCIAL BAR --}}
+{{> social-bar }}
+
+{{!-- INCLUDE PAGE FOOTER --}}
+{{> page-footer }}
+
+{{!-- INCLUDE ARROW WITH ADDITIONAL CLASSES --}}
+{{#parseJSON '{"cssClass":"--is-blue", "cssClassTwo":"is-transformed"}'}}
+  <div class="arrow">
+    <a class="arrow__link" href="#top">
+      {{> arrow }}
+    </a>
+  </div>
+{{/parseJSON}}
