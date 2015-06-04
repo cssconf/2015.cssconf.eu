@@ -164,6 +164,7 @@ section {
 .c-blog,
 .c-diversity,
 .c-scholarships,
+.c-styleguide,
 .c-call-for-speakers-intro,
 .c-call-for-speakers-content { @extend %container-content--narrow; }
 
@@ -204,9 +205,23 @@ section {
   margin-bottom: $margin-base * 1.5;
 }
 
-.c-conference .split__text { order: 2; }
+.c-conference .split__text {
+  order: 2;
+}
 
-.margin-special { margin-bottom: $margin-base * 2; }
+.margin-special {
+  margin-bottom: $margin-base * 2;
+}
 
-.blog__post { margin-bottom: 90px; }
+.blog__post {
+  margin-bottom: $margin-base * 3.5;
+}
+// remove global styling once we have this class everywhere
+time,
+.blog__time {
+  display: block;
+  font-size: $font-size-16;
+  margin-bottom: $margin-base;
+  color: $color-grey;
+}
 

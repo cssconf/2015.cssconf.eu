@@ -108,7 +108,7 @@ h2,
   color: $color-blue;
   font-family: montserratregular, sans-serif;
   font-weight: 500;
-  margin-bottom: $margin-base/2;
+  margin-bottom: $margin-base;
   line-height: 1.125;
 
   @include bp(small) { font-size: $font-size-34; }
@@ -122,7 +122,7 @@ h3,
   color: $color-black;
   font-family: montserratregular, sans-serif;
   font-weight: 500;
-  margin-bottom: $margin-base/2;
+  margin-bottom: $margin-base;
   line-height: 1.2;
 
   @include bp(small) { font-size: $font-size-24; }
@@ -136,7 +136,7 @@ h4,
   color: $color-black;
   font-family: nunitolight, sans-serif;
   font-weight: 300;
-  margin-bottom: $margin-base/2;
+  margin-bottom: $margin-base;
   text-transform: initial;
 
   @include bp(small) { font-size: $font-size-24; }
@@ -156,3 +156,8 @@ ol { padding-left: 1.6875rem; }
 
 .list { @extend %nav; } //TODO: Rename class
 
+code {
+  font-size: .75em;
+  padding: .2em .5em;
+  background-color: rgba($color-black,.05);
+}

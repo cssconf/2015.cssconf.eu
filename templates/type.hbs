@@ -1,50 +1,108 @@
 ---
-title: Typo
+title: Style Guide
 ---
-<!-- TYPO BOILERPLATE -->
-<div class="rw">
-  <div class="cl headings">
-    <h1>CSSconf is back!</h1>
 
-    <h2>Announcing CSSconf 2015</h2>
 
-    <h2 class="h2--is-red">Public Transport: Apps</h2>
+<div class="rw g-styleguide">
+  <section class="c-styleguide">
 
-    <h3>Dedicated to all people who love and write CSS</h3>
+<!-- TYPO -->
+    <h5 class="fz--is-grey">Headings</h5>
 
-    <h4>Headline h4 — Not styled yet</h4>
-  </div><!--
-  --><div class="cl lists">
-  <ul>
-    <li>PS: Want to help us make this happen?</li>
-    <li>consectetur adipisicing</li>
-    <li>E-mail us at <a class="a--has-no-underline" href="/">contact@cssconf.eu</a></li>
-    <li>Be a part of it</li>
-    <li>Join us in Berlin!</li>
-  </ul>
+
+    <h1>H1 CSSconf is back!</h1>
+
+    <h2>H2 default (blue) Announcing CSSconf</h2>
+
+    <h2 class="h2--is-red">H2 red Announcing CSSconf</h2>
+
+    <h2 class="fz--is-grey">H2 grey Announcing CSSconf</h2>
+
+    <h3>H3 Dedicated to all people who love and write CSS</h3>
+
+    <h4>H4 Not styled yet</h4>
+
+    <h5>H5 Not styled yet</h5>
+
+    <h6>H6 Not styled yet</h6>
+
+    <hr>
+
+    <h5 class="fz--is-grey">Lists</h5>
+
+    <ul>
+      <li>This is the <code>default unordered list</code> style</li>
+      <li>consectetur adipisicing</li>
+      <li>E-mail us</li>
+      <li>Be a part of it</li>
+      <li>Join us in Berlin!</li>
+    </ul>
     <ol>
-      <li>Jed Schmidt </li>
-      <li>Rachel Andrew</li>
-      <li>Jina Bolton</li>
+      <li>This is the <code>default ordered list</code> style</li>
+      <li>consectetur adipisicing</li>
+      <li>E-mail us</li>
+      <li>Be a part of it</li>
+      <li>Join us in Berlin!</li>
     </ol>
-    </div>
+    <ul class="list-simple">
+      <li>This is the <code>.list-simple</code> style</li>
+      <li>consectetur adipisicing</li>
+      <li>E-mail us</li>
+      <li>Be a part of it</li>
+      <li>Join us in Berlin!</li>
+    </ul>
 
-  <!-- <div class="geometric-container"><div class="geometric-element-1"></div></div> -->
-  <p>In September 2014, over 300 people from around the world gathered in Berlin for CSSconf EU. The conference gave the CSS community a home for one weekend, brought curious and <a href="/">open-minded people</a> together, and helped to spark inspiration, advance knowledge, and create new connections.</p>
+    <hr>
 
-  <p>CSSConf EU 2015 will take place on Saturday, September 26, 2015. Once again, we’ll share the venue – Radialsystem V – with JSconf and Reject JS, so be prepared for a week full of exciting events.</p>
+    <h5 class="fz--is-grey">Paragraphs</h5>
+    <p>In September 2014, over 300 people from around the world gathered in Berlin for CSSconf EU. The conference gave the CSS community a home for one weekend, brought curious and <a href="#">open-minded people</a> together, and helped to spark inspiration, advance knowledge, and create new connections.</p>
 
-  <p>Ticket sales will begin February 3. Like last year, <a href="/">combination tickets</a> for CSSConf and JSconf will be available. We’ll have more details for you early next year – until then, Happy Holidays and a great start in 2015 everyone!</p>
-  </div>
-<!-- TYPO BOILERPLATE END -->
+    <p>CSSConf EU 2015 will take place on Saturday, September 26, 2015. Once again, we’ll share the venue – Radialsystem V – with JSconf and Reject JS, so be prepared for a week full of exciting events.</p>
+
+    <p>Ticket sales will begin February 3. Like last year, <a href="#">combination tickets</a> for CSSConf and JSconf will be available. We’ll have more details for you early next year – until then, Happy Holidays and a great start in 2015 everyone!</p>
+<!-- TYPO END -->
+
+    <hr>
+
+<!-- LINKS -->
+    <h5 class="fz--is-grey">Links</h5>
+    <p>
+      <a href="#" target="_blank">Just a normal link</a>
+    </p>
+    <p>
+        <a class="anchor--has-underline" href="#">Link with underline</a>
+    </p>
+    <p style="text-align: center; max-width: 140px; position: relative;">
+      <a href="#" class="nav-main__link nav-main__link--is-active">Main Nav Link</a>
+      <svg class="nav-main__link-decoration">
+        <use xlink:href="#nav-main__svg"></use>
+      </svg>
+    </p>
+<!-- LINKS END -->
+
+    <hr>
 
 <!-- BUTTONS -->
-<a href="/" class="btn">Tickets</a>
-<a href="/" class="btn btn--is-active">Tickets</a>
-<a href="/" class="btn-caps">Tickets</a>
+    <h5 class="fz--is-grey">Buttons</h5>
 
-<a href="/" class="btn--special">
-  <span class="btn__span" data-hover="Buy Ticket">Buy Ticket</span>
-</a>
+    <p>
+      <a href="#" class="btn">Default Button</a>
+      <!-- <a href="#" class="btn btn--is-active">Default Button Active</a> -->
+      <a href="#" class="btn-caps">Button All Caps</a>
+      <a href="#" class="btn--special">
+        <span class="btn__span" data-hover="Buy Ticket">Button Special</span>
+      </a>
+      <br>
+      <br>
+      <br>
+      <a class="social-bar__link-twitter" href="#">Social Button Twitter</a>
+      <br>
+      <a class="social-bar__link-google" href="#">Social Button Google+</a>
+      <br>
+      <a class="social-bar__link-youtube" href="#">Social Button Youtube</a>
+    </p>
 
 <!-- BUTTONS END -->
+
+  </section>
+</div>
