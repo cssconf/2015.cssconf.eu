@@ -170,7 +170,11 @@ section {
 
 .c-cssfamily { margin-bottom: $margin-base; }
 
-.c-thank-you { position: relative; }
+.c-thank-you { 
+  position: relative;
+  margin-top: $margin-base;
+  margin-bottom: $margin-base * 2;
+}
 
 .c-thank-you__svg {
   position: absolute;

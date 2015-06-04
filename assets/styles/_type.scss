@@ -147,6 +147,27 @@ h5,
   margin-bottom: $margin-base/2;
 }
 
+// add a slightly smaller style on a span within a headline
+.heading-subline {
+  display: block;
+  font-size: $font-size-14;
+  margin-top: $margin-base/4;
+}
+
+// move headings a tiny bit to the right in order to achieve alignment.
+// use carefully only where typographic perfection is needed, and make sure no text gets cut off by overflow:hidden.
+.heading-align {
+  margin-left: -1px;
+  @include bp(small) {
+    margin-left: -2px;
+  }
+  @include bp(large) {
+    margin-left: -3px;
+  }
+}
+
+
+// lists
 ul,
 ol { margin-bottom: $margin-base; }
 
@@ -155,6 +176,9 @@ ul { padding-left: 1.25rem; }
 ol { padding-left: 1.6875rem; }
 
 .list { @extend %nav; } //TODO: Rename class
+
+
+//style for code snippets
 
 code {
   font-size: .75em;
