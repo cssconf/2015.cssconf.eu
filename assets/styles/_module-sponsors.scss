@@ -1,20 +1,24 @@
 
 
+.sponsors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 2.5rem;
+}
+
 .sponsors__logo {
-  @extend %four-twelfths;
-  @extend %palm--two-twelfths;
-  vertical-align: bottom;
-  margin-bottom: $padding-body*2;
-  padding-left: $padding-body*2;
+  max-width: 12.5rem;
+  margin: 0 auto 2rem auto;
 
-  &:first-of-type ,
-  &:nth-of-type(4) { margin-left: -$padding-body*2; }
-
-  &:nth-of-type(4) { @include bp(small) { margin-left: 0; }}
+  @include bp(large) { max-width: 18rem; }
 }
 
-.sponsors__img {
+.sponsors__img { width: 90%; }
+
+.sponsors__headline {
   width: 100%;
-  max-width: 120px;
+  margin-bottom: 2.5 * $margin-base;
 }
-
