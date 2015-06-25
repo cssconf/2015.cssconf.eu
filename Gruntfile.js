@@ -82,7 +82,7 @@ module.exports = function(grunt) {
       main: {
         files: [{
           expand: true,
-          src: ['assets/img/**', 'assets/js/modernizr.custom.js'],
+          src: ['assets/img/**', 'assets/js/modernizr.custom.js', 'assets/svg/*/**'],
           dest: 'dest/'
         }]
       },
