@@ -24,4 +24,7 @@
   margin-bottom: 2.5 * $margin-base;
 }
 
-.sponsors__link { display: block; }
+.sponsors__link { display: block;
+
+  &:hover .sponsors__img { opacity: .7; }
+}
