@@ -187,3 +187,8 @@ code {
   padding: .2em .5em;
   background-color: rgba($color-black,.05);
 }
+
+// highlighted warning / deadline text
+.deadline {
+  color: $color-red;
+}
