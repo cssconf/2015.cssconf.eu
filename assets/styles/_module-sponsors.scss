@@ -10,14 +10,31 @@
 }
 
 .sponsors__logo {
-  max-width: 12.5rem;
-  width: 12.5rem;
-  margin: 0 auto 2rem auto;
+  max-width: 14rem;
+  width: 14rem;
+  margin: 0 auto 3.5rem auto;
 
   @include bp(large) { max-width: 18rem; }
 }
 
-.sponsors__img { width: 90%; }
+// this is to downsize logos a bit that are visually bigger than the others
+.sponsors__logo--size-1 {
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+// this is to downsize logos a bit more
+.sponsors__logo--size-2 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.sponsors__img {
+  width: 90%;
+  @include bp(small) { max-width: 80%; }
+  @include bp(large) { max-width: 75%; }
+
+}
 
 .sponsors__headline {
   width: 100%;
