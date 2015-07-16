@@ -91,9 +91,9 @@
     @include bp(large) { margin-left: -1.25rem; }
   }
 
-  &:nth-of-type(4) .nav-main__link-decoration {
+  &:nth-of-type(3) .nav-main__link-decoration {
 
-    @include bp(large) { margin-left: -1rem; }
+    @include bp(large) { margin-left: -.9rem; }
   }
 }
 
