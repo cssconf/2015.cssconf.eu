@@ -1,0 +1,140 @@
+---
+title: Speakers Guide
+---
+
+{{> navmain }}
+
+<div class="rw stage">
+  {{#parseJSON '{"large":"stage-cfs-2400.png", "medium":"stage-cfs-1200.png", "small":"stage-cfs-600.png", "altText":"A lot of shapes."}'}}
+    {{> stage }}
+  {{/parseJSON}}
+  <div class="stage__content stage__content--subpage">
+    <h1>{{title}}</h1>
+  </div>
+</div>
+
+
+<!-- SECTION -->
+<div class="rw g-scholarships">
+  <section class="c-scholarships">
+    <h2>DEAR SPEAKERS OF CSSCONF EU</h2>
+    <p>This site is to help make your travels and your stay in Berlin as smooth as possible.<br>
+      Please let us know if we forgot to address any questions, and contact us any time if you need help or assistance!</p>
+  </section>
+  <section class="c-scholarships">
+    <h2>THE TEAM, WE’LL HELP!</h2>
+    <p>If you have any questions or requests always feel free to ask! As we as organizers might at times be busy our friend Minja will act as your contact person during the event and in the days leading up to it. She will be able to assist you with any questions or requests you might have!</p>
+    <div class="row-simple">
+      <figure class="row-simple__el">
+      <img class="row-simple__img"
+        srcset="/assets/1.2.4/img/michael-pfeiffer.jpg 387w,
+              /assets/1.2.4/img/michael-pfeiffer-m.jpg 200w,
+              /assets/1.2.4/img/michael-pfeiffer-s.jpg 140w"
+        src="/assets/1.2.4/img/michael-pfeiffer-s.jpg"
+        alt="Portrait picture of Michael Pfeiffer">
+        <figcaption>
+          <p>Michael Pfeiffer<br>
+            <a href="https://twitter.com/m_p_pfeiffer" target="_blank">@m_p_pfeiffer</a><br>
+            +49 15125234774<br>
+            <a href="mailto:michael@cssconf.eu">michael@cssconf.eu</a>
+          </p>
+        </figcaption>
+    </figure>
+    <figure class="row-simple__el">
+      <img class="row-simple__img"
+      srcset="/assets/1.2.4/img/kristina-schneider.jpg 387w,
+              /assets/1.2.4/img/kristina-schneider-m.jpg 200w,
+              /assets/1.2.4/img/kristina-schneider-s.jpg 140w"
+      src="/assets/1.2.4/img/kristina-schneider-s.jpg"
+      alt="Portrait picture of Kristina Schneider">
+      <figcaption>
+        <p>Kristina Schneider<br>
+          <a href="https://twitter.com/kriesse" target="_blank">@kriesse</a><br>
+          +49 1605992019<br>
+          <a href="mailto:kristina@cssconf.eu">kristina@cssconf.eu</a>
+        </p>
+      </figcaption>
+    </figure>
+    <figure class="row-simple__el">
+      <img class="row-simple__img"
+      srcset="/assets/1.2.4/img/kevin-lorenz.jpg 387w,
+              /assets/1.2.4/img/kevin-lorenz-m.jpg 200w,
+              /assets/1.2.4/img/kevin-lorenz-s.jpg 140w"
+      src="/assets/1.2.4/img/kevin-lorenz-s.jpg"
+      alt="Portrait picture of Kevin Lorenz">
+      <figcaption>
+        <p>Kevin Lorenz <br>
+          <a href="https://twitter.com/verpixelt" target="_blank">@verpixelt</a><br>
+          +49 1702384742<br>
+          <a href="mailto:kevin@cssconf.eu">kevin@cssconf.eu</a>
+        </p>
+      </figcaption>
+    </figure>
+  </div>
+  </section>
+  <section class="c-scholarships">
+    <h2>YOUR HOTEL</h2>
+    <p><strong>Ibis am Ostbahnhof | An der Schillingbrücke 2 | 10243 Berlin</strong></p>
+    <p>We have booked a double room for you from Thursday to Saturday (unless you confirmed other dates with us or have private accommodation). If your company pays for your accommodation: Great! Please let the hotel know at check-in and provide your company’s payment details (e.g. credit card).</p>
+    <div class="img-row img-row--clear">
+    <img class="img-row__element" src="http://2014.cssconf.eu/img/locations/ibis1--croped.jpg"
+    alt="">
+    <img class="img-row__element" src="http://2014.cssconf.eu/img/locations/ibis2--croped.jpg"
+    alt="">
+  </div>
+  </section>
+    <section class="c-scholarships">
+    <h2>REIMBURSEMENTS</h2>
+    <p>We will reimburse you for your travel related expenses. If your company has offered to pay: Awesome, thanks! We’d be happy to list them as a supporter on our website, please let us know.</p>
+    <p>To get reimbursed for your travel expenses, we'd ask you to email the following to <a href="mailto:contact@cssconf.eu">contact@cssconf.eu</a>:</p>
+    <ol>
+      <li>An invoice of your travel expenses. The invoice recipient is:<br>
+          SinnerSchrader Deutschland GmbH<br>
+          Holger Blank<br>
+          Völckersstr. 38<br>
+          22765 Hamburg<br>
+          The invoice should also include:
+          <ul>
+            <li>Your name and address</li>
+            <li>Your bank’s international routing information, which is usually something like Swift/BIC, IBAN</li>
+            <li>Additional information like the address of the bank is helpful too, to make sure the international wire goes through without issues.</li>
+          </ul>
+      </li>
+      <li>Please add the receipts for your flight(s), taxi, bus or other public transport rides to your invoice</li>
+      <li>Please send the invoice and all receipts via email to <a href="mailto:contact@cssconf.eu">contact@cssconf.eu</a>. We will then forward it to our accountants and get the wire initiated.</li>
+    </ol>
+  </section>
+</div>
+
+{{!-- INCLUDE ARROW WITH ADDITIONAL CLASS --}}
+{{#parseJSON '{"cssClass":"--is-black"}' }}
+  <div class="arrow">
+    <a class="arrow__link" href="#bottom">
+    {{> arrow }}
+    </a>
+  </div>
+{{/parseJSON}}
+
+{{!-- INCLUDE SPONSORS --}}
+{{> sponsors }}
+
+{{!-- INCLUDE ZEBRA STRIPES --}}
+{{> zebra-stripes }}
+
+{{!-- INCLUDE NAV-SUB --}}
+{{> nav-sub }}
+
+{{!-- INCLUDE SOCIAL BAR --}}
+{{> social-bar }}
+
+{{!-- INCLUDE PAGE FOOTER --}}
+{{> page-footer }}
+
+{{!-- INCLUDE ARROW WITH ADDITIONAL CLASSES --}}
+{{#parseJSON '{"cssClass":"--is-blue", "cssClassTwo":"is-transformed"}'}}
+  <div class="arrow">
+    <a class="arrow__link" href="#top">
+      {{> arrow }}
+    </a>
+  </div>
+{{/parseJSON}}
