@@ -1,0 +1,19 @@
+
+
+.list--schedule {
+  @extend %nav;
+}
+
+.list--schedule__a {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list--schedule__img { display: none;
+
+  @include bp(small) { display: block; }
+}
+
+.list--schedule__time {
+  flex: 1 0 100%;
+}
