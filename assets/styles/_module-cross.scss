@@ -1,0 +1,31 @@
+.cross {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  float: right;
+  position: relative;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.cross:before, .cross:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: $color-blue;
+}
+
+.cross:before {
+  left: 50%;
+  width: 30%;
+  margin-left: -15%;
+  height: 100%;
+}
+
+.cross:after {
+  top: 50%;
+  height: 30%;
+  margin-top: -15%;
+  width: 100%;
+}
