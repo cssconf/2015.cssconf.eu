@@ -67,7 +67,7 @@ module.exports = function(grunt) {
     },
     assemble: {
       options: {
-        flatten: true,
+        flatten: false,
         partials: ['templates/partials/*.hbs'],
         layoutdir: 'templates/layouts',
         layout: 'default.hbs',
@@ -75,7 +75,14 @@ module.exports = function(grunt) {
         helpers: ['./helpers.js']
       },
       site: {
-        files: { 'dest/': ['templates/*.hbs'] }
+        files: [
+          {
+            dest: 'dest/',
+            cwd: 'templates',
+            src: '{,speaker/}*.hbs',
+            expand: true
+          }
+        ]
       }
     },
     copy: {
