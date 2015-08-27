@@ -1,6 +1,6 @@
 
 
-.speakers__overlay {
+.speaker__image-overlay {
   display: none;
   width: inherit;
   height: inherit;
@@ -14,4 +14,4 @@
   .mix-blend-mode & { display: block; }
 }
 
-.image--has-border:hover .speakers__overlay { opacity: 0; }
+.image--has-border:hover .speaker__image-overlay { opacity: 0; }

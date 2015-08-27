@@ -76,13 +76,14 @@ speakers:
   </div>
 </div> --}}
 {{#forEach speaker.speakers}}
-  <div class="cl speakers__item">
-    <div class="image--has-border">
+  <div class="cl speaker speakers__item">
+    <div class="speaker__image image--has-border">
+
       <img srcset="/assets/{{version '_'}}/{{ imageLarge }} 320w,
                    /assets/{{version '_'}}/{{ imageMedium }} 256w,
                    /assets/{{version '_'}}/{{ imageSmall }} 200w"
            src="/assets/{{version '_'}}/{{ imageSmall }}" alt="{{ altText }}">
-      <div class="speakers__overlay"></div>
+      <div class="speaker__image-overlay"></div>
     </div>
     <h2>{{name}}</h2>
     <p class="speakers__paragraph">{{ bio }}</p>
