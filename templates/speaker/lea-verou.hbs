@@ -1,0 +1,64 @@
+---
+title: Lea Verou
+data:
+    name: 'Lea Verou'
+    bio: >
+        Lea is a speaker, author of “CSS Secrets”, and an Invited Expert in the
+        CSS Working Group. She worked as a Developer Advocate for the W3C and
+        is currently a Research Assistant at MIT.
+    imageLarge: 'img/speakers/lea-verou-l.jpg'
+    imageMedium: 'img/speakers/lea-verou-m.jpg'
+    imageSmall: 'img/speakers/lea-verou.jpg'
+    altText: 'A portrait picture of Lea Verou.'
+---
+
+{{> navmain }}
+<div class="rw stage">
+    {{#parseJSON '{"large":"stage-coc-2400.png", "medium":"stage-coc-1200.png", "small":"stage-coc-600.png", "altText":"A lot of shapes."}'}}
+        {{> stage }}
+    {{/parseJSON}}
+</div>
+
+{{!-- INTRODUCTION SECTION --}}
+<div class="rw g-coc">
+    <section class="c-coc">
+        <div class="cl">
+            <h1>{{title}}</h1>
+        </div>
+    </section>
+</div>
+{{!-- INTRODUCTION SECTION END --}}
+
+{{!-- INCLUDE ARROW WITH ADDITIONAL CLASS --}}
+{{#parseJSON '{"cssClass":"--is-black"}' }}
+    <div class="arrow">
+        <a class="arrow__link" href="#bottom">
+            {{> arrow }}
+        </a>
+    </div>
+{{/parseJSON}}
+
+{{!-- INCLUDE SPONSORS --}}
+{{> sponsors }}
+
+{{!-- INCLUDE ZEBRA-STRIPES --}}
+{{> zebra-stripes }}
+
+{{!-- INCLUDE NAV-SUB --}}
+{{> nav-sub }}
+
+{{!-- INCLUDE SOCIAL-BAR --}}
+{{> social-bar }}
+
+{{!-- INCLUDE PAGE-FOOTER --}}
+{{> page-footer }}
+
+{{!-- INCLUDE ARROW WITH ADDITIONAL CLASSES --}}
+{{#parseJSON '{"cssClass":"--is-blue", "cssClassTwo":"is-transformed"}'}}
+    <div class="arrow">
+        <a class="arrow__link" href="#top">
+            {{> arrow }}
+        </a>
+    </div>
+{{/parseJSON}}
+
