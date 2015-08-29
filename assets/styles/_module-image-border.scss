@@ -41,6 +41,16 @@
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+
+  &--small {
+    @extend %one-quarter;
+    margin-top: 2.5rem;
+    padding: 0 5%;
+
+    @include bp(medium) {
+      padding: 0 2.5%;
+    }
+  }
 }
 
 //TODO: Build mixin out ouf it
