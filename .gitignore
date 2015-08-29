@@ -5,3 +5,5 @@ dest
 .sass-cache
 config.*.json
 config.deployment.json
+
+/templates/speaker

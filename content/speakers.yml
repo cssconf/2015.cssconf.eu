@@ -1,0 +1,187 @@
+speakers:
+  lea:
+    name: 'Lea Verou'
+    urlKey: lea-verou
+    bio: >
+      Lea is a speaker, author of “CSS Secrets”, and an Invited Expert in the
+      CSS Working Group. She worked as a Developer Advocate for the W3C and is
+      currently a Research Assistant at MIT.
+    imageLarge: 'img/speakers/lea-verou-l.jpg'
+    imageMedium: 'img/speakers/lea-verou-m.jpg'
+    imageSmall: 'img/speakers/lea-verou.jpg'
+    altText: 'A portrait picture of Lea Verou.'
+    talkTitle: An amazing talk-title
+    talkAbstract: >
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+      amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+      rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+      dolor sit amet.
+
+  claudina:
+    name: Claudina Sarahe
+    urlKey: claudina-sarahe
+    bio: >
+      Claudina is an NYC-based entrepreneur, front end architect, tech event
+      organizer, and speaker. She curates SassConf and runs the monthly NYC
+      Sass meetup.
+    imageLarge: 'img/speakers/claudina-sarahe-l.jpg'
+    imageMedium: 'img/speakers/claudina-sarahe-m.jpg'
+    imageSmall: 'img/speakers/claudina-sarahe.jpg'
+    altText: 'A portrait picture of Claudina Sarahe.'
+    talkTitle: Another amazing talk-title
+    talkAbstract: >
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+      amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+      rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+      dolor sit amet.
+
+  glen:
+    name: Glen Maddern
+    urlKey: glen-maddern
+    bio: >
+      Glen Maddern is an independent web developer from Melbourne, Australia.
+      He also organizes CSSconf AU, and does rad web stuff.
+    imageLarge: 'img/speakers/glen-maddern-l.jpg'
+    imageMedium: 'img/speakers/glen-maddern-m.jpg'
+    imageSmall: 'img/speakers/glen-maddern.jpg'
+    altText: 'A portrait picture of Glen Maddern.'
+    talkTitle: An amazing talk-title
+    talkAbstract: >
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+      amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+      rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+      dolor sit amet.
+
+  una:
+    name: Una Kravets
+    urlKey: una-kravets
+    bio: >
+      Una is a front-end developer on the IBM Design team in Austin, TX. She
+      blogs, illustrates, is a core member of the Open Design Foundation, and
+      started the DC and Austin Sass Meetups.
+    imageLarge: 'img/speakers/una-kravets-l.jpg'
+    imageMedium: 'img/speakers/una-kravets-m.jpg'
+    imageSmall: 'img/speakers/una-kravets.jpg'
+    altText: 'A portrait picture of Una Kravets.'
+    talkTitle: An amazing talk-title
+    talkAbstract: >
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+      amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+      rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+      dolor sit amet.
+
+  katie:
+    name: Katie Kurkoski
+    urlKey: katie-kurkoski
+    bio: >
+      Katie is a front end developer for Getty Images in Seattle, Washington,
+      USA and is a veteran of the days of table-based layouts. She also fiddles
+      with Nodebots, volunteers for GDI Seattle, and curates CascadiaJS. When
+      not in front of a computer, she can often be found making glass art, or
+      playing with dice and super heroes.
+    imageLarge: 'img/speakers/katie-kurkoski-l.jpg'
+    imageMedium: 'img/speakers/katie-kurkoski-m.jpg'
+    imageSmall: 'img/speakers/katie-kurkoski.jpg'
+    altText: 'A portrait picture of Katie Kurkoski.'
+    talkTitle: An amazing talk-title
+    talkAbstract: >
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+      amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+      rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+      dolor sit amet.
+
+  michael:
+    name: Michael Mifsud
+    urlKey: michael-mifsud
+    bio: >
+      Michael is a front end engineer at 99designs where he focuses on
+      performance and tooling. He is a core contributor to LibSass and the
+      Node Sass project lead. He also started the MelbCSS Meetup and organizes
+      CSSConf AU.
+    imageLarge: 'img/speakers/michael-mifsud-l.jpg'
+    imageMedium: 'img/speakers/michael-mifsud-m.jpg'
+    imageSmall: 'img/speakers/michael-mifsud.jpg'
+    altText: 'A portrait picture of Michael Mifsud.'
+    talkTitle: An amazing talk-title
+    talkAbstract: >
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+      amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+      rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+      dolor sit amet.
+
+  tammie:
+    name: Tammie Lister
+    urlKey: tammie-lister
+    bio: >
+      Tammie works at Automattic making themes for WordPress. She has a wide
+      background including design, front end development, user experience and
+      speaking. She is a contributor to WordPress and passionate about open
+      source.
+    imageLarge: 'img/speakers/tammie-lister-l.jpg'
+    imageMedium: 'img/speakers/tammie-lister-m.jpg'
+    imageSmall: 'img/speakers/tammie-lister.jpg'
+    altText: 'A portrait picture of Tammie Lister.'
+    talkTitle: An amazing talk-title
+    talkAbstract: >
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+      amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+      rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+      dolor sit amet.
+
+  tim:
+    name: Tim Holman
+    urlKey: tim-holman
+    bio: >
+      Tim is an Australian developer, with a love for all things quirky and
+      strange online. When he's not working on Tumblr, you'll find him building
+      something bizarre, that the world definitely doesn't need.
+    imageLarge: 'img/speakers/tim-holman-l.jpg'
+    imageMedium: 'img/speakers/tim-holman-m.jpg'
+    imageSmall: 'img/speakers/tim-holman.jpg'
+    altText: 'A portrait picture of Tim Holman.'
+    talkTitle: An amazing talk-title
+    talkAbstract: >
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+      amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+      rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+      dolor sit amet.

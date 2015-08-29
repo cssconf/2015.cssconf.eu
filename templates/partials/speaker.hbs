@@ -1,61 +1,3 @@
----
-speakers:
-  - name: 'Lea Verou'
-    bio: 'Lea is a speaker, author of “CSS Secrets”, and an Invited Expert in the CSS Working Group. She worked as a Developer Advocate for the W3C and is currently a Research Assistant at MIT.'
-    imageLarge: 'img/speakers/lea-verou-l.jpg'
-    imageMedium: 'img/speakers/lea-verou-m.jpg'
-    imageSmall: 'img/speakers/lea-verou.jpg'
-    altText: 'A portrait picture of Lea Verou.'
-
-  - name: Claudina Sarahe
-    bio: 'Claudina is an NYC-based entrepreneur, front end architect, tech event organizer, and speaker. She curates SassConf and runs the monthly NYC Sass meetup.'
-    imageLarge: 'img/speakers/claudina-sarahe-l.jpg'
-    imageMedium: 'img/speakers/claudina-sarahe-m.jpg'
-    imageSmall: 'img/speakers/claudina-sarahe.jpg'
-    altText: 'A portrait picture of Claudina Sarahe.'
-
-  - name: Glen Maddern
-    bio: 'Glen Maddern is an independent web developer from Melbourne, Australia. He also organizes CSSconf AU, and does rad web stuff.'
-    imageLarge: 'img/speakers/glen-maddern-l.jpg'
-    imageMedium: 'img/speakers/glen-maddern-m.jpg'
-    imageSmall: 'img/speakers/glen-maddern.jpg'
-    altText: 'A portrait picture of Glen Maddern.'
-
-  - name: Una Kravets
-    bio: 'Una is a front-end developer on the IBM Design team in Austin, TX. She blogs, illustrates, is a core member of the Open Design Foundation, and started the DC and Austin Sass Meetups.'
-    imageLarge: 'img/speakers/una-kravets-l.jpg'
-    imageMedium: 'img/speakers/una-kravets-m.jpg'
-    imageSmall: 'img/speakers/una-kravets.jpg'
-    altText: 'A portrait picture of Una Kravets.'
-
-  - name: Katie Kurkoski
-    bio: 'Katie is a front end developer for Getty Images in Seattle, Washington, USA and is a veteran of the days of table-based layouts. She also fiddles with Nodebots, volunteers for GDI Seattle, and curates CascadiaJS. When not in front of a computer, she can often be found making glass art, or playing with dice and super heroes.'
-    imageLarge: 'img/speakers/katie-kurkoski-l.jpg'
-    imageMedium: 'img/speakers/katie-kurkoski-m.jpg'
-    imageSmall: 'img/speakers/katie-kurkoski.jpg'
-    altText: 'A portrait picture of Katie Kurkoski.'
-
-  - name: Michael Mifsud 
-    bio: 'Michael is a front end engineer at 99designs where he focuses on performance and tooling. He is a core contributor to LibSass and the Node Sass project lead. He also started the MelbCSS Meetup and organizes CSSConf AU.'
-    imageLarge: 'img/speakers/michael-mifsud-l.jpg'
-    imageMedium: 'img/speakers/michael-mifsud-m.jpg'
-    imageSmall: 'img/speakers/michael-mifsud.jpg'
-    altText: 'A portrait picture of Michael Mifsud.'
-
-  - name: Tammie Lister
-    bio: "Tammie works at Automattic making themes for WordPress. She has a wide background including design, front end development, user experience and speaking. She is a contributor to WordPress and passionate about open source"
-    imageLarge: 'img/speakers/tammie-lister-l.jpg'
-    imageMedium: 'img/speakers/tammie-lister-m.jpg'
-    imageSmall: 'img/speakers/tammie-lister.jpg'
-    altText: 'A portrait picture of Tammie Lister.'
-
-  - name: Tim Holman
-    bio: "Tim is an Australian developer, with a love for all things quirky and strange online. When he's not working on Tumblr, you'll find him building something bizarre, that the world definitely doesn't need."
-    imageLarge: 'img/speakers/tim-holman-l.jpg'
-    imageMedium: 'img/speakers/tim-holman-m.jpg'
-    imageSmall: 'img/speakers/tim-holman.jpg'
-    altText: 'A portrait picture of Tim Holman.'
----
 {{!-- <div class="speakers__slider">
   <div class="speakers__slider-element">
   {{#forEach speaker.speakers}}
@@ -75,17 +17,19 @@ speakers:
   {{/forEach}}
   </div>
 </div> --}}
-{{#forEach speaker.speakers}}
+{{#each speakers}}
   <div class="cl speaker speakers__item">
-    <div class="speaker__image image--has-border">
-
+    <a href="/speaker/{{ urlKey }}.html" class="speaker__image image--has-border">
       <img srcset="/assets/{{version '_'}}/{{ imageLarge }} 320w,
                    /assets/{{version '_'}}/{{ imageMedium }} 256w,
                    /assets/{{version '_'}}/{{ imageSmall }} 200w"
            src="/assets/{{version '_'}}/{{ imageSmall }}" alt="{{ altText }}">
       <div class="speaker__image-overlay"></div>
-    </div>
-    <h2>{{name}}</h2>
-    <p class="speakers__paragraph">{{ bio }}</p>
+    </a>
+
+    {{#unless speaker.thumbnails }}
+        <h2>{{name}}</h2>
+        <p class="speakers__paragraph">{{ bio }}</p>
+    {{/unless}}
   </div>
-{{/forEach}}
+{{/each}}
