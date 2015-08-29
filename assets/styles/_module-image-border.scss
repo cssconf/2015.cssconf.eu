@@ -47,6 +47,11 @@
     margin-top: 2.5rem;
     padding: 0 5%;
 
+    @include bp('only-small') {
+      width: 50%;
+      margin-right: -4px;
+    }
+
     @include bp(medium) {
       padding: 0 2.5%;
     }

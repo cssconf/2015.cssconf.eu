@@ -1,4 +1,36 @@
+.speaker-info, .talk-info {
+  @extend %one-half;
+  margin-right: -4px;
 
+  // Todo: Can not extend classes with media queries, so we need to manually
+  // overwrite the column style on mobile
+  @include bp('only-small') {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.speaker-info {
+  @extend %tac;
+
+  position: relative;
+
+  // fixme: wtf is there an important in %tac?
+  @include bp('only-small') {
+    text-align: left !important;
+  }
+
+  @include bp('small') {
+    top: -11rem;
+    padding-right: 2rem;
+  }
+}
+
+.talk-info {
+  @include bp('small') { padding-left: 2rem; }
+
+  &__title { color: $color-red; }
+}
 
 .speaker__image-overlay {
   display: none;
