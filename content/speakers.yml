@@ -48,7 +48,7 @@ speakers:
     altText: 'A portrait picture of Glen Maddern.'
     talkTitle: Interoperable CSS
     talkAbstract: >
-      Most people aren't aware just what an achievement CommonJS was and the 
+      Most people aren’t aware just what an achievement CommonJS was and the 
       true extent of its impact. It took a language that only ran in browsers, 
       had no concept of separate files, used global variables and a single 
       global DOM to communicate; and built something viable, then something 
@@ -58,11 +58,11 @@ speakers:
       of CSS in the last year or so, largely driven by the ingenuity of the
       React community — will we write styling code purely in JS? Will CSS
       continue to be useful? Will someone concoct some X-files-style JS+CSS 
-      alien-human hybrid language that takes over the world? It's all possible 
+      alien-human hybrid language that takes over the world? It’s all possible 
       (mostly).
-      This talk is about a new format for CSS, one that's now supported by 
+      This talk is about a new format for CSS, one that’s now supported by 
       default in Webpack & JSPM, and available with plugins for Browserify. 
-      It's called Interoperable CSS, and it hopes to do for CSS what CommonJS 
+      It’s called Interoperable CSS, and it hopes to do for CSS what CommonJS 
       did for JavaScript.
 
   una:
@@ -110,10 +110,10 @@ speakers:
       copy headlines of differing heights, strange centering and grid-breaking 
       content boxes. So, how do they build truly flexible layouts? 
       Katie will demonstrate CSS techniques for easy wins like non-embedded image 
-      copy and double-centered headlines. She'll show sneaky replacements for 
-      padding and margin to buff up those grids. And she'll finish with real 
+      copy and double-centered headlines. She’ll show sneaky replacements for 
+      padding and margin to buff up those grids. And she’ll finish with real 
       world use cases for flexbox, with fallbacks! By examining at techniques 
-      for handling the extreme variations of multiple languages, you'll learn 
+      for handling the extreme variations of multiple languages, you’ll learn 
       robust techniques for your day-to-day CSS development."
 
   michael:
@@ -157,8 +157,8 @@ speakers:
     urlKey: tim-holman
     bio: >
       Tim is an Australian developer, with a love for all things quirky and
-      strange online. When he's not working on Tumblr, you'll find him building
-      something bizarre, that the world definitely doesn't need.
+      strange online. When he’s not working on Tumblr, you’ll find him building
+      something bizarre, that the world definitely doesn’t need.
     imageLarge: 'img/speakers/tim-holman-l.jpg'
     imageMedium: 'img/speakers/tim-holman-m.jpg'
     imageSmall: 'img/speakers/tim-holman.jpg'
@@ -166,9 +166,9 @@ speakers:
     talkTitle: Fun.css
     talkAbstract: >
       Almost every day, we sit down and code, or look at code, or at the very l
-      east browse through the internet. If there's one thing that I find consistent 
+      east browse through the internet. If there’s one thing that I find consistent 
       in the world of web development, its a random seriousness when discussing 
-      our art... I want to take that away.
+      our art… I want to take that away.
       Fun.css is a talk exploring some of the stranger areas of the internet, 
       and some of the stranger techniques and ways of thinking that we can use 
       to create more friendly, and at the very least, more interesting experiences.
