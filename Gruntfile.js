@@ -160,6 +160,10 @@ module.exports = function(grunt) {
         var data = grunt.file.readYAML('content/speakers.yml'),
             speakers = data.speakers;
 
+        if (grunt.file.exists('templates/speaker')) {
+          grunt.file.delete('templates/speaker');
+        }
+
         for (var key in speakers) {
           var speaker = speakers[key],
               filename = 'templates/speaker/' + speaker.urlKey + '.hbs';
