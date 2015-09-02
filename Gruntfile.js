@@ -164,6 +164,8 @@ module.exports = function(grunt) {
           var speaker = speakers[key],
               filename = 'templates/speaker/' + speaker.urlKey + '.hbs';
 
+          if (!speaker.announced) { continue; }
+
           grunt.log.writeln('Generating ' + filename.cyan);
           grunt.file.write(filename,
               '---\n\n' +

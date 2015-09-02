@@ -1,7 +1,8 @@
 speakers:
   lea:
-    name: 'Lea Verou'
+    announced: true
     urlKey: lea-verou
+    name: 'Lea Verou'
     bio: >
       Lea is a speaker, author of "CSS Secrets", and an Invited Expert in the
       CSS Working Group. She worked as a Developer Advocate for the W3C and is
@@ -20,10 +21,14 @@ speakers:
       animate it too, but do not be fooled: the real takeaway of this talk has 
       little to do with pie charts and a lot to do with problem solving via the 
       tools the Open Web Platform offers us today.
+    links:
+      - { url: 'https://twitter.com/leaverou', text: '@LeaVerou' }
+      - { url: 'http://lea.verou.me/', text: 'lea.verou.me' }
 
   claudina:
-    name: Claudina Sarahe
+    announced: true
     urlKey: claudina-sarahe
+    name: Claudina Sarahe
     bio: >
       Claudina is an NYC-based entrepreneur, front end architect, tech event
       organizer, and speaker. She curates SassConf and runs the monthly NYC
@@ -34,11 +39,14 @@ speakers:
     altText: 'A portrait picture of Claudina Sarahe.'
     talkTitle: details soon! 
     talkAbstract: >
-      details soon! 
+      details soon!
+    links:
+      - { url: 'https://twitter.com/itsmisscs', text: '@itsmisscs' }
 
   glen:
-    name: Glen Maddern
+    announced: true
     urlKey: glen-maddern
+    name: Glen Maddern
     bio: >
       Glen Maddern is an independent web developer from Melbourne, Australia.
       He also organizes CSSconf AU, and does rad web stuff.
@@ -64,10 +72,14 @@ speakers:
       default in Webpack & JSPM, and available with plugins for Browserify. 
       It’s called Interoperable CSS, and it hopes to do for CSS what CommonJS 
       did for JavaScript.
+    links:
+      - { url: 'https://twitter.com/glenmaddern', text: '@glenmaddern' }
+      - { url: 'http://glenmaddern.com', text: 'glenmaddern.com' }
 
   una:
-    name: Una Kravets
+    announced: true
     urlKey: una-kravets
+    name: Una Kravets
     bio: >
       Una is a front-end developer on the IBM Design team in Austin, TX. She
       blogs, illustrates, is a core member of the Open Design Foundation, and
@@ -86,10 +98,14 @@ speakers:
       This talk will go through some common photo editing tasks, from the 
       pragmatic (cropping images, masking) to special effects (vignettes, blurs, 
       colorizing) and show the audience how to do them in the browser!"
+    links:
+      - { url: 'https://twitter.com/una', text: '@una' }
+      - { url: 'https://una.github.io', text: 'una.github.io' }
 
   katie:
-    name: Katie Kurkoski
+    announced: true
     urlKey: katie-kurkoski
+    name: Katie Kurkoski
     bio: >
       Katie is a front end developer for Getty Images in Seattle, Washington,
       USA and is a veteran of the days of table-based layouts. She also fiddles
@@ -115,10 +131,14 @@ speakers:
       world use cases for flexbox, with fallbacks! By examining at techniques 
       for handling the extreme variations of multiple languages, you’ll learn 
       robust techniques for your day-to-day CSS development."
+    links:
+      - { url: 'https://twitter.com/katiek2', text: '@katiek2' }
+      - { url: 'http://www.pewpewlaser.com/', text: 'www.pewpewlaser.com' }
 
   michael:
-    name: Michael Mifsud
+    announced: true
     urlKey: michael-mifsud
+    name: Michael Mifsud
     bio: >
       Michael is a front end engineer at 99designs where he focuses on
       performance and tooling. He is a core contributor to LibSass and the
@@ -131,10 +151,14 @@ speakers:
     talkTitle: It's All Just Functions And Variables
     talkAbstract: >
       details soon!
+    links:
+      - { url: 'https://twitter.com/xzyfer', text: '@xzyfer' }
+
 
   tammie:
-    name: Tammie Lister
+    announced: true
     urlKey: tammie-lister
+    name: Tammie Lister
     bio: >
       Tammie works at Automattic making themes for WordPress. She has a wide
       background including design, front end development, user experience and
@@ -151,10 +175,13 @@ speakers:
       field impatient. Emotion is a powerful thing we can use to connect to 
       users. In this talk I’ll explore why this is important and how to start 
       creating emotion through CSS.
+    links:
+      - { url: '', text: '' }
 
   tim:
-    name: Tim Holman
+    announced: true
     urlKey: tim-holman
+    name: Tim Holman
     bio: >
       Tim is an Australian developer, with a love for all things quirky and
       strange online. When he’s not working on Tumblr, you’ll find him building
@@ -172,10 +199,53 @@ speakers:
       Fun.css is a talk exploring some of the stranger areas of the internet, 
       and some of the stranger techniques and ways of thinking that we can use 
       to create more friendly, and at the very least, more interesting experiences.
+    links:
+      - { url: 'http://twitter.com/twholman', text: '@twholman' }
+      - { url: 'http://tholman.com', text: 'tholman.com' }
+
+  horia:
+    announced: false
+    url-key: horia-dragomir
+    name: Horia Dragomir
+    bio: >
+      Horia is currently a UI Engineer at Facebook, and in the past has worked
+      on everything from design to project management, in all sorts of
+      companies, from Social Games to Investment Banks.
+    imageLarge: 'img/speakers/horia-dragomir-l.jpg'
+    imageMedium: 'img/speakers/horia-dragomir-m.jpg'
+    imageSmall: 'img/speakers/horia-dragomir.jpg'
+    altText: 'A portrait picture of Horia Dragomir.'
+    talkTitle: "I don't want to be on Facebook the whole day!"
+    talkAbstract: >
+      Or, How we built Messenger.com. Let's take a look at how we do CSS work
+      at facebook and how that worked both for and against us when working on
+      the first secondary domain: messenger.com
+      Warning: contains cools CSS and a bit of React.
+    links:
+      - { url: 'twitter.com/hdragomir', text: '@hdragomir' }
+      - { url: 'http://hdragomir.com', text: 'hdragomir.com' }
+
+  zoe:
+    announced: false
+    urlKey: zoe-m-gillenwater
+    name: Zoe M. Gillenwater
+    bio: >
+      details soon!
+    imageLarge: 'img/speakers/zoe-m-gillenwater-l.jpg'
+    imageMedium: 'img/speakers/zoe-m-gillenwater-m.jpg'
+    imageSmall: 'img/speakers/zoe-m-gillenwater.jpg'
+    altText: 'A portrait picture of Zoe M. Gillenwater'
+    talkTitle: 'details soon!'
+    talkAbstract: >
+      details soon!
+    links:
+      - { url: 'https://twitter.com/zomigi', text: '@zomigi' }
+      - { url: 'http://zomigi.com/', text: 'zomigi.com' }
 
   nick:
-    name: Nick Hehr
+    announced: true
     urlKey: nick-hehr
+    name: Nick Hehr
     bio: >
       Nick is an empathetic community member, front-end developer, and avid
       Disney parks & animation fan. When he’s not at a meetup or contributing
@@ -189,3 +259,6 @@ speakers:
     talkTitle: Intro
     talkAbstract: >
       details soon!
+    links:
+      - { url: 'https://twitter.com/hipsterbrown', text: '@hipsterbrown' }
+      - { url: 'http://www.hipsterbrown.com/', text: 'www.hipsterbrown.com' }

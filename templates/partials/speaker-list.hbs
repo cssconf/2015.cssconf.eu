@@ -1,4 +1,4 @@
-{{#each speakers}}
+{{#each speakers}}{{#if announced}}
   <div class="cl speaker speakers__item">
     <a href="/speaker/{{ urlKey }}.html" class="speaker__image image--has-border">
       <img srcset="/assets/{{version '_'}}/{{ imageLarge }} 320w,
@@ -11,4 +11,4 @@
     <h2>{{name}}</h2>
     <p class="speakers__paragraph">{{ bio }}</p>
   </div>
-{{/each}}
+{{/if}}{{/each}}

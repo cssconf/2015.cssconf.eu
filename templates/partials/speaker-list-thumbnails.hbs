@@ -1,4 +1,4 @@
-{{#each speakers}}
+{{#each speakers}}{{#if announced}}
   <div class="cl speaker speakers__item speakers__item--small">
     <a href="/speaker/{{ urlKey }}.html" class="speaker__image image--has-border">
       <img srcset="/assets/{{version '_'}}/{{ imageLarge }} 320w,
@@ -8,4 +8,4 @@
       <div class="speaker__image-overlay"></div>
     </a>
   </div>
-{{/each}}
+{{/if}}{{/each}}
