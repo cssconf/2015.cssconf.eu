@@ -173,3 +173,18 @@ speakers:
       and some of the stranger techniques and ways of thinking that we can use 
       to create more friendly, and at the very least, more interesting experiences.
 
+  nick:
+    name: Nick Hehr
+    bio: >
+      Nick is an empathetic community member, front-end developer, and avid
+      Disney parks & animation fan. When he’s not at a meetup or contributing
+      to Hoodie, you can probably find him at the nearest climbing gym. His
+      mustache is real and has been growing on him for over two and a half
+      years.
+    imageLarge: 'img/speakers/nick-hehr-l.jpg'
+    imageMedium: 'img/speakers/nick-hehr-m.jpg'
+    imageSmall: 'img/speakers/nick-hehr.jpg'
+    altText: 'A portrait picture of Nick Hehr.'
+    talkTitle: Intro
+    talkAbstract: >
+      details soon!

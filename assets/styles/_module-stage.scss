@@ -40,3 +40,13 @@
   width: 100%;
   max-width: 100%;
 }
+
+.banner-shown .stage {
+  padding-top: 144px;
+
+  @include bp(xsmall) {
+    padding-top: 159px;
+  }
+
+  @media screen and (min-width: 37.5em) { padding-top: 136px; }
+}
