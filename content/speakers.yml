@@ -176,7 +176,8 @@ speakers:
       users. In this talk I’ll explore why this is important and how to start 
       creating emotion through CSS.
     links:
-      - { url: '', text: '' }
+      - { url: 'https://twitter.com/karmatosed', text: '@karmatosed' }
+      - { url: 'http://diaryofawebsite.com/', text: 'diaryofawebsite.com' }
 
   tim:
     announced: true
@@ -205,7 +206,7 @@ speakers:
 
   horia:
     announced: false
-    url-key: horia-dragomir
+    urlKey: horia-dragomir
     name: Horia Dragomir
     bio: >
       Horia is currently a UI Engineer at Facebook, and in the past has worked
@@ -222,7 +223,7 @@ speakers:
       the first secondary domain: messenger.com
       Warning: contains cools CSS and a bit of React.
     links:
-      - { url: 'twitter.com/hdragomir', text: '@hdragomir' }
+      - { url: 'https://twitter.com/hdragomir', text: '@hdragomir' }
       - { url: 'http://hdragomir.com', text: 'hdragomir.com' }
 
   zoe:
