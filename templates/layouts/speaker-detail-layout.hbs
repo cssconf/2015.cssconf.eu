@@ -5,12 +5,12 @@ layout: default.hbs
 {{> navmain }}
 
 <div class="rw stage">
-    {{#parseJSON '{"large":"stage-coc-2400.png", "medium":"stage-coc-1200.png", "small":"stage-coc-600.png", "altText":"A lot of shapes."}'}}
+    {{#parseJSON '{"large":"stage-coc-2400.png", "medium":"stage-coc-1200.png", "small":"stage-sub-600.png", "altText":"A lot of shapes."}'}}
         {{> stage }}
     {{/parseJSON}}
 
     <div class="stage__content stage__content--subpage">
-        <h1>Meet our speakers</h1>
+        <h1>Meet Our Speakers</h1>
     </div>
 </div>
 
@@ -19,8 +19,8 @@ layout: default.hbs
 {{!-- SPEAKER-DETAIL SECTION END --}}
 
 {{!-- ALL SPEAKERS SECTION --}}
-<div class="rw g-speakers">
-    <section class="c-speakers speakers__grid speakers--thumbs">
+<div class="rw g-speakers-home">
+    <section class="c-speakers-home speakers__grid speakers--thumbs">
         <div class="cl">
             {{> speaker-list-thumbnails }}
         </div>
