@@ -76,7 +76,7 @@ speakers:
     imageMedium: 'img/speakers/una-kravets-m.jpg'
     imageSmall: 'img/speakers/una-kravets.jpg'
     altText: 'A portrait picture of Una Kravets.'
-    talkTitle: Photoshop is Dead!: Editing Images in CSS
+    talkTitle: 'Photoshop is Dead!: Editing Images in CSS'
     talkAbstract: >
       "Photoshop is the most popular photo editing program of today, but it’s 
       big, slow, and has a learning curve, not to even mention its price. 
@@ -100,7 +100,9 @@ speakers:
     imageMedium: 'img/speakers/katie-kurkoski-m.jpg'
     imageSmall: 'img/speakers/katie-kurkoski.jpg'
     altText: 'A portrait picture of Katie Kurkoski.'
-    talkTitle: Developing for Localization: CSS Techniques To Get Your Message Across To The World Wide Web
+    talkTitle: >
+      Developing for Localization: CSS Techniques To Get Your Message Across To
+      The World Wide Web
     talkAbstract: >
       "Although headquartered in the USA, the Getty Images website is localized 
       into more than 20 languages, and the translated content can be half again 
