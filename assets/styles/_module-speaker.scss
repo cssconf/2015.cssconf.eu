@@ -11,13 +11,6 @@
 .speaker-info {
   text-align: left;
   position: relative;
-  top: -11rem;
-  margin-bottom: -11rem;
-
-  @include bp(small) {
-    top: 0;
-    margin-bottom: 0;
-  }
 
   @include bp(medium) {
     top: -8rem;
@@ -30,9 +23,21 @@
   }
 }
 
+.speaker-info__details {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.speaker__linklist__item {
+  display: inline-block;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
 .speaker-info__image {
   width: 15rem;
   height: 15rem;
+  margin-bottom: 2rem;
 
   @include bp(xsmall) {
     width: 17rem;
