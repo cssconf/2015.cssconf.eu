@@ -45,6 +45,12 @@
   }
 }
 
+.speaker__linklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+
 .talk-info { @include bp('medium') { padding-left: 5%; } }
 
 .talk-info__title { color: $color-red; }

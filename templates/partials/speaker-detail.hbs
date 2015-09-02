@@ -11,6 +11,14 @@
 
             <h2 class="speaker__name">{{ name }}</h2>
             <p class="speaker__bio">{{ bio }}</p>
+
+            <ul class="speaker__linklist">
+                {{#each links}}
+                    <li class="speaker__linklist__item">
+                        <a class="anchor anchor--has-underline" href="{{url}}">{{text}}</a>
+                    </li>
+                {{/each}}
+            </ul>
         </div>
 
         <div class="cl talk-info">
