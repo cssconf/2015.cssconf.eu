@@ -7,6 +7,10 @@
   font-size: 6em;
 }
 
+.countdown span {
+  display: inline-block;
+}
+
 .countdown.done {
   color: $color-red;
 }

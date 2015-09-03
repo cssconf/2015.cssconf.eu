@@ -60,19 +60,19 @@ title: Countdown
     function appendCharsAsChildren (el, str) {
       str.split('').forEach(function (ch) {
         var span = document.createElement('span');
-        span.innerHTML = ch;
+        span.innerHTML = ch === ' ' ? '&nbsp;' : ch;
         el.appendChild(span);
       });
     }
 
     function applyRoundedAnimation (parent, animation, offset) {
       offset = offset || 100;
-      var prefixes = ['-webkit-', '-moz-', ''];
+      var rules = ['animation', 'WebkitAnimation', 'MozAnimation'];
       var children = parent.children;
       for (var i = 0; i < children.length; i++) {
         var child = children[i];
-        prefixes.forEach(function (pre) {
-          child.style[pre + 'animation'] = animation + ' 1s ' +
+        rules.forEach(function (rule) {
+          child.style[rule] = animation + ' 1s ' +
               i * offset + 'ms ease-in-out both infinite';
         });
       }
