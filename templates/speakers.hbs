@@ -1,25 +1,28 @@
 ---
-title: Speakers
+title: Meet Our Speakers
 ---
 
 {{> navmain }}
 <div class="rw stage">
-  {{#parseJSON '{"large":"stage-coc-2400.png", "medium":"stage-coc-1200.png", "small":"stage-coc-600.png", "altText":"A lot of shapes."}'}}
+  {{#parseJSON '{"large":"stage-coc-2400.png", "medium":"stage-coc-1200.png", "small":"stage-sub-600.png", "altText":"A lot of shapes."}'}}
     {{> stage }}
   {{/parseJSON}}
+  <div class="stage__content stage__content--subpage">
+    <h1>{{title}}</h1>
+  </div>
 </div>
 
 {{!-- INTRODUCTION SECTION --}}
-<div class="rw g-coc">
-  <section class="c-coc">
+<div class="rw g-speakers">
+  <section class="c-speakers">
     <div class="cl">
-      <h1>{{title}}</h1>
-      <p>More speakers to be announced soon. Our <a href-"/call-for-speakers/">call for speakers</a> is open until July 15 2015.</p>
-      <a href="/call-for-speakers/" class="btn--special"><span class="btn__span" data-hover="Submit Talk Now">Submit Talk Now</span></a>
+      <!-- <h1>{{title}}</h1> -->
+      <p>Here’s our (almost complete) 2015 line up! We can’t wait to see them on stage. Also: be prepared for another surprise speaker announcement!</p>
+      <!-- <a href="/call-for-speakers/" class="btn--special"><span class="btn__span" data-hover="Submit Talk Now">Submit Talk Now</span></a> -->
     </div>
 
     <div class="cl">
-      {{> speaker }}
+      {{> speaker-list }}
     </div>
 
   </section>

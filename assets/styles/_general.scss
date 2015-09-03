@@ -133,11 +133,12 @@ section {
 }
 
 // add to sections to add beige background
-.c-speakers,
+.c-speakers-home,
 .c-thank-you,
 .c-cssfamily { @extend %bgc; }
 
 // add to sections to center-align content
+.c-speakers,
 .c-cssfamily,
 .g-thank-you,
 .g-sponsors-reel,
@@ -151,7 +152,9 @@ section {
 .c-accessibility,
 .c-conference,
 .c-speakers,
-.c-venue,.c-schedule,
+.c-speaker-detail,
+.c-venue,
+.c-schedule,
 .c-thank-you,
 .c-schedule,
 .c-max-width { @extend %container-content; }

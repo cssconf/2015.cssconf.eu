@@ -1,0 +1,11 @@
+{{#each speakers}}{{#if announced}}
+  <div class="cl speaker speakers__item speakers__item--small">
+    <a href="/speaker/{{ urlKey }}.html" class="speaker__image image--has-border">
+      <img srcset="/assets/{{version '_'}}/{{ imageLarge }} 320w,
+                   /assets/{{version '_'}}/{{ imageMedium }} 256w,
+                   /assets/{{version '_'}}/{{ imageSmall }} 200w"
+           src="/assets/{{version '_'}}/{{ imageSmall }}" alt="{{ altText }}">
+      <div class="speaker__image-overlay"></div>
+    </a>
+  </div>
+{{/if}}{{/each}}

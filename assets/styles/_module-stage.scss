@@ -2,10 +2,20 @@
 
 .stage {
   position: relative;
-  min-height: 16rem;
-  @extend %tac;
+  max-height: 15rem;
+  overflow: hidden;
 
+  @extend %tac;
   @extend %container;
+
+  @include bp(small) {
+    min-height: 16rem;
+    max-height: none;
+  }
+}
+
+.stage--home {
+  max-height: none;
 }
 
 .stage__image {
@@ -28,6 +38,8 @@
 .stage__content--subpage {
   bottom: auto;
   top: 44%;
+  @include bp(small) { top: 42%; }
+  
 }
 
 .stage__headline-index {
