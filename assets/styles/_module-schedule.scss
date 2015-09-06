@@ -1,19 +1,17 @@
 
 
-.list--schedule {
-  @extend %nav;
-}
-
-.list--schedule__a {
-  display: flex;
-  flex-wrap: wrap;
-}
+.list--schedule { @extend %nav; }
 
 .list--schedule__img { display: none;
 
   @include bp(small) { display: block; }
 }
 
-.list--schedule__time {
-  flex: 1 0 100%;
-}
+.list--schedule__time { margin-bottom: 0; }
+
+.list--schedule__text { margin-bottom: 0; }
+
+.list--schedule h2,
+.list--schedule p { margin-bottom: 0; }
+
+.list--schedule__el { margin-bottom: $margin-base; }
