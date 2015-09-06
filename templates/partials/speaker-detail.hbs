@@ -1,0 +1,32 @@
+<div class="rw g-speaker-detail">
+    <section class="c-speaker-detail">
+        <div class="cl speaker-info">
+            <div class="speaker-info__image image--has-border">
+                <img srcset="/assets/{{ version '_' }}/{{ imageLarge }} 320w,
+                           /assets/{{ version '_' }}/{{ imageMedium }} 256w,
+                           /assets/{{ version '_' }}/{{ imageSmall }} 200w"
+                     src="/assets/{{ version '_' }}/{{ imageSmall }}" alt="{{ altText }}">
+                <!--<div class="speaker__image-overlay"></div>-->
+            </div>
+            
+            <div class="speaker-info__details">
+              <h2 class="speaker__name">{{ name }}</h2>
+              <p class="speaker__bio">{{ bio }}</p>
+
+              <ul class="speaker__linklist">
+                  {{#each links}}
+                      <li class="speaker__linklist__item">
+                          <a class="anchor anchor--has-underline" href="{{url}}">{{text}}</a>
+                      </li>
+                  {{/each}}
+              </ul>
+            </div>
+            
+        </div>
+
+        <div class="cl talk-info">
+            <h2 class="talk-info__title">{{ talkTitle }}</h2>
+            <p class="talk-info__abstract">{{ talkAbstract }}</p>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,36 @@
+
+
+.cross {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  transform: rotate(45deg);
+  cursor: pointer;
+  top: 0;
+  right: .625rem;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: $color-blue;
+  }
+
+  &::before {
+    left: .5rem;
+    width: .3125rem;
+    margin-left: -.125rem;
+    height: 1.0625rem;
+  }
+
+  &::after {
+    top: .5625rem;
+    height: .3125rem;
+    margin-top: -.1875rem;
+    width: 1.0625rem;
+  }
+}

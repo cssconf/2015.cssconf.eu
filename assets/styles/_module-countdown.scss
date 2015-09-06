@@ -1,0 +1,29 @@
+.g-countdown {
+  text-align: center;
+}
+
+.countdown {
+  margin-top: 1em;
+  font-size: 6em;
+}
+
+.countdown span {
+  display: inline-block;
+}
+
+.countdown.done {
+  color: $color-red;
+}
+
+.countdown span.date {
+  color: $color-blue;
+}
+
+@keyframes floating {
+  0%,100% {
+      transform: translate3d(0,-10px,0);
+  }
+  50% {
+      transform: translate3d(0,10px,0);
+  }
+}

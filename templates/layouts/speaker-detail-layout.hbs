@@ -1,0 +1,63 @@
+---
+layout: default.hbs
+---
+
+{{> navmain }}
+
+<div class="rw stage">
+    {{#parseJSON '{"large":"stage-coc-2400.png", "medium":"stage-coc-1200.png", "small":"stage-sub-600.png", "altText":"A lot of shapes."}'}}
+        {{> stage }}
+    {{/parseJSON}}
+
+    <div class="stage__content stage__content--subpage">
+        <h1>Meet Our Speakers</h1>
+    </div>
+</div>
+
+{{!-- SPEAKER-DETAIL SECTION --}}
+{{> body}}
+{{!-- SPEAKER-DETAIL SECTION END --}}
+
+{{!-- ALL SPEAKERS SECTION --}}
+<div class="rw g-speakers-home">
+    <section class="c-speakers-home speakers__grid speakers--thumbs">
+        <div class="cl">
+            {{> speaker-list-thumbnails }}
+        </div>
+    </section>
+</div>
+{{!-- ALL SPEAKERS SECTION END --}}
+
+{{!-- INCLUDE ARROW WITH ADDITIONAL CLASS --}}
+{{#parseJSON '{"cssClass":"--is-black"}' }}
+    <div class="arrow">
+        <a class="arrow__link" href="#bottom">
+            {{> arrow }}
+        </a>
+    </div>
+{{/parseJSON}}
+
+{{!-- INCLUDE SPONSORS --}}
+{{> sponsors }}
+
+{{!-- INCLUDE ZEBRA-STRIPES --}}
+{{> zebra-stripes }}
+
+{{!-- INCLUDE NAV-SUB --}}
+{{> nav-sub }}
+
+{{!-- INCLUDE SOCIAL-BAR --}}
+{{> social-bar }}
+
+{{!-- INCLUDE PAGE-FOOTER --}}
+{{> page-footer }}
+
+{{!-- INCLUDE ARROW WITH ADDITIONAL CLASSES --}}
+{{#parseJSON '{"cssClass":"--is-blue", "cssClassTwo":"is-transformed"}'}}
+    <div class="arrow">
+        <a class="arrow__link" href="#top">
+            {{> arrow }}
+        </a>
+    </div>
+{{/parseJSON}}
+

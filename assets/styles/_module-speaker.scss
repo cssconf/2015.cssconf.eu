@@ -1,6 +1,66 @@
 
 
-.speakers__overlay {
+.speaker-info,
+.talk-info {
+  width: 100%;
+  margin-right: -4px;
+
+  @include bp(medium) { width: 50%; }
+}
+
+.speaker-info {
+  text-align: left;
+  position: relative;
+
+  @include bp(medium) {
+    top: -8rem;
+    margin-bottom: -8rem;
+  }
+
+  @include bp(xlarge) {
+    top: -13rem;
+    margin-bottom: -13rem;
+  }
+}
+
+.speaker-info__details {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.speaker__linklist__item {
+  display: inline-block;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.speaker-info__image {
+  width: 15rem;
+  height: 15rem;
+  margin-bottom: 2rem;
+
+  @include bp(xsmall) {
+    width: 17rem;
+    height: 17rem;
+  }
+
+  @include bp(xlarge) {
+    width: 22rem;
+    height: 22rem;
+  }
+}
+
+.speaker__linklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+
+.talk-info { @include bp('medium') { padding-left: 5%; } }
+
+.talk-info__title { color: $color-red; }
+
+.speaker__image-overlay {
   display: none;
   width: inherit;
   height: inherit;
@@ -14,4 +74,4 @@
   .mix-blend-mode & { display: block; }
 }
 
-.image--has-border:hover .speakers__overlay { opacity: 0; }
+.image--has-border:hover .speaker__image-overlay { opacity: 0; }

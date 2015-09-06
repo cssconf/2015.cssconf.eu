@@ -1,0 +1,85 @@
+---
+title: Countdown
+---
+
+{{> navmain }}
+
+<div class="rw g-countdown">
+  <div class="countdown">
+  </div>
+</div>
+
+{{!-- INCLUDE NAV-SUB --}}
+{{> nav-sub }}
+
+{{!-- INCLUDE SOCIAL BAR --}}
+{{> social-bar }}
+
+{{!-- INCLUDE PAGE FOOTER --}}
+{{> page-footer }}
+
+{{!-- INCLUDE ARROW WITH ADDITIONAL CLASSES --}}
+{{#parseJSON '{"cssClass":"--is-blue", "cssClassTwo":"is-transformed"}'}}
+  <div class="arrow">
+    <a class="arrow__link" href="#top">
+      {{> arrow }}
+    </a>
+  </div>
+{{/parseJSON}}
+
+<script>
+  ;(function () {
+    var endDay = 26;
+    window.addEventListener('DOMContentLoaded', onContentLoaded);
+
+    function onContentLoaded () {
+      var countdownEl = document.querySelector('.countdown');
+      var days = endDay - new Date().getDate();
+      var msg;
+      if (days <= 0) {
+        msg = 'OMG. YAAAAAAAS.'
+        countdownEl.classList.add('done')
+      } else {
+        msg = days + ' ' + pluralize('day', days) + ' until CSS Conf EU!';
+      }
+      appendCharsAsChildren(countdownEl, msg);
+      // Hacky stuff to add classes to day count
+      // Also put line break after day count
+      if (days > 0) {
+        for (var i = 0; ; i++) {
+          var span = countdownEl.children[i]
+          if (span.innerHTML === 'u') break;
+          span.classList.add('date');
+        }
+        countdownEl.insertBefore(document.createElement('div'),
+            countdownEl.children[i])
+      }
+      applyRoundedAnimation(countdownEl, 'floating', 100)
+    }
+
+    function appendCharsAsChildren (el, str) {
+      str.split('').forEach(function (ch) {
+        var span = document.createElement('span');
+        span.innerHTML = ch === ' ' ? '&nbsp;' : ch;
+        el.appendChild(span);
+      });
+    }
+
+    function applyRoundedAnimation (parent, animation, offset) {
+      offset = offset || 100;
+      var rules = ['animation', 'WebkitAnimation', 'MozAnimation'];
+      var children = parent.children;
+      for (var i = 0; i < children.length; i++) {
+        var child = children[i];
+        rules.forEach(function (rule) {
+          child.style[rule] = animation + ' 1s ' +
+              i * offset + 'ms ease-in-out both infinite';
+        });
+      }
+    }
+
+    function pluralize (s, n) {
+      return s + (n > 1 ? 's' : '');
+    }
+  }());
+</script>
