@@ -1,6 +1,6 @@
 {
   "name": "conf",
-  "version": "1.3.6",
+  "version": "1.3.7",
   "description": "Website Repo of CSSconf.eu",
   "main": "index.js",
   "scripts": {
