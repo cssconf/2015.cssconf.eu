@@ -1,22 +1,26 @@
-
-
+// to avoid vertical scrollbar
+.g-schedule {
+  overflow: hidden;
+}
 .c-schedule {
   background: linear-gradient(to right, rgba(252, 199, 32, .1) 0%, rgba(252, 199, 32, .1) .5%, transparent .5%, transparent 20%, rgba(252, 199, 32, .1) 20%,rgba(252, 199, 32, .1) 20.5%, transparent 20.5%,transparent 40%, rgba(252, 199, 32, .1) 40%, rgba(252, 199, 32, .1) 40.5%, transparent 40.5%, transparent 60%, rgba(252, 199, 32, .1) 60%, rgba(252, 199, 32, .1) 60.5%, transparent 60.5%, transparent 80.1%, rgba(252, 199, 32, .1) 80%, rgba(252, 199, 32, .1) 80.5%, transparent 80.5%, transparent 99.5%, rgba(252, 199, 32, .1) 99.7%, rgba(252, 199, 32, .1) 100% );
 }
 
 .list--schedule { @extend %nav; }
 
-.list--schedule__img { display: none;
+.list--schedule__img {
+  display: none;
 
   @include bp(small) {
     display: block;
-    width: 30vw;
+    width: 10vw;
+    float: left;
+    margin-right: $margin-base;
+    margin-bottom: $margin-base;
   }
 
   @include bp(medium) {
     width: 15vw;
-    float: left;
-    margin-right: $margin-base;
   }
   @include bp(xlarge) { width: 12.5rem; }
 }
@@ -24,42 +28,53 @@
 .list--schedule__time {
   margin-bottom: 0;
   color: $color-red;
-  font-size: 1.8em;
+  font-size: 1em;
+  vertical-align: top;
+  display: inline-block;
+  min-width: 70px;
 
-  @include bp(small) { font-size: 2.8em; }
+  @include bp(small) {
+    font-size: 1.8em;
+    min-width: 110px;
+  }
 
   @include bp(medium) {
-    font-size: 2em;
-    position: absolute;
-    left: 0;
-    top: 0;
+    font-size: 2.8em;
+    min-width: 160px;
   }
 }
 
-.list--schedule__el--has-image .list--schedule__time {
-  @include bp(medium) { top: calc(7.5vw - 1.5625rem); }
 
-  @include bp(xlarge) { top: 4.6875rem; }
-}
+.list--schedule__content {
+  margin-bottom: 0;
+  display: inline-block;
+  width: calc(100% - 70px - #{$margin-base});
 
-.list--schedule__el--has-image::before {
-  @include bp(medium) { top: 7.5vw !important; }
-  @include bp(xlarge) { top: 6.25rem !important; }
-}
-
-
-.list--schedule__text { margin-bottom: 0;
-
-  @include bp(medium) {
-    width: calc(864px - 15vw - 300px - #{$margin-base});
-    float: left;
+  @include bp(small) {
+    width: calc(100% - 110px - #{$margin-base});
   }
 
-  @include bp(xlarge) { width: calc(67.5rem - 31.25rem - #{$margin-base}); }
+  @include bp(medium) {
+    width: calc(100% - 160px - #{$margin-base});
+    padding-top: .8em;
+    padding-left: 2 * $margin-base;
+    padding-right: 2 * $margin-base;
+    padding-top: .8em;
+  }
+
+  @include bp(large) {
+    padding-left: 3 * $margin-base;
+    padding-right: 3 * $margin-base;
+  }
+
 }
 
 .list--schedule h2,
 .list--schedule p { margin-bottom: 0; }
+
+.list--schedule h2 {
+  @include bp(only-small) { font-size: 1.2em; }
+}
 
 .list--schedule p {
 
@@ -69,15 +84,15 @@
 }
 
 .list--schedule__el {
-  margin-bottom: $margin-base;
+  margin-bottom: 2 * $margin-base;
+  padding-bottom: $margin-base;
   clear: both;
   @extend %cf;
   position: relative;
   z-index: 1;
 
   @include bp(medium) {
-    padding-left: 18.75rem;
-    margin-bottom: 3 * $margin-base;
+    margin-top: $margin-base;
   }
 
   &::before {
@@ -89,16 +104,14 @@
     display: block;
     position: absolute;
     z-index: -1;
-    top: 1.125rem;
+    bottom: -1.25rem;
 
     @include bp(small) {
-      top: 40px;
       left: -1.5rem;
     }
 
     @include bp(medium) {
       left: -2.25rem;
-      top: 1.5rem;
     }
 
     @include bp(large) { left: calc(-50vw + 24em); }
