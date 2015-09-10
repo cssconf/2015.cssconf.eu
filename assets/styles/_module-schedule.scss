@@ -1,7 +1,7 @@
 
 
 .c-schedule {
-  background: linear-gradient(to right, rgba(252, 199, 32, .2) 0%, rgba(252, 199, 32, .2) .5%, transparent .5%, transparent 20%, rgba(252, 199, 32, .2) 20%,rgba(252, 199, 32, .2) 20.5%, transparent 20.5%,transparent 40%, rgba(252, 199, 32, .2) 40%, rgba(252, 199, 32, .2) 40.5%, transparent 40.5%, transparent 60%, rgba(252, 199, 32, .2) 60%, rgba(252, 199, 32, .2) 60.5%, transparent 60.5%, transparent 80.1%, rgba(252, 199, 32, .2) 80%, rgba(252, 199, 32, .2) 80.5%, transparent 80.5%, transparent 99.5%, rgba(252, 199, 32, .2) 99.7%, rgba(252, 199, 32, .2) 100% );
+  background: linear-gradient(to right, rgba(252, 199, 32, .1) 0%, rgba(252, 199, 32, .1) .5%, transparent .5%, transparent 20%, rgba(252, 199, 32, .1) 20%,rgba(252, 199, 32, .1) 20.5%, transparent 20.5%,transparent 40%, rgba(252, 199, 32, .1) 40%, rgba(252, 199, 32, .1) 40.5%, transparent 40.5%, transparent 60%, rgba(252, 199, 32, .1) 60%, rgba(252, 199, 32, .1) 60.5%, transparent 60.5%, transparent 80.1%, rgba(252, 199, 32, .1) 80%, rgba(252, 199, 32, .1) 80.5%, transparent 80.5%, transparent 99.5%, rgba(252, 199, 32, .1) 99.7%, rgba(252, 199, 32, .1) 100% );
 }
 
 .list--schedule { @extend %nav; }
@@ -85,7 +85,7 @@
     width: 100vw;
     left: -.75rem;
     height: 1.25rem;
-    background-color: #f5f2e6;
+    background-color: #faf8f2;
     display: block;
     position: absolute;
     z-index: -1;
