@@ -54,7 +54,7 @@
 }
 
 .banner-shown .stage,
-.banner-shown + .g-organizers {
+.banner-shown .nav-main + .g-organizers {
   padding-top: 144px;
 
   @include bp(xsmall) {
