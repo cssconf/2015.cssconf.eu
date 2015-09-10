@@ -7,18 +7,168 @@ title: Schedule
   {{#parseJSON '{"large":"stage-coc-2400.png", "medium":"stage-coc-1200.png", "small":"stage-sub-600.png", "altText":"A lot of shapes."}'}}
     {{> stage }}
   {{/parseJSON}}
+  <div class="stage__content stage__content--subpage">
+    <h1>{{title}}</h1>
+  </div>
 </div>
 
 {{!-- INTRODUCTION SECTION --}}
 <div class="rw g-schedule">
   <section class="c-schedule">
     <div class="cl">
-      <h1>{{title}}</h1>
-      <p>Our schedule is in the making and you'll find it on this page in the coming days. In the meantime, here is a general outline of the day:</p> 
-  
-      <p>CSSconf EU will begin at 8:30 and end at 19:30. Breakfast, lunch and dinner will be served on the day, and will all include veggie options. You're then invited to join us for the CSSconf EU party, which will be held at our venue, Radialsystem V.</p>
-
-      <p>We look forward to seeing you in Berlin soon!</p>
+      <ul class="list--schedule">
+        <li class="list--schedule__el">
+          <time class="list--schedule__time">08:30</time>
+          <div class="list--schedule__content">
+            <h2>Doors Open and Breakfast ☕ 🎉</h2>
+          </div>
+        </li>
+        <li class="list--schedule__el">
+          <time class="list--schedule__time">09:40</time>
+          <div class="list--schedule__content">
+            <h2>Opening Remarks 🎤</h2>
+          </div>
+        </li>
+        <li class="list--schedule__el list--schedule__el--has-image">
+          <time class="list--schedule__time">09:45</time>
+          <div class="list--schedule__content">
+            <img class="list--schedule__img" src="/assets/{{version '_'}}/img/speakers/nick-hehr.jpg">
+            <h2><a class="anchor--has-underline" href="/speaker/nick-hehr.html">Nick Hehr</a></h2>
+            <p>Intro</p>
+          </div>
+        </li>
+        <li class="list--schedule__el list--schedule__el--has-image">
+          <time class="list--schedule__time">10:00</time>
+          <div class="list--schedule__content">
+            <img class="list--schedule__img" src="/assets/{{version '_'}}/img/speakers/claudina-sarahe.jpg">
+            <h2><a class="anchor--has-underline" href="/speaker/claudina-sarahe.html">Claudina Sarahe</a></h2>
+            <p>The Front-End Revolution</p>
+          </div>
+        </li>
+        <li class="list--schedule__el list--schedule__el--has-image">
+          <time class="list--schedule__time">10:35</time>
+          <div class="list--schedule__content">
+            <img class="list--schedule__img" src="/assets/{{version '_'}}/img/speakers/una-kravets.jpg">
+            <h2><a class="anchor--has-underline" href="/speaker/una-kravets.html">Una Kravets</a></h2>
+            <p>Photoshop is Dead!: Editing Images in CSS</p>
+          </div>
+        </li>
+        <li class="list--schedule__el">
+          <time class="list--schedule__time">11:10</time>
+          <div class="list--schedule__content">
+            <h2>Coffee Break ☕</h2>
+          </div>
+        </li>
+        <li class="list--schedule__el list--schedule__el--has-image">
+          <time class="list--schedule__time">11:25</time>
+          <div class="list--schedule__content">
+            <img class="list--schedule__img" src="/assets/{{version '_'}}/img/speakers/michael-mifsud.jpg">
+            <h2><a class="anchor--has-underline" href="/speaker/michael-mifsud.html">Michael Mifsud</a></h2>
+            <p>It’s All Just Functions And Variables</p>
+          </div>
+        </li>
+        <li class="list--schedule__el list--schedule__el--has-image">
+          <time class="list--schedule__time">12:00</time>
+          <div class="list--schedule__content">
+            <img class="list--schedule__img" src="/assets/{{version '_'}}/img/speakers/lea-verou.jpg">
+            <h2><a class="anchor--has-underline" href="/speaker/lea-verou.html">Lea Verou</a></h2>
+            <p>The Missing Slice</p>
+          </div>
+        </li>
+        <li class="list--schedule__el">
+          <time class="list--schedule__time">12:50</time>
+          <div class="list--schedule__content">
+            <h2>Lunch 🍝🍴</h2>
+          </div>
+        </li>
+        <li class="list--schedule__el list--schedule__el--has-image">
+          <time class="list--schedule__time">14:00</time>
+          <div class="list--schedule__content">
+            <img class="list--schedule__img" src="/assets/{{version '_'}}/img/speakers/horia-dragomir.jpg">
+            <h2><a class="anchor--has-underline" href="/speaker/horia-dragomir.html">Horia Dragomir</a></h2>
+            <p>I Don’t Want To Be on Facebook All Day</p>
+          </div>
+        </li>
+        <li class="list--schedule__el list--schedule__el--has-image">
+          <time class="list--schedule__time">14:35</time>
+          <div class="list--schedule__content">
+            <img class="list--schedule__img" src="/assets/{{version '_'}}/img/speakers/glen-maddern.jpg">
+            <h2><a class="anchor--has-underline" href="/speaker/glen-maddern.html">Glen Maddern</a></h2>
+            <p>Interoperable CSS</p>
+          </div>
+        </li>
+        <li class="list--schedule__el">
+          <time class="list--schedule__time">15:10</time>
+          <div class="list--schedule__content">
+            <h2>Coffee Break ☕️</h2>
+          </div>
+        </li>
+        <li class="list--schedule__el list--schedule__el--has-image">
+          <time class="list--schedule__time">15:25</time>
+          <div class="list--schedule__content">
+            <img class="list--schedule__img" src="/assets/{{version '_'}}/img/speakers/tammie-lister.jpg">
+            <h2><a class="anchor--has-underline" href="/speaker/tammie-lister.html">Tammie Lister</a></h2>
+            <p>Emotion Through CSS</p>
+          </div>
+        </li>
+        <li class="list--schedule__el list--schedule__el--has-image">
+          <time class="list--schedule__time">16:00</time>
+          <div class="list--schedule__content">
+            <img class="list--schedule__img" src="/assets/{{version '_'}}/img/speakers/katie-kurkoski.jpg">
+            <h2><a class="anchor--has-underline" href="/speaker/katie-kurkoski.html">Katie Kurkoski</a></h2>
+            <p>Developing for Localization: CSS Techniques To Get Your Message Across To The World Wide Web</p>
+          </div>
+        </li>
+        <li class="list--schedule__el">
+          <time class="list--schedule__time">15:10</time>
+          <div class="list--schedule__content">
+            <h2>Longer Coffee Break with Cake ☕️🍰</h2>
+          </div>
+        </li>
+        <li class="list--schedule__el">
+          <time class="list--schedule__time">17:15</time>
+          <div class="list--schedule__content">
+            <img class="list--schedule__img" src="/assets/{{version '_'}}/img/speakers/zoe-gillenwater.jpg">
+            <h2><a class="anchor--has-underline" href="/speaker/zoe-m-gillenwater.html">Zoe M. Gillenwater</a></h2>
+            <p>Enhancing Responsiveness with Flexbox</p>
+          </div>
+        </li>
+        <li class="list--schedule__el list--schedule__el--has-image">
+          <time class="list--schedule__time">17:50</time>
+          <div class="list--schedule__content">
+            <img class="list--schedule__img" src="/assets/{{version '_'}}/img/speakers/tim-holman.jpg">
+            <h2><a class="anchor--has-underline" href="/speaker/tim-holman.html">Tim Holman</a></h2>
+            <p>Fun.css</p>
+          </div>
+        </li>
+        <li class="list--schedule__el">
+          <time class="list--schedule__time">18:25</time>
+          <div class="list--schedule__content">
+            <h2>Closing Remarks 🎤</h2>
+          </div>
+        </li>
+        <li class="list--schedule__el">
+          <time class="list--schedule__time">18:35</time>
+          <div class="list--schedule__content">
+            <h2>Family Photo 💖📷</h2>
+          </div>
+        </li>
+        <li class="list--schedule__el">
+          <time class="list--schedule__time">19:00</time>
+          <div class="list--schedule__content">
+            <h2><a class="anchor--has-underline" href="/info/#party">Dinner</a> 🍔🍴</h2>
+          </div>
+        </li>
+        <li class="list--schedule__el">
+          <time class="list--schedule__time">20:30</time>
+          <div class="list--schedule__content">
+            <h2><a class="anchor--has-underline" href="/info/#party">Party</a> 🎊🎉</h2>
+            <p>
+              Open for all friends, family and the community – celebrate with us!
+            </p>
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
 </div>
