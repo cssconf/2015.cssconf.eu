@@ -7,4 +7,9 @@ module.exports.register = function (Handlebars, options)  {
       return str;
     }
   });
+
+  Handlebars.registerHelper('makeParagraphs', function (s) {
+    return new Handlebars.SafeString(
+        '<p>' + s.split('\n\n').join('</p><p>') + '</p>');
+  });
 };
