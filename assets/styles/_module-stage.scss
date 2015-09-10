@@ -53,7 +53,8 @@
   max-width: 100%;
 }
 
-.banner-shown .stage {
+.banner-shown .stage,
+.banner-shown + .g-organizers {
   padding-top: 144px;
 
   @include bp(xsmall) {
