@@ -13,13 +13,13 @@ speakers:
     altText: 'A portrait picture of Lea Verou.'
     talkTitle: The Missing Slice
     talkAbstract: |
-      Think of the humble pie chart. Simple and ubiquitous, yet surprisingly 
-      difficult to create with Web technologies in a flexible, maintainable way. 
-      Faced with this simple goal, Lea will take you on a colorful interactive 
-      journey through several aspects of CSS and SVG and will sweep you off your 
-      feet with clever ways to use them. At the end, you will have your pie and 
-      animate it too, but do not be fooled: the real takeaway of this talk has 
-      little to do with pie charts and a lot to do with problem solving via the 
+      Think of the humble pie chart. Simple and ubiquitous, yet surprisingly
+      difficult to create with Web technologies in a flexible, maintainable way.
+      Faced with this simple goal, Lea will take you on a colorful interactive
+      journey through several aspects of CSS and SVG and will sweep you off your
+      feet with clever ways to use them. At the end, you will have your pie and
+      animate it too, but do not be fooled: the real takeaway of this talk has
+      little to do with pie charts and a lot to do with problem solving via the
       tools the Open Web Platform offers us today.
     links:
       - { url: 'https://twitter.com/leaverou', text: '@LeaVerou' }
@@ -37,7 +37,7 @@ speakers:
     imageMedium: 'img/speakers/claudina-sarahe-m.jpg'
     imageSmall: 'img/speakers/claudina-sarahe.jpg'
     altText: 'A portrait picture of Claudina Sarahe.'
-    talkTitle: details soon! 
+    talkTitle: details soon!
     talkAbstract: |
       details soon!
     links:
@@ -56,23 +56,23 @@ speakers:
     altText: 'A portrait picture of Glen Maddern.'
     talkTitle: Interoperable CSS
     talkAbstract: |
-      Most people aren’t aware just what an achievement CommonJS was and the 
-      true extent of its impact. It took a language that only ran in browsers, 
-      had no concept of separate files, used global variables and a single 
-      global DOM to communicate; and built something viable, then something 
-      thriving, then something dominant. All by adding only a couple of pieces 
+      Most people aren’t aware just what an achievement CommonJS was and the
+      true extent of its impact. It took a language that only ran in browsers,
+      had no concept of separate files, used global variables and a single
+      global DOM to communicate; and built something viable, then something
+      thriving, then something dominant. All by adding only a couple of pieces
       of syntax and a new mental model.
 
       There have been a lot of ideas and a lot of speculation about the future
       of CSS in the last year or so, largely driven by the ingenuity of the
       React community — will we write styling code purely in JS? Will CSS
-      continue to be useful? Will someone concoct some X-files-style JS+CSS 
-      alien-human hybrid language that takes over the world? It’s all possible 
+      continue to be useful? Will someone concoct some X-files-style JS+CSS
+      alien-human hybrid language that takes over the world? It’s all possible
       (mostly).
 
-      This talk is about a new format for CSS, one that’s now supported by 
-      default in Webpack & JSPM, and available with plugins for Browserify. 
-      It’s called Interoperable CSS, and it hopes to do for CSS what CommonJS 
+      This talk is about a new format for CSS, one that’s now supported by
+      default in Webpack & JSPM, and available with plugins for Browserify.
+      It’s called Interoperable CSS, and it hopes to do for CSS what CommonJS
       did for JavaScript.
     links:
       - { url: 'https://twitter.com/glenmaddern', text: '@glenmaddern' }
@@ -92,18 +92,20 @@ speakers:
     altText: 'A portrait picture of Una Kravets.'
     talkTitle: 'Photoshop is Dead!: Editing Images in CSS'
     talkAbstract: |
-      "Photoshop is the most popular photo editing program of today, but it’s 
-      big, slow, and has a learning curve, not to even mention its price. 
-      Enter: the browser. With CSS blend modes, gradients, and SVG filters, 
-      you could pretty much do most of Photoshop’s common functions right in 
+      "Photoshop is the most popular photo editing program of today, but it’s
+      big, slow, and has a learning curve, not to even mention its price.
+      Enter: the browser. With CSS blend modes, gradients, and SVG filters,
+      you could pretty much do most of Photoshop’s common functions right in
       the browser.
 
-      This talk will go through some common photo editing tasks, from the 
-      pragmatic (cropping images, masking) to special effects (vignettes, blurs, 
+      This talk will go through some common photo editing tasks, from the
+      pragmatic (cropping images, masking) to special effects (vignettes, blurs,
       colorizing) and show the audience how to do them in the browser!"
     links:
       - { url: 'https://twitter.com/una', text: '@una' }
       - { url: 'https://una.github.io', text: 'una.github.io' }
+      - { url: 'http://blog.cssconf.eu/2015/09/04/meet-una-kravets/', text: 'Speaker Interview' }
+
 
   katie:
     announced: true
@@ -124,16 +126,16 @@ speakers:
       The World Wide Web
     talkAbstract: |
       Although headquartered in the USA, the Getty Images website is localized
-      into more than 20 languages, and the translated content can be half again 
-      as long as the original. The resulting layout havok includes side-by-side 
-      copy headlines of differing heights, strange centering and grid-breaking 
+      into more than 20 languages, and the translated content can be half again
+      as long as the original. The resulting layout havok includes side-by-side
+      copy headlines of differing heights, strange centering and grid-breaking
       content boxes. So, how do they build truly flexible layouts?
 
-      Katie will demonstrate CSS techniques for easy wins like non-embedded image 
-      copy and double-centered headlines. She’ll show sneaky replacements for 
-      padding and margin to buff up those grids. And she’ll finish with real 
-      world use cases for flexbox, with fallbacks! By examining at techniques 
-      for handling the extreme variations of multiple languages, you’ll learn 
+      Katie will demonstrate CSS techniques for easy wins like non-embedded image
+      copy and double-centered headlines. She’ll show sneaky replacements for
+      padding and margin to buff up those grids. And she’ll finish with real
+      world use cases for flexbox, with fallbacks! By examining at techniques
+      for handling the extreme variations of multiple languages, you’ll learn
       robust techniques for your day-to-day CSS development.
     links:
       - { url: 'https://twitter.com/katiek2', text: '@katiek2' }
@@ -174,10 +176,10 @@ speakers:
     altText: 'A portrait picture of Tammie Lister.'
     talkTitle: Emotion Through CSS
     talkAbstract: |
-      Through CSS animation we can bring personality to interactions. Buttons 
-      can be impatient or happy. A sliding panel can be eager to open. An input 
-      field impatient. Emotion is a powerful thing we can use to connect to 
-      users. In this talk I’ll explore why this is important and how to start 
+      Through CSS animation we can bring personality to interactions. Buttons
+      can be impatient or happy. A sliding panel can be eager to open. An input
+      field impatient. Emotion is a powerful thing we can use to connect to
+      users. In this talk I’ll explore why this is important and how to start
       creating emotion through CSS.
     links:
       - { url: 'https://twitter.com/karmatosed', text: '@karmatosed' }
@@ -202,8 +204,8 @@ speakers:
       consistent in the world of web development, its a random seriousness when
       discussing our art… I want to take that away.
 
-      Fun.css is a talk exploring some of the stranger areas of the internet, 
-      and some of the stranger techniques and ways of thinking that we can use 
+      Fun.css is a talk exploring some of the stranger areas of the internet,
+      and some of the stranger techniques and ways of thinking that we can use
       to create more friendly, and at the very least, more interesting experiences.
     links:
       - { url: 'http://twitter.com/twholman', text: '@twholman' }
@@ -285,3 +287,5 @@ speakers:
     links:
       - { url: 'https://twitter.com/hipsterbrown', text: '@hipsterbrown' }
       - { url: 'http://www.hipsterbrown.com/', text: 'www.hipsterbrown.com' }
+      - { url: 'http://blog.cssconf.eu/2015/09/01/meet-nick-hehr/', text: 'MC Interview' }
+      
