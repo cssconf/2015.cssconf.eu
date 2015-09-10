@@ -212,7 +212,7 @@ speakers:
       - { url: 'http://tholman.com', text: 'tholman.com' }
 
   horia:
-    announced: false
+    announced: true
     urlKey: horia-dragomir
     name: Horia Dragomir
     bio: >
@@ -235,16 +235,16 @@ speakers:
       - { url: 'http://hdragomir.com', text: 'hdragomir.com' }
 
   zoe:
-    announced: false
+    announced: true
     urlKey: zoe-m-gillenwater
     name: Zoe M. Gillenwater
     bio: >
       Zoe is a senior designer for Booking.com. She is the author of two books
       on CSS and visual web design, and she recently wrote the chapter on
       flexbox for Smashing Magazine's new Real-Life Responsive Web Design book.
-    imageLarge: 'img/speakers/zoe-m-gillenwater-l.jpg'
-    imageMedium: 'img/speakers/zoe-m-gillenwater-m.jpg'
-    imageSmall: 'img/speakers/zoe-m-gillenwater.jpg'
+    imageLarge: 'img/speakers/zoe-gillenwater-l.jpg'
+    imageMedium: 'img/speakers/zoe-gillenwater-m.jpg'
+    imageSmall: 'img/speakers/zoe-gillenwater.jpg'
     altText: 'A portrait picture of Zoe M. Gillenwater'
     talkTitle: Enhancing Responsiveness With Flexbox
     talkAbstract: |
