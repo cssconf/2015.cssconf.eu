@@ -226,10 +226,10 @@ speakers:
     talkTitle: "I Don't Want To Be On Facebook All Day!"
     talkAbstract: |
       Or, How we built Messenger.com. Let's take a look at how we do CSS work
-      at facebook and how that worked both for and against us when working on
+      at Facebook and how that worked both for and against us when working on
       the first secondary domain: messenger.com
 
-      Warning: contains cools CSS and a bit of React.
+      Warning: contains cool CSS and a bit of React.
     links:
       - { url: 'https://twitter.com/hdragomir', text: '@hdragomir' }
       - { url: 'http://hdragomir.com', text: 'hdragomir.com' }
