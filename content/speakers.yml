@@ -223,7 +223,7 @@ speakers:
     imageMedium: 'img/speakers/horia-dragomir-m.jpg'
     imageSmall: 'img/speakers/horia-dragomir.jpg'
     altText: 'A portrait picture of Horia Dragomir.'
-    talkTitle: "I don't want to be on Facebook the whole day!"
+    talkTitle: "I Don't Want To Be On Facebook All Day!"
     talkAbstract: |
       Or, How we built Messenger.com. Let's take a look at how we do CSS work
       at facebook and how that worked both for and against us when working on
@@ -246,7 +246,7 @@ speakers:
     imageMedium: 'img/speakers/zoe-m-gillenwater-m.jpg'
     imageSmall: 'img/speakers/zoe-m-gillenwater.jpg'
     altText: 'A portrait picture of Zoe M. Gillenwater'
-    talkTitle: Enhancing Responsiveness with Flexbox
+    talkTitle: Enhancing Responsiveness With Flexbox
     talkAbstract: |
       Flexbox and responsive web design go great together, like peanut butter
       and jelly. Flexbox gives you more control over the things you care about
