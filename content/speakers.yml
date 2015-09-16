@@ -106,7 +106,6 @@ speakers:
       - { url: 'https://una.github.io', text: 'una.github.io' }
       - { url: 'http://blog.cssconf.eu/2015/09/04/meet-una-kravets/', text: 'Speaker Interview' }
 
-
   katie:
     announced: true
     urlKey: katie-kurkoski
@@ -140,6 +139,7 @@ speakers:
     links:
       - { url: 'https://twitter.com/katiek2', text: '@katiek2' }
       - { url: 'http://www.pewpewlaser.com/', text: 'www.pewpewlaser.com' }
+      - { url: 'http://blog.cssconf.eu/2015/09/16/meet-katie-kurkoski/', text: 'Speaker Interview' }
 
   michael:
     announced: true
@@ -210,6 +210,7 @@ speakers:
     links:
       - { url: 'http://twitter.com/twholman', text: '@twholman' }
       - { url: 'http://tholman.com', text: 'tholman.com' }
+      - { url: 'http://blog.cssconf.eu/2015/09/14/meet-tim-holman/', text: 'Speaker Interview' }
 
   horia:
     announced: true
@@ -288,4 +289,4 @@ speakers:
       - { url: 'https://twitter.com/hipsterbrown', text: '@hipsterbrown' }
       - { url: 'http://www.hipsterbrown.com/', text: 'www.hipsterbrown.com' }
       - { url: 'http://blog.cssconf.eu/2015/09/01/meet-nick-hehr/', text: 'MC Interview' }
-      
+
