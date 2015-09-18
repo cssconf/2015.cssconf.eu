@@ -37,9 +37,18 @@ speakers:
     imageMedium: 'img/speakers/claudina-sarahe-m.jpg'
     imageSmall: 'img/speakers/claudina-sarahe.jpg'
     altText: 'A portrait picture of Claudina Sarahe.'
-    talkTitle: details soon!
+    talkTitle: The Front End Revolution
     talkAbstract: |
-      details soon!
+      Claudina's talk will explore events in the history of 
+      front end development that have lead to the bouleversement 
+      within the field. Despite what you might think, the revolution 
+      has nothing to do with the tools and technology. Twitter 
+      adoption isn't what started the Arab Spring; Node isn't 
+      responsible for JavaScript's renaissance; and Wikipedia's 
+      most significant accomplishment has nothing to do with the 
+      fact that they are one of the most visited, most trusted, 
+      human-powered sites."
+
     links:
       - { url: 'https://twitter.com/itsmisscs', text: '@itsmisscs' }
 
