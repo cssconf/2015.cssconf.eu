@@ -85,11 +85,11 @@ speakers:
     altText: 'A portrait picture of Una Kravets.'
     talkTitle: 'Photoshop is Dead!: Editing Images in CSS'
     talkAbstract: |
-    Una’s talk, Photoshop is Dead: Editing Images in CSS, will demonstrate 
-    how we can use CSS blend modes, filters, and gradients to implement custom 
-    photo effects right in the browser. The talk will help us understand how blend 
-    modes work and will show us how to implement dynamic and accessible graphics 
-    within our own web projects.
+      Una’s talk, Photoshop is Dead: Editing Images in CSS, will demonstrate 
+      how we can use CSS blend modes, filters, and gradients to implement custom 
+      photo effects right in the browser. The talk will help us understand how blend 
+      modes work and will show us how to implement dynamic and accessible graphics 
+      within our own web projects.
     links:
       - { url: 'https://twitter.com/una', text: '@una' }
       - { url: 'https://una.github.io', text: 'una.github.io' }
@@ -113,12 +113,12 @@ speakers:
       Developing for Localization: CSS Techniques To Get Your Message Across To
       The World Wide Web
     talkAbstract: |
-    As a developer for Getty Images whose site is localized into more than 20 languages, 
-    Katie is all too familiar with the layout havoc caused by translated content. 
-    In her talk, Developing for Localization, she will demonstrate CSS techniques 
-    to get your message across the world wide web. From easy wins such as non-embedded 
-    image copy to sneaky replacements for padding and margin to buff up those grids, 
-    you'll learn robust techniques for your day-to-day CSS development!
+      As a developer for Getty Images whose site is localized into more than 20 languages, 
+      Katie is all too familiar with the layout havoc caused by translated content. 
+      In her talk, Developing for Localization, she will demonstrate CSS techniques 
+      to get your message across the world wide web. From easy wins such as non-embedded 
+      image copy to sneaky replacements for padding and margin to buff up those grids, 
+      you'll learn robust techniques for your day-to-day CSS development!
     links:
       - { url: 'https://twitter.com/katiek2', text: '@katiek2' }
       - { url: 'http://www.pewpewlaser.com/', text: 'www.pewpewlaser.com' }
@@ -217,11 +217,11 @@ speakers:
     altText: 'A portrait picture of Horia Dragomir.'
     talkTitle: "I Don't Want To Be On Facebook All Day!"
     talkAbstract: |
-    Horia's talk tells the story of building messenger.com. Horia will give us 
-    a glimpse into how CSS is used at Facebook, and how it worked 
-    both for and against the developers tasked with working on the 
-    first secondary domain: messenger.com. 
-    Contains cool CSS and a bit of React. You've been warned!
+      Horia’s talk tells the story of building messenger.com. Horia will give us 
+      a glimpse into how CSS is used at Facebook, and how it worked 
+      both for and against the developers tasked with working on the 
+      first secondary domain: messenger.com. 
+      Contains cool CSS and a bit of React. You’ve been warned!
     links:
       - { url: 'https://twitter.com/hdragomir', text: '@hdragomir' }
       - { url: 'http://hdragomir.com', text: 'hdragomir.com' }
@@ -233,7 +233,7 @@ speakers:
     bio: >
       Zoe is a senior designer for Booking.com. She is the author of two books
       on CSS and visual web design, and she recently wrote the chapter on
-      flexbox for Smashing Magazine's new Real-Life Responsive Web Design book.
+      flexbox for Smashing Magazine’s new Real-Life Responsive Web Design book.
     imageLarge: 'img/speakers/zoe-gillenwater-l.jpg'
     imageMedium: 'img/speakers/zoe-gillenwater-m.jpg'
     imageSmall: 'img/speakers/zoe-gillenwater.jpg'
