@@ -71,7 +71,7 @@ speakers:
       continue to be useful? Will someone concoct some X-files-style JS+CSS
       alien-human hybrid language that takes over the world? It’s all possible
       (mostly).
-
+      
       This talk is about a new format for CSS, one that’s now supported by
       default in Webpack & JSPM, and available with plugins for Browserify.
       It’s called Interoperable CSS, and it hopes to do for CSS what CommonJS
@@ -147,16 +147,16 @@ speakers:
     altText: 'A portrait picture of Michael Mifsud.'
     talkTitle: It's All Just Functions And Variables
     talkAbstract: |
-      Michael’s talk, It's All Just Functions And Variables, 
+      Michael’s talk, It‘s All Just Functions And Variables, 
       will tell the story of how weeks of being taunted by nonsensical 
       compiler errors and a supportive community turned him, a "lowly" 
       front end developer, into a core contributor to LibSass - a large C/C++ project. 
       He will unravel the stigma that "front end developers aren't real programmers" which 
       propagates throughout the industry and into the hearts and minds of fellow developers.
-
+      
       Michael will convince you that regardless of whether you write CSS, 
       JavaScript or COBOL, you are as much a programmer as anyone on your 
-      team or the intenet, and that it's not our languages that define us 
+      team or the intenet, and that it’s not our languages that define us 
       but our willingness to learn to master our domain.
     links:
       - { url: 'https://twitter.com/xzyfer', text: '@xzyfer' }
@@ -254,7 +254,7 @@ speakers:
       in a responsive layout and lets you create much morecomplex and reliable 
       layouts than you can with floats, table display, or inline-block. 
       All with far less CSS.
-
+      
       In this talk, you’ll learn what flexbox features are particularly
       suited to responsive layouts and how you can harness them by
       applying flexbox as a progressive enhancement. We’ll look at examples of
