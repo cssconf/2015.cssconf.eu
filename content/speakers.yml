@@ -79,6 +79,7 @@ speakers:
     links:
       - { url: 'https://twitter.com/glenmaddern', text: '@glenmaddern' }
       - { url: 'http://glenmaddern.com', text: 'glenmaddern.com' }
+      - { url: 'http://blog.cssconf.eu/2015/09/21/meet-glen-maddern/', text: 'Speaker Interview' }
 
   una:
     announced: true
