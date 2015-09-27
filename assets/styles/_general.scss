@@ -33,6 +33,20 @@ ol { margin-top: 0; }
   }
 }
 
+// container with margin gutter
+%container-gutter {
+
+  @include bp(small) {
+    margin-left: $padding-body;
+    margin-right: $padding-body;
+  }
+
+  @include bp(medium) {
+    margin-left: $padding-body * 2;
+    margin-right: $padding-body * 2;
+  }
+}
+
 // apply this in order to have a gap to the left and right, also on mobile
 %container-nav {
   padding-left: $padding-body;

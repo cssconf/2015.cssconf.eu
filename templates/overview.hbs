@@ -1,0 +1,120 @@
+{{> navmain }}
+
+{{!-- STAGE SECTION --}}
+<div class="rw stage stage--home">
+  {{#parseJSON '{"large":"stage-2400.png", "medium":"stage-1200.png", "small":"stage-600.png", "altText":"CSSconf written in line artwork."}' }}
+    {{> stage }}
+  {{/parseJSON}}
+  <div class="stage__content">
+    <!-- <a href="http://2015.cssconf.eu/sponsors/" class="stage__button btn--special">
+      <span class="btn__span" data-hover="Become a sponsor">Become a sponsor</span>
+    </a> -->
+    <a href="https://ti.to/cssconfeu/cssconf-eu-2015/" class="stage__button btn--special">
+      <span class="btn__span" data-hover="Buy Ticket">Buy Ticket</span>
+    </a>
+  </div>
+</div>
+{{!-- STAGE SECTION END --}}
+
+{{!-- CONFERENCE SECTION --}}
+<div class="rw g-conference">
+  <section class="c-conference">
+    <div class="cl split__text">
+      <h1 class="heading-align">The Conference</h1>
+      <p>CSSconf EU is a community conference dedicated to the designers and developers who build the world’s most engaging user interfaces. For the community, from the community.</p>
+      <a href="/info/" class="btn--special"><span class="btn__span" data-hover="Learn More">Learn More</span></a>
+    </div><!--
+ --><div class="cl split__media">
+      <div class="image--has-single-border image--is-positioned-right image--has-geo-element">
+        <img class="image-single-border" src="/assets/{{version '_'}}/img/img-conference.jpg" alt="">
+      </div>
+    </div>
+  </section>
+</div>
+{{!-- CONFERENCE SECTION END --}}
+
+{{!-- SPEAKER SECTION --}}
+<div class="rw g-speakers-home">
+  <section class="c-speakers-home">
+    <h1 class="heading-align">Meet our Speakers</h1>
+    <p>Here’s our 2015 line up! We can’t wait to see them on stage. See the complete <a href="/schedule/">schedule</a>.</p>
+    {{> speaker-list }}
+  </section>
+</div>
+{{!-- SPEAKER SECTION END --}}
+
+{{!-- VENUE SECTION --}}
+<div class="rw g-venue">
+  <section class="c-venue">
+    <div class="cl split__media">
+      <div class="image--has-single-border">
+        <a class="c-venue__link" target="_blank" href="https://www.google.de/maps/place/RADIALSYSTEM+V/@52.510292,13.428619,17z/data=!3m1!4b1!4m2!3m1!1s0x47a84e3900263f87:0xf3893f5141a5c0fc?hl=en">
+          <img class="image-single-border" src="/assets/{{version '_'}}/img/map.png" alt="">
+        </a>
+      </div>
+    </div><!--
+ --><div class="cl split__text">
+      <h1 class="heading-align">The Venue</h1>
+      <h2 class="fz-gamma">
+        Radialsystem V
+        <span class="heading-subline">Holzmarktstr. 33, 10243 Berlin</span>
+      </h2>
+      <p>Our venue, RADIALSYSTEM V, is situated in the urban centre of Berlin between Friedrichshain, Mitte and Kreuzberg. Formerly a turn of the century pumping station for the Berlin Wasserwerke (Berlin Water Services), the historic building now functions as a cultural centre where new ideas radiate out in all directions.</p>
+    </div>
+  </section>
+</div>
+{{!-- VENUE SECTION END --}}
+
+{{!-- THANK YOU SECTION --}}
+<div class="rw g-thank-you">
+  <section class="c-thank-you">
+    <svg class="c-thank-you__svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 107 93" enable-background="new 0 0 107 93" xml:space="preserve">
+      <path d="M0,83.1c5.9-5.6,10.6-6.9,14.5-8c3.1-0.9,5.4-1.5,8.8-4.7c3.4-3.2,4.2-5.5,5.2-8.5c1.3-3.8,2.9-8.5,8.7-14s10.6-6.9,14.5-8c3.1-0.9,5.4-1.5,8.8-4.7c3.4-3.2,4.2-5.5,5.2-8.5c1.3-3.8,2.9-8.5,8.7-14c5.9-5.6,10.6-6.9,14.5-8C92,3.9,94.2,3.2,97.6,0l9.3,9.9c-5.9,5.6-10.6,6.9-14.5,8c-3.1,0.9-5.4,1.5-8.8,4.7c-3.4,3.2-4.2,5.5-5.2,8.5c-1.3,3.8-2.9,8.5-8.7,14c-5.9,5.6-10.6,6.9-14.5,8c-3.1,0.9-5.4,1.5-8.8,4.7c-3.4,3.2-4.2,5.5-5.2,8.5c-1.3,3.8-2.9,8.5-8.7,14c-5.9,5.6-10.6,6.9-14.5,8c-3.1,0.9-5.4,1.5-8.8,4.7L0,83.1z"/>
+    </svg>
+    <h1>Thank you</h1>
+    <h2 class="fz-gamma">This community event is possible thanks to the generous support of our sponsors.</h2>
+    <p>We are currently offering sponsorship packages and media partnerships for CSSconf EU.</p>
+    <a href="/sponsors/" class="btn--special"><span class="btn__span" data-hover="Request Information">Request Information</span></a>
+  </section>
+</div>
+{{!-- THANK YOU SECTION END --}}
+
+{{!-- INCLUDE SPONSORS SECTION --}}
+{{> sponsors }}
+
+{{!-- INCLUDE ORGANIZERS SECTION --}}
+{{> organizers }}
+
+{{!-- INCLUDE TEAM SECTION --}}
+{{> team }}
+
+{{!-- INCLUDE ARROW WITH ADDITIONAL CLASS --}}
+{{#parseJSON '{"cssClass":"--is-black"}' }}
+  <div class="arrow">
+    <a class="arrow__link" href="#bottom">
+    {{> arrow }}
+    </a>
+  </div>
+{{/parseJSON}}
+
+{{!-- INCLUDE ZEBRA STRIPES --}}
+{{> zebra-stripes }}
+
+{{!-- INCLUDE NAV-SUB --}}
+{{> nav-sub }}
+
+{{!-- INCLUDE SOCIAL BAR --}}
+{{> social-bar }}
+
+{{!-- INCLUDE PAGE FOOTER --}}
+{{> page-footer }}
+
+{{!-- INCLUDE ARROW WITH ADDITIONAL CLASSES --}}
+{{#parseJSON '{"cssClass":"--is-blue", "cssClassTwo":"is-transformed"}'}}
+  <div class="arrow">
+    <a class="arrow__link" href="#top">
+      {{> arrow }}
+    </a>
+  </div>
+{{/parseJSON}}
+

@@ -1,0 +1,22 @@
+.thanks__stage {
+  max-height: none;
+}
+
+.thanks__stage .stage__content {
+  width: 40%;
+  top: 20%;
+  bottom: inherit;
+
+  @include bp(medium) {
+    top: 25%;
+  }
+
+  @include bp(large) {
+    top: 30%;
+  }
+}
+
+.thanks__video__item {
+  @extend %one-half;
+  display: inline-block;
+}
