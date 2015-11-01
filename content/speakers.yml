@@ -24,10 +24,10 @@ speakers:
     links:
       - { url: 'https://twitter.com/leaverou', text: '@LeaVerou' }
       - { url: 'http://lea.verou.me/', text: 'lea.verou.me' }
-    videoId: 'beep'
-    videoPreviewLarge: 'boop'
-    videoPreviewMedium: 'boop'
-    videoPreviewSmall: 'boop'
+    videoId: 'eVnUDTtOLE0'
+    videoPreviewLarge: 'img/video-thumbs/lea-verou-thumb-l.jpg'
+    videoPreviewMedium: 'img/video-thumbs/lea-verou-thumb-m.jpg'
+    videoPreviewSmall: 'img/video-thumbs/lea-verou-thumb.jpg'
 
   claudina:
     announced: true
@@ -55,10 +55,10 @@ speakers:
 
     links:
       - { url: 'https://twitter.com/itsmisscs', text: '@itsmisscs' }
-    videoId: 'beep'
-    videoPreviewLarge: 'boop'
-    videoPreviewMedium: 'boop'
-    videoPreviewSmall: 'boop'
+    videoId: '0gpraHLQ0L0'
+    videoPreviewLarge: 'img/video-thumbs/claudina-sarahe-thumb-l.jpg'
+    videoPreviewMedium: 'img/video-thumbs/claudina-sarahe-thumb-m.jpg'
+    videoPreviewSmall: 'img/video-thumbs/claudina-sarahe-thumb.jpg'
 
   glen:
     announced: true
@@ -88,10 +88,10 @@ speakers:
       - { url: 'https://twitter.com/glenmaddern', text: '@glenmaddern' }
       - { url: 'http://glenmaddern.com', text: 'glenmaddern.com' }
       - { url: 'http://blog.cssconf.eu/2015/09/21/meet-glen-maddern/', text: 'Speaker Interview' }
-    videoId: 'beep'
-    videoPreviewLarge: 'boop'
-    videoPreviewMedium: 'boop'
-    videoPreviewSmall: 'boop'
+    videoId: 'aIyhhHTmsXE'
+    videoPreviewLarge: 'img/video-thumbs/glen-maddern-thumb-l.jpg'
+    videoPreviewMedium: 'img/video-thumbs/glen-maddern-thumb-m.jpg'
+    videoPreviewSmall: 'img/video-thumbs/glen-maddern-thumb.jpg'
 
   una:
     announced: true
@@ -116,10 +116,10 @@ speakers:
       - { url: 'https://twitter.com/una', text: '@una' }
       - { url: 'https://una.github.io', text: 'una.github.io' }
       - { url: 'http://blog.cssconf.eu/2015/09/04/meet-una-kravets/', text: 'Speaker Interview' }
-    videoId: 'beep'
-    videoPreviewLarge: 'boop'
-    videoPreviewMedium: 'boop'
-    videoPreviewSmall: 'boop'
+    videoId: 'LY65F2e4B5w'
+    videoPreviewLarge: 'img/video-thumbs/una-kravets-thumb-l.jpg'
+    videoPreviewMedium: 'img/video-thumbs/una-kravets-thumb-m.jpg'
+    videoPreviewSmall: 'img/video-thumbs/una-kravets-thumb.jpg'
 
   katie:
     announced: true
@@ -149,10 +149,10 @@ speakers:
       - { url: 'https://twitter.com/katiek2', text: '@katiek2' }
       - { url: 'http://www.pewpewlaser.com/', text: 'www.pewpewlaser.com' }
       - { url: 'http://blog.cssconf.eu/2015/09/16/meet-katie-kurkoski/', text: 'Speaker Interview' }
-    videoId: 'beep'
-    videoPreviewLarge: 'boop'
-    videoPreviewMedium: 'boop'
-    videoPreviewSmall: 'boop'
+    videoId: 'CNNUCECrjso'
+    videoPreviewLarge: 'img/video-thumbs/katie-kurkoski-thumb-l.jpg'
+    videoPreviewMedium: 'img/video-thumbs/katie-kurkoski-thumb-m.jpg'
+    videoPreviewSmall: 'img/video-thumbs/katie-kurkoski-thumb.jpg'
 
   michael:
     announced: true
@@ -182,10 +182,10 @@ speakers:
     links:
       - { url: 'https://twitter.com/xzyfer', text: '@xzyfer' }
       - { url: 'http://blog.cssconf.eu/2015/09/17/meet-michael-mifsud/', text: 'Speaker Interview' }
-    videoId: 'beep'
-    videoPreviewLarge: 'boop'
-    videoPreviewMedium: 'boop'
-    videoPreviewSmall: 'boop'
+    videoId: 'sijmNe9Yp5Q'
+    videoPreviewLarge: 'img/video-thumbs/michael-mifsud-thumb-l.jpg'
+    videoPreviewMedium: 'img/video-thumbs/michael-mifsud-thumb-m.jpg'
+    videoPreviewSmall: 'img/video-thumbs/michael-mifsud-thumb.jpg'
 
   tammie:
     announced: true
@@ -211,10 +211,10 @@ speakers:
       - { url: 'https://twitter.com/karmatosed', text: '@karmatosed' }
       - { url: 'http://diaryofawebsite.com/', text: 'diaryofawebsite.com' }
       - { url: 'http://blog.cssconf.eu/2015/09/18/meet-tammie-lister/', text: 'Speaker Interview' }
-    videoId: 'beep'
-    videoPreviewLarge: 'boop'
-    videoPreviewMedium: 'boop'
-    videoPreviewSmall: 'boop'
+    videoId: 'C9im1tkit0E'
+    videoPreviewLarge: 'img/video-thumbs/tammie-lister-thumb-l.jpg'
+    videoPreviewMedium: 'img/video-thumbs/tammie-lister-thumb-m.jpg'
+    videoPreviewSmall: 'img/video-thumbs/tammie-lister-thumb.jpg'
 
   tim:
     announced: true
@@ -240,10 +240,10 @@ speakers:
       - { url: 'http://twitter.com/twholman', text: '@twholman' }
       - { url: 'http://tholman.com', text: 'tholman.com' }
       - { url: 'http://blog.cssconf.eu/2015/09/14/meet-tim-holman/', text: 'Speaker Interview' }
-    videoId: 'beep'
-    videoPreviewLarge: 'boop'
-    videoPreviewMedium: 'boop'
-    videoPreviewSmall: 'boop'
+    videoId: '5HP6k43T0yM'
+    videoPreviewLarge: 'img/video-thumbs/tim-holman-thumb-l.jpg'
+    videoPreviewMedium: 'img/video-thumbs/tim-holman-thumb-m.jpg'
+    videoPreviewSmall: 'img/video-thumbs/tim-holman-thumb.jpg'
 
   horia:
     announced: true
@@ -268,10 +268,10 @@ speakers:
       - { url: 'https://twitter.com/hdragomir', text: '@hdragomir' }
       - { url: 'http://hdragomir.com', text: 'hdragomir.com' }
       - { url: 'http://blog.cssconf.eu/2015/09/23/meet-horia-dragomir', text: 'Speaker Interview' }
-    videoId: 'beep'
-    videoPreviewLarge: 'boop'
-    videoPreviewMedium: 'boop'
-    videoPreviewSmall: 'boop'
+    videoId: 'rSx5RxuaZfc'
+    videoPreviewLarge: 'img/video-thumbs/horia-dragomir-thumb-l.jpg'
+    videoPreviewMedium: 'img/video-thumbs/horia-dragomir-thumb-m.jpg'
+    videoPreviewSmall: 'img/video-thumbs/horia-dragomir-thumb.jpg'
 
   zoe:
     announced: true
@@ -303,10 +303,10 @@ speakers:
       - { url: 'https://twitter.com/zomigi', text: '@zomigi' }
       - { url: 'http://zomigi.com/', text: 'zomigi.com' }
       - { url: 'http://blog.cssconf.eu/2015/09/22/meet-zoe-gillenwater/', text: 'Speaker Interview' }
-    videoId: 'beep'
-    videoPreviewLarge: 'boop'
-    videoPreviewMedium: 'boop'
-    videoPreviewSmall: 'boop'
+    videoId: '_98SE8WUvLk'
+    videoPreviewLarge: 'img/video-thumbs/zoe-gillenwater-thumb-l.jpg'
+    videoPreviewMedium: 'img/video-thumbs/zoe-gillenwater-thumb-m.jpg'
+    videoPreviewSmall: 'img/video-thumbs/zoe-gillenwater-thumb.jpg'
 
   nick:
     announced: true
@@ -329,8 +329,8 @@ speakers:
       - { url: 'https://twitter.com/hipsterbrown', text: '@hipsterbrown' }
       - { url: 'http://www.hipsterbrown.com/', text: 'www.hipsterbrown.com' }
       - { url: 'http://blog.cssconf.eu/2015/09/01/meet-nick-hehr/', text: 'MC Interview' }
-    videoId: 'beep'
-    videoPreviewLarge: 'boop'
-    videoPreviewMedium: 'boop'
-    videoPreviewSmall: 'boop'
+    videoId: '0zbHNUbADgM'
+    videoPreviewLarge: 'img/video-thumbs/nick-hehr-thumb-l.jpg'
+    videoPreviewMedium: 'img/video-thumbs/nick-hehr-thumb-m.jpg'
+    videoPreviewSmall: 'img/video-thumbs/nick-hehr-thumb.jpg'
 
