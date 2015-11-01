@@ -15,6 +15,7 @@ p,
 ul,
 ol { margin-top: 0; }
 
+picture { display: block; }
 
 // link to top
 #top { display: none; }
@@ -187,7 +188,7 @@ section {
 
 .c-cssfamily { margin-bottom: $margin-base; }
 
-.c-thank-you { 
+.c-thank-you {
   position: relative;
   margin-top: $margin-base;
   margin-bottom: $margin-base * 2;

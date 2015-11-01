@@ -3,6 +3,13 @@ $icon-large: 7em;
 .video {
   position: relative;
   top: 0;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: " ";
+  }
 }
 
 .video__rw {
@@ -74,4 +81,9 @@ $icon-large: 7em;
 
 .video__description h2 {
   color: $color-yellow;
+}
+
+.video--thanks {
+  @extend %one-half;
+  display: inline-block;
 }

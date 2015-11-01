@@ -39,7 +39,6 @@
   bottom: auto;
   top: 44%;
   @include bp(small) { top: 42%; }
-  
 }
 
 .stage__headline-index {
@@ -49,6 +48,7 @@
 }
 
 .stage__img {
+  display: block;
   width: 100%;
   max-width: 100%;
 }
@@ -62,4 +62,21 @@
   }
 
   @media screen and (min-width: 37.5em) { padding-top: 136px; }
+}
+
+.stage--thanks {
+  max-height: none;
+
+  .stage__content {
+    left: $padding-body;
+    right: $padding-body;
+
+    @include bp(medium) {
+      top: 25%;
+    }
+
+    @include bp(large) {
+      top: 30%;
+    }
+  }
 }

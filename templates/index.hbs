@@ -1,4 +1,4 @@
-<div class="rw stage thanks__stage">
+<div class="rw stage stage--thanks">
   {{#parseJSON '{"large":"stage-thanks-2400.png", "medium":"stage-thanks-1200.png", "small":"stage-thanks-600.png", "altText":"A bunch of shapes."}' }}
     {{> stage}}
   {{/parseJSON}}
@@ -9,7 +9,7 @@
 </div>
 
 <a href="{{youtubeLink general.moodVideoId general.playlistId}}">
-  <div class="rw stage video video__rw">
+  <div class="rw video video__rw">
       {{#parseJSON '{"large":"mood-video-preview-2400.png", "medium":"mood-video-preview-1200.png", "small":"mood-video-preview-600.png", "altText":"A bunch of shapes."}' }}
         {{> stage}}
       {{/parseJSON}}
@@ -25,7 +25,7 @@
   <div class="rw stage thanks__video__group">
     <!--
     {{#each partition}}
-      --><div class="video thanks__video__item">
+      --><div class="video video--thanks">
         <a href="{{youtubeLink videoId general.playlistId}}">
           <img srcset="/assets/{{version '_'}}/{{videoPreviewLarge}} 320w,
                   /assets/{{version '_'}}/{{videoPreviewMedium}} 256w,
