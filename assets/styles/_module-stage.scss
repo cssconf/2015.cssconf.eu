@@ -53,30 +53,34 @@
   max-width: 100%;
 }
 
-.banner-shown .stage,
-.banner-shown .nav-main + .g-organizers {
-  padding-top: 144px;
-
-  @include bp(xsmall) {
-    padding-top: 159px;
-  }
-
-  @media screen and (min-width: 37.5em) { padding-top: 136px; }
-}
-
 .stage--thanks {
   max-height: none;
+  padding-top: 0;
+  margin-top: 144px;
+  margin-bottom: 144px;
 
   .stage__content {
+    top: 20%;
     left: $padding-body;
     right: $padding-body;
+    bottom: auto;
+
+    @include bp(small) {
+      width: 75%;
+    }
 
     @include bp(medium) {
       top: 25%;
+      width: 50%;
     }
 
     @include bp(large) {
       top: 30%;
+      width: 40%;
     }
+  }
+
+  @include bp(xsmall) {
+    margin-bottom: 159px;
   }
 }
