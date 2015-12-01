@@ -1,10 +1,10 @@
 import {FastClick} from 'fastclick'
 import ToggleState from './ToggleState'
 import picturefill from 'picturefill'
-import initSoldOutBanner from './soldout-banner.js';
+//import initSoldOutBanner from './soldout-banner.js';
 // import slider from './slider/slider.js'
 
-initSoldOutBanner();
+//initSoldOutBanner();
 picturefill();
 FastClick.attach(document.body);
 
