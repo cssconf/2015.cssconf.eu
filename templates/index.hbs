@@ -1,3 +1,9 @@
+---
+title: Thank you!
+---
+
+{{> navmain }}
+
 <div class="rw stage stage--thanks">
   {{#parseJSON '{"large":"stage-thanks-2400.png", "medium":"stage-thanks-1200.png", "small":"stage-thanks-600.png", "altText":"A bunch of shapes."}' }}
     {{> stage}}
@@ -8,40 +14,73 @@
   </div>
 </div>
 
-<a href="{{youtubeLink general.moodVideoId general.playlistId}}">
+
+<a class="video__link" href="{{youtubeLink general.moodVideoId general.playlistId}}">
   <div class="rw video video__rw">
       {{#parseJSON '{"large":"mood-video-preview-2400.png", "medium":"mood-video-preview-1200.png", "small":"mood-video-preview-600.png", "altText":"A bunch of shapes."}' }}
         {{> stage}}
       {{/parseJSON}}
       <div class="video__preview-overlay"></div>
     <div class="video__description">
-      <h2>CSSConf EU 2015 Wrap Up</h2>
-      <p>Pretty much legendary.</p>
+      <h2 class="video__description__speaker">CSSConf EU 2015 Wrap Up</h2>
+      <p class="video__description__title">Pretty much legendary.</p>
     </div>
   </div>
 </a>
 
-{{#partition speakers 3}}
-  <div class="rw stage thanks__video__group">
-    <!--
-    {{#each partition}}
-      --><div class="video video--thanks">
-        <a href="{{youtubeLink videoId ../../general.playlistId}}">
-          <img srcset="/assets/{{version '_'}}/{{videoPreviewLarge}} 320w,
+<section class="rw thanks">
+  <!--
+  {{#each speakers}}
+    --><div class="thanks__video">
+      <a class="video__link" href="{{youtubeLink videoId ../../general.playlistId}}">
+        <div class="video video--thanks">
+
+          <img class="video__poster" srcset="/assets/{{version '_'}}/{{videoPreviewLarge}} 320w,
                   /assets/{{version '_'}}/{{videoPreviewMedium}} 256w,
                   /assets/{{version '_'}}/{{videoPreviewSmall}} 200w"
               src="/assets/{{version '_'}}/{{videoPreviewSmall}}"
               alt="{{talkTitle}}">
           <div class="video__preview-overlay"></div>
           <div class="video__description">
-            <h2>{{name}}</h2>
-            <p>{{talkTitle}}</p>
+            <h2 class="video__description__speaker">{{name}}</h2>
+            <p class="video__description__title">{{talkTitle}}</p>
           </div>
-        </a>
-      </div><!--
-    {{/each}}
-    -->
-  </div>
-{{/partition}}
+        </div>
+      </a>
+    </div><!--
+  {{/each}}
+  -->
+</section>
 
-<a href="/overview/">Go to start page</a>
+{{!-- INCLUDE ARROW WITH ADDITIONAL CLASS --}}
+{{#parseJSON '{"cssClass":"--is-black"}' }}
+  <div class="arrow">
+    <a class="arrow__link" href="#bottom">
+      {{> arrow }}
+    </a>
+  </div>
+{{/parseJSON}}
+
+{{!-- INCLUDE SPONSORS --}}
+{{> sponsors }}
+
+{{!-- INCLUDE ZEBRA STRIPES --}}
+{{> zebra-stripes }}
+
+{{!-- INCLUDE NAV-SUB --}}
+{{> nav-sub }}
+
+{{!-- INCLUDE SOCIAL BAR --}}
+{{> social-bar }}
+
+{{!-- INCLUDE PAGE FOOTER --}}
+{{> page-footer }}
+
+{{!-- INCLUDE ARROW WITH ADDITIONAL CLASSES --}}
+{{#parseJSON '{"cssClass":"--is-blue", "cssClassTwo":"is-transformed"}'}}
+  <div class="arrow">
+    <a class="arrow__link" href="#top">
+      {{> arrow }}
+    </a>
+  </div>
+{{/parseJSON}}
