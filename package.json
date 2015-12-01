@@ -4,7 +4,7 @@
   "description": "Website Repo of CSSconf.eu",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "start": "grunt dev"
   },
   "author": "",
   "license": "ISC",
