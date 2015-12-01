@@ -13,20 +13,21 @@ $icon-large: 7em;
     content: " ";
   }
 
+  // after-element is for the play-icon
   &:after {
     content: "";
     display: block;
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 2;
 
-    background: url(img/video-icon.svg) center no-repeat;
-    background-size: $icon-large $icon-large;
-    //width: $icon-large;
-    //height: $icon-large;
-    //margin: 0 auto $margin-base auto;
-  }
+    width: 25%; max-width: $icon-large;
+    height: $icon-large;
 
+    background: url(img/video-icon.svg) center no-repeat;
+    background-size: contain;
+  }
 }
 
 .video__rw {
@@ -70,17 +71,16 @@ $icon-large: 7em;
 
 .video__description {
   position: absolute;
-  bottom: 2em;
-  left: 1.5em;
-  right: 1.5em;
-  //top: 7em;
+  left: 0; right: 0;
+  bottom: 0;
+  // vetical margin in percent relates to the width, thus adds a bit of responsive behaviour
+  margin: 0 1.5em 5%;
   text-align: center;
   z-index: 3;
   color: $color-white;
 
   &__speaker { margin-bottom: .5em; }
   &__title { margin-bottom: .75em; }
-
 
   @include bp(large) {
     //top: 12em;
