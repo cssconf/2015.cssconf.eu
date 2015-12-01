@@ -3,36 +3,51 @@ $icon-large: 7em;
 .video {
   position: relative;
   top: 0;
+  cursor: pointer;
 
+  // before-elements are used to add some colorful backgrounds
   &:before {
     position: absolute;
     top: 0;
     left: 0;
     content: " ";
   }
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 2;
+
+    background: url(img/video-icon.svg) center no-repeat;
+    background-size: $icon-large $icon-large;
+    //width: $icon-large;
+    //height: $icon-large;
+    //margin: 0 auto $margin-base auto;
+  }
+
 }
 
 .video__rw {
   max-height: none;
+
+  &.stage {
+    overflow: inherit;
+  }
+
+  &:before {
+    content: " ";
+    background-color: $color-yellow;
+    width: 50%;
+    height: 1.5em;
+    position: absolute;
+    top: 100%;
+    left: 40%;
+  }
 }
 
-.video__rw.stage {
-  overflow: inherit;
-}
 
-.video__rw::before {
-  content: " ";
-  background-color: $color-yellow;
-  width: 50%;
-  height: 1.5em;
-  position: absolute;
-  top: 100%;
-  left: 40%;
-}
-
-.mix-blend-mode .video__preview-overlay {
-  display: block;
-}
 
 .video__preview-overlay {
   @extend %container-gutter;
@@ -45,45 +60,39 @@ $icon-large: 7em;
   background-color: #000;
   background: radial-gradient(ellipse at top center, #999 0%, #000 50%, #222 100%);
   z-index: 1;
+  transition: opacity .3s;
   opacity: 0.5;
+
+  .mix-blend-mode & { display: block; }
+  .video:hover & { opacity: 0.3; }
 }
 
-.video:hover .video__preview-overlay {
-  opacity: 0.4;
-}
 
 .video__description {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 7em;
+  bottom: 2em;
+  left: 1.5em;
+  right: 1.5em;
+  //top: 7em;
   text-align: center;
-  z-index: 2;
+  z-index: 3;
   color: $color-white;
 
+  &__speaker { margin-bottom: .5em; }
+  &__title { margin-bottom: .75em; }
+
+
   @include bp(large) {
-    top: 12em;
+    //top: 12em;
   }
 }
 
-.video__description::before {
-  content: " ";
+.video__link {
   display: block;
-  background-image: url(img/video-icon.svg);
-  background-size: $icon-large $icon-large;
-  width: $icon-large;
-  height: $icon-large;
-  position: relative;
-  margin: 0 auto $margin-base auto;
+  cursor: pointer;
 }
-
 
 .video__description h2 {
   color: $color-yellow;
 }
 
-.video--thanks {
-  @extend %one-half;
-  display: inline-block;
-}

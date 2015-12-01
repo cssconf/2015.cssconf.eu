@@ -53,3 +53,41 @@
 }
 
 .img-row--clear { margin: 0; }
+
+
+
+
+
+// shame.scss - get this into proper locations later. Or never.
+// It's not like anybody would care anymore.
+
+
+// make sure images don't exceed their containers dimensions
+.video__poster { max-width: 100%; }
+
+// this is a container around the `.video`-element itself.
+// Positioning of the videos is done using the padding of these containers
+// They will be rendered in groups of four.
+.thanks__video {
+  position: relative;
+
+  width: 100%;
+
+  @include bp(small) { width: 50%; }
+  @include bp(xlarge) { width: 1/3 * 100%; }
+
+  display: inline-block;
+  vertical-align: middle;
+
+  padding: 1.5em 0.75em; // sensible base-value
+
+  // the first in the group is rendered in full width
+  //&:nth-child(3n) { padding: 3em 2em; }
+  //&:nth-child(3n + 1) { padding: 3em 5em; }
+  //&:nth-child(3n + 2) { padding: 3em 4em; }
+  //&:nth-child(4n) { padding-left: 7em; padding-right: 1em; }
+  //
+  //&:nth-child(5n) { top: 2em; }
+  //&:nth-child(5n + 3) { left: 2em; }
+
+}
