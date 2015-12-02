@@ -68,6 +68,10 @@
 // this is a container around the `.video`-element itself.
 // Positioning of the videos is done using the padding of these containers
 // They will be rendered in groups of four.
+.thanks {
+  text-align: center;
+}
+
 .thanks__video {
   position: relative;
 
