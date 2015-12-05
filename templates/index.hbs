@@ -54,23 +54,18 @@ title: Thank you!
   -->
 </section>
 
-{{!-- INCLUDE ARROW WITH ADDITIONAL CLASS --}}
-{{#parseJSON '{"cssClass":"--is-black"}' }}
-  <div class="arrow">
-    <a class="arrow__link" href="#bottom">
-      {{> arrow }}
-    </a>
+<section>
+  <div class="thanks__link">
+    <a href="/overview/">Go to start page</a>
   </div>
-{{/parseJSON}}
+</section>
 
-{{!-- INCLUDE SPONSORS --}}
-{{> sponsors }}
 
 {{!-- INCLUDE ZEBRA STRIPES --}}
 {{> zebra-stripes }}
 
-{{!-- INCLUDE NAV-SUB --}}
-{{> nav-sub }}
+{{!-- INCLUDE SPONSORS --}}
+{{> sponsors }}
 
 {{!-- INCLUDE SOCIAL BAR --}}
 {{> social-bar }}

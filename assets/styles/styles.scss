@@ -181,3 +181,28 @@
   }
 
 }
+
+.thanks__link {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  min-width: 280px;
+  height: 7em;
+  padding: 3em 1em;
+  background-color: $color-blue;
+  a {
+    font-size: 1em;
+    color: $color-white;
+    &:hover, &:focus {
+      color: $color-white;
+      border-bottom: .2em solid yellow;
+    } 
+  }
+  @include bp(medium) {
+    height: 9em;
+    a {
+      font-size: 2em;
+    }
+  }
+}
