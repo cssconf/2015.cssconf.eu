@@ -57,13 +57,10 @@
 
 
 
-
-// shame.scss - get this into proper locations later. Or never.
-// It's not like anybody would care anymore.
-
+// video grid on post-conf thank you page
 
 // make sure images don't exceed their containers dimensions
-.video__poster { 
+.video__poster {
   max-width: 100%;
   display: block;
 }
@@ -73,6 +70,8 @@
 // They will be rendered in groups of four.
 .thanks {
   text-align: center;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .thanks__video {
@@ -81,20 +80,104 @@
   width: 100%;
 
   @include bp(small) { width: 50%; }
-  @include bp(xlarge) { width: 1/3 * 100%; }
+  @include bp(large) { width: 1/3 * 100%; }
 
   display: inline-block;
   vertical-align: middle;
 
-  padding: 1.5em 0.75em; // sensible base-value
+  padding: 1.5em 1em; // sensible base-value
 
-  // the first in the group is rendered in full width
-  //&:nth-child(3n) { padding: 3em 2em; }
-  //&:nth-child(3n + 1) { padding: 3em 5em; }
-  //&:nth-child(3n + 2) { padding: 3em 4em; }
-  //&:nth-child(4n) { padding-left: 7em; padding-right: 1em; }
-  //
-  //&:nth-child(5n) { top: 2em; }
-  //&:nth-child(5n + 3) { left: 2em; }
+  @include bp(large) {
+
+    padding: 3em 2.25em; // sensible base-value
+
+    // before-elements are used to add some colorful backgrounds
+    .video:before {
+      position: absolute;
+      content: " ";
+      z-index: -1;
+      top: -1em;
+      left: -1em;
+      width: 90%;
+      height: 40%;
+      background-color: $color-yellow;
+    }
+
+    // varying background ornaments
+
+    &:nth-child(4n) {
+      transform: translate(2em, 1em);
+      .video:before {
+        background-color: $color-yellow;
+      }
+    }
+
+    &:nth-child(4n+1) {
+      transform: translate(-1em, -3em);
+
+      .video:before {
+        background-color: $color-red;
+      }
+    }
+
+    &:nth-child(4n+2) {
+      .video:before {
+        background-color: $color-blue;
+      }
+    }
+
+    &:nth-child(4n+3) {
+      transform: translate(1em, -2em);
+
+      .video:before {
+        background-color: $color-beige;
+      }
+    }
+
+    &:nth-child(5n) {
+      .video:before {
+        height: 90%;
+        width: 100%;
+        top: 3em;
+        left: 1.5em;
+      }
+    }
+
+    &:nth-child(5n+1) {
+      .video:before {
+        top: -1em;
+        left: -1em;
+        width: 90%;
+        height: 40%;
+      }
+    }
+
+    &:nth-child(5n+2) {
+      .video:before {
+        height: 100%;
+        top: 1em;
+        left: 1em;
+      }
+    }
+
+    &:nth-child(5n+3) {
+      .video:before {
+        height: 100%;
+        width: 100%;
+        top: 1em;
+        left: -.5em;
+      }
+    }
+
+    &:nth-child(5n+4) {
+      .video:before {
+        height: 30%;
+        width: 100%;
+        top: 8em;
+        left: -1.5em;
+      }
+    }
+
+  }
 
 }

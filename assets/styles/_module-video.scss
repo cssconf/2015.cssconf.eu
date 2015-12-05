@@ -5,14 +5,6 @@ $icon-large: 5em;
   top: 0;
   cursor: pointer;
 
-  // before-elements are used to add some colorful backgrounds
-  &:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: " ";
-  }
-
   // after-element is for the play-icon
   &:after {
     content: "";
@@ -83,8 +75,8 @@ $icon-large: 5em;
   align-items: center;
   justify-content: center;
 
-  padding-left: .5em;
-  padding-right: .5em;
+  padding-left: .25em;
+  padding-right: .25em;
   text-align: center;
   z-index: 3;
   color: $color-white;
@@ -98,6 +90,12 @@ $icon-large: 5em;
     font-size: .7em;
   }
   @include bp(medium) {
+    font-size: 1em;
+  }
+  @include bp(large) {
+    font-size: .8em;
+  }
+  @include bp(xlarge) {
     font-size: 1em;
   }
 
