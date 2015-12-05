@@ -63,7 +63,10 @@
 
 
 // make sure images don't exceed their containers dimensions
-.video__poster { max-width: 100%; }
+.video__poster { 
+  max-width: 100%;
+  display: block;
+}
 
 // this is a container around the `.video`-element itself.
 // Positioning of the videos is done using the padding of these containers

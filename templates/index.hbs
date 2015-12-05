@@ -16,14 +16,16 @@ title: Thank you!
 
 
 <a class="video__link" href="{{youtubeLink general.moodVideoId general.playlistId}}">
-  <div class="rw video video__rw">
-      {{#parseJSON '{"large":"mood-video-preview-2400.png", "medium":"mood-video-preview-1200.png", "small":"mood-video-preview-600.png", "altText":"A bunch of shapes."}' }}
-        {{> stage}}
-      {{/parseJSON}}
-      <div class="video__preview-overlay"></div>
-    <div class="video__description">
-      <h2 class="video__description__speaker">CSSconf EU 2015 Mood Film</h2>
-      <p class="video__description__title">Pretty much legendary.</p>
+  <div class="rw">
+    <div class="video video__rw">
+        {{#parseJSON '{"large":"mood-video-preview-2400.png", "medium":"mood-video-preview-1200.png", "small":"mood-video-preview-600.png", "altText":"A bunch of shapes."}' }}
+          {{> stage}}
+        {{/parseJSON}}
+        <div class="video__preview-overlay"></div>
+      <div class="video__description">
+        <h2 class="video__description__speaker">CSSconf EU 2015 Mood Film</h2>
+        <p class="video__description__title">Watch the best moments of CSSconf EU 2015</p>
+      </div>
     </div>
   </div>
 </a>

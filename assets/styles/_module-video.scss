@@ -51,7 +51,6 @@ $icon-large: 7em;
 
 
 .video__preview-overlay {
-  @extend %container-gutter;
   display: none;
   position: absolute;
   top: 0;
