@@ -15,6 +15,7 @@ p,
 ul,
 ol { margin-top: 0; }
 
+picture { display: block; }
 
 // link to top
 #top { display: none; }
@@ -30,6 +31,20 @@ ol { margin-top: 0; }
   @include bp(medium) {
     padding-left: $padding-body * 2;
     padding-right: $padding-body * 2;
+  }
+}
+
+// container with margin gutter
+%container-gutter {
+
+  @include bp(small) {
+    margin-left: $padding-body;
+    margin-right: $padding-body;
+  }
+
+  @include bp(medium) {
+    margin-left: $padding-body * 2;
+    margin-right: $padding-body * 2;
   }
 }
 
@@ -173,7 +188,7 @@ section {
 
 .c-cssfamily { margin-bottom: $margin-base; }
 
-.c-thank-you { 
+.c-thank-you {
   position: relative;
   margin-top: $margin-base;
   margin-bottom: $margin-base * 2;

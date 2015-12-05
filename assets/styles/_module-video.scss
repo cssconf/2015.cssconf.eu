@@ -1,0 +1,119 @@
+$icon-large: 5em;
+
+.video {
+  position: relative;
+  top: 0;
+  cursor: pointer;
+
+  // after-element is for the play-icon
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    width: 25%;
+    max-width: $icon-large;
+    height: $icon-large;
+
+    background: url(img/video-icon.svg) center no-repeat;
+    background-size: contain;
+  }
+}
+
+.video__rw {
+  max-height: none;
+
+  &.stage {
+    overflow: inherit;
+  }
+
+  &:before {
+    content: " ";
+    background-color: $color-yellow;
+    width: 50%;
+    height: 1.5em;
+    position: absolute;
+    top: 100%;
+    left: 40%;
+  }
+}
+
+
+
+.video__preview-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  background: radial-gradient(ellipse at top center, #999 0%, #000 50%, #222 100%);
+  z-index: 1;
+  transition: opacity .3s;
+  opacity: 0.5;
+
+  .mix-blend-mode & { display: block; }
+  .video:hover & { opacity: 0.3; }
+}
+
+
+.video__description {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  //this verticaly centers the content, so the title + name always align somewhat balanced in relation to the play button
+  height: 40%;
+  height: calc(50% - (#{$icon-large}/2));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-left: .25em;
+  padding-right: .25em;
+  text-align: center;
+  z-index: 3;
+  color: $color-white;
+
+  // make sure long titles fit on smaller screens + smaller grid sizes
+  font-size: 0.7em;
+  @include bp(xsmall) {
+    font-size: 1em;
+  }
+  @include bp(small) {
+    font-size: .7em;
+  }
+  @include bp(medium) {
+    font-size: 1em;
+  }
+  @include bp(large) {
+    font-size: .8em;
+  }
+  @include bp(xlarge) {
+    font-size: 1em;
+  }
+
+  &__speaker { margin-bottom: .5em; }
+  &__title { margin-bottom: 0; }
+
+  .video--thanks &__speaker {
+    font-size: 1.4em;
+    margin-bottom: 0.2em;
+  }
+}
+
+.video__link {
+  display: block;
+  cursor: pointer;
+}
+
+.video__description h2 {
+  color: $color-yellow;
+}
+

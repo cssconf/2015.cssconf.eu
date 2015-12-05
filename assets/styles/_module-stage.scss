@@ -39,7 +39,6 @@
   bottom: auto;
   top: 44%;
   @include bp(small) { top: 42%; }
-  
 }
 
 .stage__headline-index {
@@ -49,17 +48,33 @@
 }
 
 .stage__img {
+  display: block;
   width: 100%;
   max-width: 100%;
 }
 
-.banner-shown .stage,
-.banner-shown .nav-main + .g-organizers {
-  padding-top: 144px;
+.stage--thanks {
+  .stage__content {
+    left: $padding-body;
+    right: $padding-body;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
 
-  @include bp(xsmall) {
-    padding-top: 159px;
+    @include bp(small) {
+      width: 75%;
+    }
+
+    @include bp(medium) {
+      width: 50%;
+    }
+
+    @include bp(large) {
+      width: 40%;
+    }
   }
 
-  @media screen and (min-width: 37.5em) { padding-top: 136px; }
+  @include bp(xsmall) {
+    margin-bottom: 1.5em;
+  }
 }
