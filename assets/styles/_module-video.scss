@@ -1,4 +1,4 @@
-$icon-large: 7em;
+$icon-large: 5em;
 
 .video {
   position: relative;
@@ -22,7 +22,8 @@ $icon-large: 7em;
     transform: translate(-50%, -50%);
     z-index: 2;
 
-    width: 25%; max-width: $icon-large;
+    width: 25%;
+    max-width: $icon-large;
     height: $icon-large;
 
     background: url(img/video-icon.svg) center no-repeat;
@@ -70,27 +71,42 @@ $icon-large: 7em;
 
 .video__description {
   position: absolute;
-  left: 0; right: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
-  // vetical margin in percent relates to the width, thus adds a bit of responsive behaviour
-  margin: 0 1.5em 4%;
+
+  //this verticaly centers the content, so the title + name always align somewhat balanced in relation to the play button
+  height: 40%;
+  height: calc(50% - (#{$icon-large}/2));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-left: .5em;
+  padding-right: .5em;
   text-align: center;
   z-index: 3;
   color: $color-white;
 
-  &__speaker { margin-bottom: .5em; }
-  &__title { margin-bottom: .75em; }
+  // make sure long titles fit on smaller screens + smaller grid sizes
+  font-size: 0.7em;
+  @include bp(xsmall) {
+    font-size: 1em;
+  }
+  @include bp(small) {
+    font-size: .7em;
+  }
+  @include bp(medium) {
+    font-size: 1em;
+  }
 
+  &__speaker { margin-bottom: .5em; }
+  &__title { margin-bottom: 0; }
 
   .video--thanks &__speaker {
     font-size: 1.4em;
     margin-bottom: 0.2em;
-  }
-  .video--thanks &__title { margin-bottom: .75em; }
-
-
-  @include bp(large) {
-    //top: 12em;
   }
 }
 
