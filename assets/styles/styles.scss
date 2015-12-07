@@ -73,115 +73,121 @@
   text-align: center;
   padding-left: 0;
   padding-right: 0;
+  overflow-x: hidden;
 }
+
+.thanks__video .video:before {
+  // before-elements are used to add some colorful backgrounds
+  @include bp(large) {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    top: -1em;
+    left: -1em;
+    width: 90%;
+    height: 40%;
+  }
+}
+
+// SET TRANSFORMS AND BACKGROUND-COLORS ACROSS THE VIDEO ELEMENTS
+.thanks__video:nth-child(4n) {
+  @include bp(large) { transform: translate(2em, 1em);
+  .video::before { background-color: $color-yellow; }
+  }
+}
+
+.thanks__video:nth-child(4n+1) {
+  @include bp(large) { transform: translate(-1em, -3em);
+    .video::before { background-color: $color-red; }
+  }
+}
+
+.thanks__video:nth-child(4n+2) {
+  @include bp(large) {
+    .video::before { background-color: $color-blue; }
+  }
+}
+
+.thanks__video:nth-child(4n+3) {
+  @include bp(large) { transform: translate(1em, -2em);
+    .video::before { background-color: $color-beige; }
+  }
+}
+
+//SET POSITIONS AND SIZES FOR GEOMETRICAL BACKGROUND ELEMENTS
+
+.thanks__video:nth-child(5n) {
+  @include bp(large) {
+    .video::before {
+      height: 90%;
+      width: 100%;
+      top: 16%;
+      left: 7%;
+    }
+  }
+}
+
+
+// LEA VEROU + MICHAEL MIFSUD
+.thanks__video:nth-child(5n+1) {
+  @include bp(large) {
+    .video::before {
+      top: -5%;
+      left: -5%;
+      width: 90%;
+      height: 40%;
+    }
+  }
+}
+
+.thanks__video:nth-child(5n+2) {
+  @include bp(large) {
+    .video::before {
+      height: 100%;
+      top: 5%;
+      left: 5%;
+    }
+  }
+}
+
+// GLEN MADDERN + TIM HOLMAN
+.thanks__video:nth-child(5n+3) {
+  @include bp(large) {
+    .video::before {
+      height: 100%;
+      width: 100%;
+      top: 5%;
+      left: -5%;
+    }
+  }
+}
+
+.thanks__video:nth-child(5n+4) {
+  @include bp(large) {
+    .video::before {
+      height: 30%;
+      width: 100%;
+      top: 75%;
+      left: -4%;
+    }
+  }
+}
+
 
 .thanks__video {
   position: relative;
-
   width: 100%;
-
-  @include bp(small) { width: 50%; }
-  @include bp(large) { width: 1/3 * 100%; }
-
   display: inline-block;
   vertical-align: middle;
-
   padding: 1.5em 1em; // sensible base-value
 
+  @include bp(small) { width: 50%; }
   @include bp(large) {
-
+    width: 1/3 * 100%;
     padding: 3em 2.25em; // sensible base-value
-
-    // before-elements are used to add some colorful backgrounds
-    .video:before {
-      position: absolute;
-      content: " ";
-      z-index: -1;
-      top: -1em;
-      left: -1em;
-      width: 90%;
-      height: 40%;
-      background-color: $color-yellow;
-    }
-
-    // varying background ornaments
-
-    &:nth-child(4n) {
-      transform: translate(2em, 1em);
-      .video:before {
-        background-color: $color-yellow;
-      }
-    }
-
-    &:nth-child(4n+1) {
-      transform: translate(-1em, -3em);
-
-      .video:before {
-        background-color: $color-red;
-      }
-    }
-
-    &:nth-child(4n+2) {
-      .video:before {
-        background-color: $color-blue;
-      }
-    }
-
-    &:nth-child(4n+3) {
-      transform: translate(1em, -2em);
-
-      .video:before {
-        background-color: $color-beige;
-      }
-    }
-
-    &:nth-child(5n) {
-      .video:before {
-        height: 90%;
-        width: 100%;
-        top: 3em;
-        left: 1.5em;
-      }
-    }
-
-    &:nth-child(5n+1) {
-      .video:before {
-        top: -1em;
-        left: -1em;
-        width: 90%;
-        height: 40%;
-      }
-    }
-
-    &:nth-child(5n+2) {
-      .video:before {
-        height: 100%;
-        top: 1em;
-        left: 1em;
-      }
-    }
-
-    &:nth-child(5n+3) {
-      .video:before {
-        height: 100%;
-        width: 100%;
-        top: 1em;
-        left: -.5em;
-      }
-    }
-
-    &:nth-child(5n+4) {
-      .video:before {
-        height: 30%;
-        width: 100%;
-        top: 8em;
-        left: -1.5em;
-      }
-    }
-
   }
-
 }
+
 
 .thanks__link {
   display: block;
